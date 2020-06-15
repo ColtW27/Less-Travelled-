@@ -21,7 +21,7 @@ class NavBar extends React.Component {
             <div>
                 <Link to={'/FIXTHIS'}>####TBD</Link>
                 <Link to={'/profile'}>Profile</Link>
-                <Link to={'/FIXTHIS'}>####TBD</Link>
+                <Link to={'/logout'}>####TBD</Link>
                 <button onClick={this.logoutUser}>Logout</button>
             </div>
         );
@@ -37,10 +37,16 @@ class NavBar extends React.Component {
 
   render() {
       return (
-        <div>
-            <h1>####UPDATE</h1>
-            { this.getLinks() }
-        </div>
+        <nav className='nav-container'>
+          <ul>
+            <li>Less Traveled</li>
+            <li>Add an attraction</li>
+            <li>Tall Tales</li>
+            <li>States</li>
+            <li>Categories</li>
+            <li>{ this.getLinks() }</li>
+          </ul>    
+        </nav>
       );
   }
 }

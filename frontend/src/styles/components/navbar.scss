@@ -1,0 +1,23 @@
+.nav-container {
+  position: fixed;
+  width: 100%;
+  font-family: $pacificoc;
+  
+
+
+
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 100px 15px 100px;
+    // color: $yellowfont;
+    background-color: rgba($gray, 0.5);
+  }
+
+  ul li:first-child {
+    color: orange;
+    font-size: 24px;
+  }
+}
