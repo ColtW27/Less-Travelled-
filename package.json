@@ -1,5 +1,5 @@
 {
-  "name": "twittermern",
+  "name": "lesstraveled",
   "version": "1.0.0",
   "description": "\"First mern\"",
   "main": "app.js",
@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ColtW27/twittermern.git"
+    "url": "git+https://github.com/ColtW27/Less-Travelled-"
   },
   "author": "Colt Wilmouth`",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ColtW27/twittermern/issues"
+    "url": "https://github.com/ColtW27/Less-Travelled-/issues"
   },
-  "homepage": "https://github.com/ColtW27/twittermern#readme",
+  "homepage": "https://github.com/ColtW27/Less-Travelled-#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.18",
