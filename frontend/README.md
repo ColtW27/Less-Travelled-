@@ -66,3 +66,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Added Scripts/Dependencies
+
+Frontend Package Json : 
+`"proxy": "http://localhost:5000"` - ensures that our backend server uses
+localhost 5000. w/o this script it will always assume 3000
+`frontend` - a script defined so that it can be ran inside the `npm run dev` script 
+
+Terminal Command Scripts : 
+`npm run frontend-install` - allows us to install dependencies for both folders(frontend/backend)
+`npm run dev` - will run both the backend and frontend servers at the same time
+
