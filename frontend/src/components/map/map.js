@@ -3,10 +3,10 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import MapComponent from './map_container'
 
 
-// const mapStyles = {
-//   width: '20%',
-//   height: '20%',
-// };
+const mapStyles = {
+  width: '50%',
+  height: '50%',
+};
 
 
 class TravelMap extends React.Component {
@@ -16,10 +16,10 @@ class TravelMap extends React.Component {
   render() {
     return (
         <Map
-          className='maps-main-container'
+          // className='maps-main-container'
           google={this.props.google}
-          zoom={12}
-          // style={mapStyles}
+          zoom={9}
+          style={mapStyles}
           initialCenter={{ lat: 47.444, lng: -122.176}}
         />
     );

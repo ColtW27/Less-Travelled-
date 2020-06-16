@@ -3,6 +3,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Switch } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import BackgroundVideo from './backgroundVideo/backgroundVideo';
+import AttractionsIndex from './attractions_index/attractionsIndex'
 
 
 import MainPage from './main/main_page';
@@ -18,7 +19,7 @@ const App = () => (
     <Switch>
         <AuthRoute exact path="/" component={MainPage} />
         {/* <AuthRoute exact path="/login" component={LoginFormContainer} /> ####*/}
-        {/* <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
+        <AuthRoute exact path="/attractions" component={AttractionsIndex} />
     </Switch>
   </div>
 );

@@ -7,6 +7,8 @@ import { connect } from 'mongoose'
 const mSTP = state => {
   return {
 //Entities reducer: state.entities.map
+//Should pass in an array of objects and from it we will list each item
+  
 
   }
 }
