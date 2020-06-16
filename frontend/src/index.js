@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.scss'
+
+
 
 // We will create this component shortly
 import Root from './components/root';
@@ -16,6 +19,10 @@ import { setAuthToken } from './util/session_api_util';
 
 // We have not created this action yet, but will do so in the next step
 import { logout } from './actions/session_actions';
+require('dotenv').config();
+console.log(process.env)
+console.log(process.env.PORT)
+console.log("this is index")
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
