@@ -11,7 +11,7 @@ export default function(state = initialState, action) {
 switch (action.type) {
 case RECEIVE_CURRENT_USER:
 return {
- ...state,
+//  ...state,
  isAuthenticated: !!action.currentUser,
  user: action.currentUser
 };

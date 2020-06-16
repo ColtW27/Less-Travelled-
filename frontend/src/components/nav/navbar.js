@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import './navbar.scss' ####
 
 class NavBar extends React.Component {
+
   constructor(props) {
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
@@ -16,22 +17,32 @@ class NavBar extends React.Component {
 
   // Selectively render links dependent on whether the user is logged in
   getLinks() {
-      if (this.props.loggedIn) {
+    const { currentUser, openModal } = this.props; 
+      console.log(this.props)
+      
+      if (this.props.loggedIn) { 
         return (
             <div>
                 {/* <Link to={'/FIXTHIS'}>####TBD</Link>
                 <Link to={'/profile'}>Profile</Link>
-                <Link to={'/logout'}>####TBD</Link> */}
-                <p>WELCOME USER</p>
+
+                <Link to={'/FIXTHIS'}>####TBD</Link>
+                
+              <Link to={'/logout'}>####TBD</Link> */}
+                {/* <p>WELCOME USER</p> */}
+                
+              <h2 className="header-name">WELCOME {currentUser.handle}!</h2>
+
                 <button onClick={this.logoutUser}>Logout</button>
             </div>
         );
       } else {
         return (
-            <div>
-                <Link to={'/signup'}>Signup</Link>
-                <Link to={'/login'}>Login</Link>
-            </div>
+          <nav className="login-signup">
+            <button onClick={() => openModal('login')}>Login</button>
+      &nbsp; &nbsp;
+            <button onClick={() => openModal('signup')}>Signup</button>
+          </nav>
         );
       }
   }
