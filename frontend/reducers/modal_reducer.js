@@ -9,4 +9,6 @@ export default function modalReducer(state = null, action) {
     default:
       return state;
   }
-}
+}; 
+
+// test
