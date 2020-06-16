@@ -32,50 +32,68 @@ class SignupForm extends React.Component {
         );
     }
     render() {
-      return(
+      return (
         <div className="login-form-container">
-            <form onSubmit={this.handleSubmit}>
-                <h3 className="log-in-label">Join the Less Travelled Community!
-                </h3>
-                <br />
-                <div onClick={this.props.closeModal}
-                    className="login-close-x">✕
-        </div>
-                <label>
-                    <input type="text"
-                        onChange={this.handleChange('email')}
-                        value={this.state.email}
-                        placeholder="Email" />
-                </label>
-                <br />
-                <label>
-                    <input type="password"
-                        onChange={this.handleChange('password')}
-                        value={this.state.password}
-                        placeholder="Password" />
-                </label>
-                <br />
+          <form onSubmit={this.handleSubmit}>
+            <h3 className="log-in-label">Join the Less Travelled Community!</h3>
+            <br />
+            <div onClick={this.props.closeModal} className="login-close-x">
+              ✕
+            </div>
 
-                <div
-                    className="signup-form-errors">
-                    {this.showErrors()}
-                </div>
-                <br />
-                <button
-                    className="signup-form-main-login-button"
-                    type="submit"
-                    value='signup'
-                >Signup
-        </button>
-                <label
-                    className="">
-                    Don't have an account?
+            <label>
+              <input
+                type="text"
+                onChange={this.handleChange("handle")}
+                value={this.state.handle}
+                placeholder="Handle"
+              />
+            </label>
+            <br/>
+            <label>
+              <input
+                type="text"
+                onChange={this.handleChange("email")}
+                value={this.state.email}
+                placeholder="Email"
+              />
+            </label>
+            <br />
+            <label>
+              <input
+                type="password"
+                onChange={this.handleChange("password")}
+                value={this.state.password}
+                placeholder="Password"
+              />
+            </label>
+            <label>
+              <input
+                type="password"
+                onChange={this.handleChange("password2")}
+                value={this.state.password2}
+                placeholder="Re-enter Password"
+              />
+            </label>
+            <br />
+
+            <div className="signup-form-errors">{this.showErrors()}</div>
+            <br />
+            <button
+              className="signup-form-main-login-button"
+              type="submit"
+              value="signup"
+            >
+              Signup
+            </button>
+            <label className="">
+              Don't have an account?
               {this.props.otherForm}
-                    {/* Link to other switch to signup form */}
-                </label>
-            </form>
+              {/* Link to other switch to signup form */}
+            </label>
+          </form>
         </div>
-      )
+      );
     }
 
 }

@@ -5,17 +5,17 @@ import { openModal, closeModal } from '../../../actions/modal_actions';
 
 import SignupForm from './signup_form';
 
-const mapStateToProps = ({ errors }) => {
-  return {
-    user: {
-      handle: "",
-      email: "",
-      password: ""
-    },
-    errors: errors.session,
-    formType: 'signup',
-  };
-};
+const mapStateToProps = (state, ownProps) => ({
+  user: {
+    handle: "",
+    email: "",
+    password: "",
+    password2: ""
+  },
+  errors: Object.values(state.errors.session),
+  formType: "signup",
+});
+
 
 const mapDispatchToProps = dispatch => {
   return {
