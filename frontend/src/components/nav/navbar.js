@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import './navbar.scss' ####
 
 class NavBar extends React.Component {
+
   constructor(props) {
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
@@ -16,19 +17,21 @@ class NavBar extends React.Component {
 
   // Selectively render links dependent on whether the user is logged in
   getLinks() {
-    const { currentUser, openModal } = this.props;
-
-      if (this.props.loggedIn) { //does logged in need invoked?
+    const { currentUser, openModal } = this.props; 
+      console.log(this.props)
+      
+      if (this.props.loggedIn) { 
         return (
             <div>
                 {/* <Link to={'/FIXTHIS'}>####TBD</Link>
                 <Link to={'/profile'}>Profile</Link>
 
                 <Link to={'/FIXTHIS'}>####TBD</Link>
-                <h2 className="header-name">Hi, {currentUser.username}!</h2>
-
-                <Link to={'/logout'}>####TBD</Link> */}
-                <p>WELCOME USER</p>
+                
+              <Link to={'/logout'}>####TBD</Link> */}
+                {/* <p>WELCOME USER</p> */}
+                
+              <h2 className="header-name">WELCOME {currentUser.handle}!</h2>
 
                 <button onClick={this.logoutUser}>Logout</button>
             </div>

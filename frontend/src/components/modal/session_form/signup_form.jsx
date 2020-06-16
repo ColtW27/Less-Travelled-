@@ -47,15 +47,17 @@ class SignupForm extends React.Component {
                 onChange={this.handleChange("handle")}
                 value={this.state.handle}
                 placeholder="Handle"
+                className="signup-form-input"
               />
             </label>
-            <br/>
+            <br />
             <label>
               <input
                 type="text"
                 onChange={this.handleChange("email")}
                 value={this.state.email}
                 placeholder="Email"
+                className="signup-form-input"
               />
             </label>
             <br />
@@ -65,6 +67,7 @@ class SignupForm extends React.Component {
                 onChange={this.handleChange("password")}
                 value={this.state.password}
                 placeholder="Password"
+                className="signup-form-input"
               />
             </label>
             <label>
@@ -73,6 +76,7 @@ class SignupForm extends React.Component {
                 onChange={this.handleChange("password2")}
                 value={this.state.password2}
                 placeholder="Re-enter Password"
+                className="signup-form-input"
               />
             </label>
             <br />

@@ -18,6 +18,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
         e.preventDefault();
         const user = Object.assign({}, this.state)
+       
         this.props.processForm(user).then(this.props.closeModal)
     }
     showErrors() {
