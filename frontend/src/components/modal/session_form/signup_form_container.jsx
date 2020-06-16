@@ -1,12 +1,17 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { signup } from '../../actions/session_actions';
-import { openModal, closeModal } from '../../actions/modal_actions';
+import { signup } from '../../../actions/session_actions';
+import { openModal, closeModal } from '../../../actions/modal_actions';
 
-import SessionForm from './session_form';
+import SignupForm from './signup_form';
 
 const mapStateToProps = ({ errors }) => {
   return {
+    user: {
+      handle: "",
+      email: "",
+      password: ""
+    },
     errors: errors.session,
     formType: 'signup',
   };
@@ -24,4 +29,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
+export default connect(mapStateToProps, mapDispatchToProps)(SignupForm);

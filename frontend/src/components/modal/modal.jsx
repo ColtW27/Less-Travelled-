@@ -1,8 +1,8 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
-import LoginFormContainer from '../session_form/login_form_container';
-import SignupFormContainer from '../session_form/signup_form_container';
+import LoginFormContainer from './session_form/login_form_container';
+import SignupFormContainer from './session_form/signup_form_container';
 
 function Modal({ modal, closeModal }) {
   if (!modal) {
@@ -40,5 +40,5 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Modal);
-module.exports = connect(mapStateToProps, mapDispatchToProps)(Modal);
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);
+

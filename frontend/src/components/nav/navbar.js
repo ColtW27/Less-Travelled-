@@ -24,7 +24,7 @@ class NavBar extends React.Component {
                 <Link to={'/FIXTHIS'}>####TBD</Link>
                 <Link to={'/profile'}>Profile</Link>
                 <Link to={'/FIXTHIS'}>####TBD</Link>
-                {/* <h2 className="header-name">Hi, {currentUser.username}!</h2> */}
+                <h2 className="header-name">Hi, {currentUser.username}!</h2>
                 <button onClick={this.logoutUser}>Logout</button>
             </div>
         );
