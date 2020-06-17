@@ -14,7 +14,7 @@ const reviews = require("./routes/api/reviews");
 mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => console.log("Connected to MongoDB successfully"))
-  .catch(err => console.log(err));
+  // .catch(err => console.log(err));
 
 app.get("/", (req, res) => {
   const user = new User({
