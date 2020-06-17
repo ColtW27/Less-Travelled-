@@ -1,3 +1,16 @@
+.attractionsListings {
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border: thin solid black;
+    height: 100px; 
+    width: 100px;
+  }
+}
+
 .searchField {
   height: 40px;
   width: 400px;
