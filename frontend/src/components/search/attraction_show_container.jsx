@@ -1,25 +1,32 @@
 import { connect } from 'react-redux';
 
-import { fetchBench } from '../../actions/bench_actions';
-import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
-import BenchShow from './bench_show';
+import { fetchAttraction } from '../../actions/attractions_actions';
 
-const mapStateToProps = (state, { match }) => {
-  const benchId = parseInt(match.params.benchId);
-  const bench = selectBench(state.entities, benchId);
-  const reviews = selectReviewsForBench(state.entities, bench);
+// frontend / src / actions / attractions_actions.js
+// import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
+import AttractionShow from '.attraction_show_page';
+
+
+const mapStateToProps = (state) => {
   return {
-    benchId,
-    bench,
-    reviews
+    attractions: Object.values(state.attractions.all)
   };
 };
 
+// const mapStateToProps = (state, { match }) => {
+//   const attractionId = parseInt(match.params.attractionId);
+//   // const attraction = selectBench(state.entities, benchId);
+//   // const reviews = selectReviewsForBench(state.entities, bench);
+//   return {
+//     attractionId,
+//     attraction,
+//     // reviews
+//   };
+// };
+
 const mapDispatchToProps = dispatch => ({
-  fetchBench: id => dispatch(fetchBench(id))
+  fetchAttraction: id => dispatch(fetchAttraction(id))
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BenchShow);
+export default connect(mapStateToProps,mapDispatchToProps)(AttractionShow);
+

@@ -39,4 +39,4 @@ const BenchShow = ({ bench, benchId, fetchBench, reviews }) => {
   );
 };
 
-export default BenchShow;
+export default AttractionShow;

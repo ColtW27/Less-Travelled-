@@ -1,4 +1,5 @@
 .attractionsListings {
+  margin-top: 126px;
   display: flex;
   // justify-content: space-between;
   flex-wrap: wrap;
@@ -6,8 +7,8 @@
     margin-left: 25px;
     margin-bottom: 25px;
     border: thin solid black;
-    height: 100px; 
-    width: 100px;
+    height: 700px; 
+    width: 700px;
   }
 }
 
@@ -35,7 +36,7 @@
 .attractions-container {
   // margin-top: 100px;
   // display: flex;
-  position: fixed;
+  // position: fixed;
   width: 100%; 
   height: 1500px; 
   // background-color: green;
@@ -44,9 +45,10 @@
     // margin-top: 50px;
     padding-top: 70px;
     // padding-left: 100px;
-    // position: fixed;
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    // display: flex;
+    // justify-content: center;
+    left: 100px;
     // float: right;
     // width: 250px;
     // background-color: red;
