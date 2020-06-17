@@ -3,7 +3,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Switch } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 // import BackgroundVideo from './backgroundVideo/backgroundVideo';
-import AttractionsIndex from './attractions_index/attractionsIndex'
+import AttractionsIndex from './search/attractionsIndex'
 
 
 import Modal from './modal/modal'
@@ -20,6 +20,8 @@ const App = () => (
     <NavBarContainer />
 
     <Modal />
+
+    <AttractionsIndex />
 
     <Switch>
         <AuthRoute exact path="/" component={MainPage} />
