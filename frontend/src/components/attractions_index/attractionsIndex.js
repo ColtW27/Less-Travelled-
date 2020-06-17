@@ -5,10 +5,16 @@ class AttractionsIndex extends React.Component {
 
   render() {
     return (
-      <div className='attractions-index-container'>
-        <TravelMap />
-
-      </div>
+      <parent className='attractions-container'>
+        <nav>SEARCH BAR</nav>
+        <div className='attractions-main'>
+          <ul>
+            <li>DISPLAY 1</li>
+            <li>DISPLAY 2</li>
+          </ul>
+          <map><TravelMap/></map>
+        </div>
+      </parent>
     );
   }
 }

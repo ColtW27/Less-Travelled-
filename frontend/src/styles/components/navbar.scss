@@ -2,11 +2,8 @@
   position: fixed;
   width: 100%;
   font-family: $pacificoc;
+  z-index: 10;
   
-
-
-
-
   ul {
     display: flex;
     flex-direction: row;
@@ -20,8 +17,5 @@
   ul li:first-child {
     color: blue;
     font-size: 24px;
-    // background: -webkit-linear-gradient(red,yellow);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
   }
 }

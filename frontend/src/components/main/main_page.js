@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBarContainer from '../nav/navbar_container';
-import BackgroundVideo from '../backgroundVideo/backgroundVideo';
+import BackgroundVideo from '../background_video/backgroundVideo';
 import TravelMap from '../map/map'
 
 
