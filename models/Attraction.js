@@ -6,6 +6,10 @@ const AttractionSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
+    name: {
+        type: String,
+        required: true
+    },
     address: {
         type: String,
         required: true
