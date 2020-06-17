@@ -4,8 +4,8 @@ import MapComponent from './map_container'
 
 
 const mapStyles = {
-  width: '50%',
-  height: '50%',
+  width: '500px',
+  height: '500px'
 };
 
 
