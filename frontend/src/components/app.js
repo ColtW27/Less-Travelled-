@@ -21,7 +21,7 @@ const App = () => (
 
     <Modal />
 
-    <AttractionsIndex />
+
 
     <Switch>
         <AuthRoute exact path="/" component={MainPage} />
