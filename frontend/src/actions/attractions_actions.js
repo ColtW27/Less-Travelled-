@@ -5,7 +5,7 @@ export const RECEIVE_ATTRACTION = 'RECEIVE_ATTRACTION';
 export const RECEIVE_NEW_ATTRACTION = 'RECEIVE_NEW_ATTRACTION'
 // export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 
-export const receiveAttractions = attractions => ({
+export const receiveAttractions = (attractions) => ({
   type: RECEIVE_ATTRACTIONS,
   attractions
 });
@@ -35,8 +35,8 @@ export const receiveNewAttraction = attraction => ({
 //   ))
 // );
 
-export const fetchAttractions = filters => dispatch => (
-  APIUtil.fetchAttractions(filters).then(attractions => (
+export const fetchAttractions = () => dispatch => (
+  APIUtil.fetchAttractions().then(attractions => (
 
 
     dispatch(receiveAttractions(attractions))
