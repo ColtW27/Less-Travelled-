@@ -5,7 +5,7 @@ class AttractionForm extends React.Component {
     super(props);
     this.coords = {lat: props.lat, lng: props.lng}
     this.state = {
-      // title: '',
+      name: '',
       description: '',
       address: '', // #### MAY CHANGE NAME
       // photoFile: null,
@@ -41,7 +41,7 @@ class AttractionForm extends React.Component {
   }
 
   render () {
-    const {description, address, location_data } = this.state;
+    const { name, description, address, location_data } = this.state;
     const { lat, lng} = this.coords;
 
 
@@ -53,13 +53,13 @@ class AttractionForm extends React.Component {
         <div className="new-attraction-container">
           <form onSubmit={this.handleSubmit}>
 
-            {/* <label className="attraction-field">Title</label>
+            <label className="attraction-field">Name</label>
             <input
               type="text"
-              value={title}
-              onChange={this.update('title')}
+              value={name}
+              onChange={this.update('name')}
               className="attraction-field"
-            /> */}
+            />
 
             <label className="attraction-field">Description</label>
             <input
