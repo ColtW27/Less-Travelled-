@@ -1,5 +1,6 @@
 .development
 /node_modules
+/config
 
 
 #api keys

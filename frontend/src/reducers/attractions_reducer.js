@@ -1,17 +1,21 @@
 import {
   // RECEIVE_REVIEW,
   RECEIVE_ATTRACTIONS,
-  RECEIVE_ATTRACTION
+  RECEIVE_ATTRACTION,
+  RECEIVE_NEW_ATTRACTION
 } from '../actions/attractions_actions';
 
-const attractionsReducer = (state = {}, action) => {
+const attractionsReducer = (state = { new: undefined}, action) => {
   Object.freeze(state)
+  let newState = Object.assign({}, state)
   switch (action.type) {
     case RECEIVE_ATTRACTIONS:
       return action.attractions;
     case RECEIVE_ATTRACTION:
       const newAttraction = { [action.attraction.id]: action.attraction };
       return Object.assign({}, state, newAttraction);
+    case RECEIVE_NEW_ATTRACTION:
+      return newState.new = action.attraction.data
     // case RECEIVE_REVIEW:
     //   const { review, average_rating } = action;
     //   const newState = Object.assign({}, state);
