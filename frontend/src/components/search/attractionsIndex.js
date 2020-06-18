@@ -33,7 +33,7 @@ class AttractionsIndex extends React.Component {
       <div className='attractions-container'>
         {/* <nav>SEARCH BAR</nav> */}
         <div className="searchBar"> 
-          <form>
+          <form className="attraction-search-form">
             <input className="searchField" placeholder="Attraction"></input>
             &nbsp;
             <select className="categoryField">

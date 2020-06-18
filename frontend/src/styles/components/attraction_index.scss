@@ -37,18 +37,22 @@
   // margin-top: 100px;
   // display: flex;
   // position: fixed;
+  background-attachment: fixed;
   width: 100%; 
-  height: 1500px; 
+  height: 100%; 
+  // height: 1500px; 
   // background-color: green;
+  background-image: url(https://www.mensjournal.com/wp-content/uploads/2019/12/Desert-Road-Trip-6-dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+
 
   .searchBar {
     // margin-top: 50px;
-    padding-top: 70px;
+    padding-top: 85px;
     // padding-left: 100px;
     position: fixed;
     // display: flex;
     // justify-content: center;
-    left: 100px;
+    left: 24px;
     // float: right;
     // width: 250px;
     // background-color: red;
@@ -77,7 +81,27 @@
 
   map {
     position: fixed;
-    top: 140px;
+    top: 150px;
     left: 750px;
+   
   }
+}
+
+.attraction-search-form input , select{
+margin: 7px;
+    // border: 5px outset;
+    border-radius: 10px;
+    //  background: transparent;
+    box-shadow: 1px 1.5px;
+    background-color: rgba(146, 146, 146, 0.726);
+    font-size: 20px;
+    color: rgb(7, 6, 6);
+  font-weight: bold;
+  font-family: $pacificoc;;
+    
+}
+.attraction-search-form input::placeholder {
+  color: rgb(7, 6, 6);
+  font-weight: bold;
+  font-family: $pacificoc;;
 }

@@ -38,7 +38,8 @@
 }
 
 .login-signup button{
-  background-color: $yellowfont;
+  // background-color: $yellowfont;
+  background-color: rgba(128, 128, 128, 0.5);
   padding: 10px;
   border-radius: 30%;
   font-family: $pacificoc;
