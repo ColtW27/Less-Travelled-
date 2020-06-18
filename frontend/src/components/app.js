@@ -7,6 +7,7 @@ import NavBarContainer from './nav/navbar_container';
 import AttractionsForm from './attraction_form/attraction_form_container'
 import AttractionsContainer from './search/attractions_container'
 
+
 import Modal from './modal/modal'
 
 import MainPage from './main/main_page';
@@ -17,20 +18,12 @@ import MainPage from './main/main_page';
 const App = () => (
   <div>
     <NavBarContainer />
-
     <Modal />
-
-
 
     <Switch>
         <AuthRoute exact path="/" component={MainPage} />
-        {/* <Route  path="/" component={MainPage} /> */}
-        {/* <AuthRoute exact path="/login" component={LoginFormContainer} /> ####*/}
-
-
-        <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
         <ProtectedRoute exact path="/attractions" component={AttractionsContainer} />
-
+        <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
     </Switch>
   </div>
 );
