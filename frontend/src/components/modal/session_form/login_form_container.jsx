@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => ({
     password: "",
   },
   errors: Object.values(state.errors.session),
-  formType: "login",
+  formType: "login"
 });
 
 const mapDispatchToProps = dispatch => {

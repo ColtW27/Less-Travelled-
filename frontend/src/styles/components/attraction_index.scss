@@ -1,5 +1,80 @@
-.attractions-main {
-  
+.attractionsListings {
+  margin-top: 126px;
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border: thin solid black;
+    height: 700px; 
+    width: 700px;
+  }
+}
+
+.searchField {
+  height: 40px;
+  width: 400px;
+}
+
+.categoryField {
+  height: 46px;
+  width: 150px;
+
+}
+
+.ratingField {
+  height: 46px;
+  width: 150px;
+}
+
+.searchButton {
+  height: 46px;
+  width: 150px;
+}
+
+.attractions-container {
+  // margin-top: 100px;
+  // display: flex;
+  // position: fixed;
+  width: 100%; 
+  height: 1500px; 
+  // background-color: green;
+
+  .searchBar {
+    // margin-top: 50px;
+    padding-top: 70px;
+    // padding-left: 100px;
+    position: fixed;
+    // display: flex;
+    // justify-content: center;
+    left: 100px;
+    // float: right;
+    // width: 250px;
+    // background-color: red;
+  }
+
+  form {
+    // background-color: green;
+  }
+
+}
+// .searchBar {
+//   form {
+//     margin-top: 100px;
+//   }
+// }
+
+.attractions-main {  
+  // background-color: blue;
+  form {
+    // margin-top: 100px;
+  }
+  .attractionsIndex {
+    margin-top: 100px;
+    // background-color: gray;
+  }
+
   map {
     position: fixed;
     top: 140px;

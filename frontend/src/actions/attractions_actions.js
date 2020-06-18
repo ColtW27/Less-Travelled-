@@ -7,15 +7,14 @@ export const RECEIVE_NEW_ATTRACTION = 'RECEIVE_NEW_ATTRACTION'
 
 export const receiveAttractions = attractions => ({
   type: RECEIVE_ATTRACTIONS,
-  attractions,
+  attractions
 });
 
-export const receiveAttraction = ({ attraction, reviews, authors }) => ({
+export const receiveAttraction = ({ attraction }) => ({
   type: RECEIVE_ATTRACTION,
-  attraction,
-  reviews,
-  authors,
+  attraction
 });
+
 
 export const receiveNewAttraction = attraction => ({
   type: RECEIVE_NEW_ATTRACTION,
@@ -38,18 +37,22 @@ export const receiveNewAttraction = attraction => ({
 
 export const fetchAttractions = filters => dispatch => (
   APIUtil.fetchAttractions(filters).then(attractions => (
+
+
     dispatch(receiveAttractions(attractions))
-  ))
+  )).catch(err => console.log(err))
 );
 
 export const fetchAttraction = id => dispatch => (
   APIUtil.fetchAttraction(id).then(payload => (
     dispatch(receiveAttraction(payload))
-  ))
+  )).catch(err => console.log(err))
 );
 
 export const createAttraction = attraction => dispatch => (
+
   APIUtil.createAttraction(attraction)
     .then(attraction => (dispatch(receiveNewAttraction(attraction))
   ))
+
 );

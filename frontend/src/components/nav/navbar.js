@@ -23,13 +23,14 @@ class NavBar extends React.Component {
       if (this.props.loggedIn) { 
         return (
             <div>
+      
                 {/* <Link to={'/FIXTHIS'}>####TBD</Link>
                 <Link to={'/profile'}>Profile</Link>
 
                 <Link to={'/FIXTHIS'}>####TBD</Link>
                 
               <Link to={'/logout'}>####TBD</Link> */}
-                {/* <p>WELCOME USER</p> */}
+               
                 
               <h2 className="header-name">WELCOME {currentUser.handle}!</h2>
 

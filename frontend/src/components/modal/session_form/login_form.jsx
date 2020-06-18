@@ -18,8 +18,16 @@ class LoginForm extends React.Component {
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
         e.preventDefault();
         const user = Object.assign({}, this.state)
-       
-        this.props.processForm(user).then(this.props.closeModal)
+       let that = this;
+      this.props.processForm(user);
+      // if (!this.state.session.errors){
+        debugger
+        // this.props.closeModal
+      // }
+        // this.state.session.errors ? 
+        //   this.props.closeModal : let j;
+        
+      
     }
     showErrors() {
         return (
@@ -36,11 +44,11 @@ class LoginForm extends React.Component {
       return (
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit}>
-            <h3 className="log-in-label">Welcome Back</h3>
+            <h3 className="log-in-label">Welcome Back!</h3>
             <br />
-            <div onClick={this.props.closeModal} className="login-close-x">
+            {/* <div onClick={this.props.closeModal} className="login-close-x">
               ✕
-            </div>
+            </div> */}
             <label>
               <input
                 type="text"
@@ -64,18 +72,20 @@ class LoginForm extends React.Component {
 
             <div className="login-form-errors">{this.showErrors()}</div>
             <br />
-            <button
-              className="login-form-main-login-button"
-              type="submit"
-              value="login"
-            >
-              Log in
-            </button>
-            <label className="">
-              Don't have an account?
-              {this.props.otherForm}
-              {/* Link to other switch to signup form */}
-            </label>
+            <div className="login-bottom-form-div">
+              <button
+                className="login-form-main-login-button"
+                type="submit"
+                value="login"
+              >
+                Log in
+              </button>
+              <label className="">
+                Don't have an account?
+                {this.props.otherForm}
+                {/* Link to other switch to signup form */}
+              </label>
+            </div>
           </form>
         </div>
       );

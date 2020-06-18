@@ -31,13 +31,14 @@ router.post("/",
 
         const newAttraction = new Attraction({
             user: req.user.id,
+            name: req.body.name,
             address: req.body.address,
             location_data: req.body.location_data,
             description: req.body.description,
             rating: req.body.rating
         });
 
-        newAttraction.save().then(attraction => res.json(attraction));
+       return newAttraction.save().then(attraction => res.json(attraction));
     }
 )
 

@@ -1,6 +1,9 @@
 import axios from "axios"; 
 
-export const fetchAttractions = data => {
+
+
+export const fetchAttractions = () => {
+
   return axios.get('/api/attractions')
 };
 
