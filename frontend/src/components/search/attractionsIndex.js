@@ -7,13 +7,14 @@ import AttractionsBox from './AttractionsBox';
 class AttractionsIndex extends React.Component {
   constructor(props) {
     super(props);
+    // this.renderAttractions = this.renderAttractions.bind(this);
 
     this.state = {
       attractions: []
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     // window.props = this.props; 
     // debugger 
     this.props.fetchAttractions();   
@@ -24,14 +25,39 @@ class AttractionsIndex extends React.Component {
     this.setState({ attractions: newState.attractions });
   }
 
+//   renderAttractions() {
+//   //   if (this.props.attractions.data.length !== 0) { 
+//   //     return (                   
+//   //         this.state.attractions.data.map(attraction =>
+//   //           <AttractionsBox
+//   //             key={attraction.id}
+//   //             attraction={attraction}
+//   //           // user={attraction.user}
+//   //           // address={attraction.address} 
+//   //           />
+//   //         )
+//   //       );                         
+//   // }
+// }
+
+// const attractions = this.props.attractions.data => {
+
+  
+  
   render() {
-    // const {name, address, location_data, description, rating} = this.props.attractions; 
-    // if (this.state.attractions.length === 0) {
-    //   return (<div>There are no Attractions</div>)
-    // } else {
+      
+    console.log(this.props.attractions)
+    // const attractions = this.props.attractions.map((attraction) => (
+    //     <AttractionsBox
+    //       key={attraction.id} 
+    //       attraction={attraction}
+    //     />
+    //   )); 
+    // }
+
+  
     return (
       <div className='attractions-container'>
-        {/* <nav>SEARCH BAR</nav> */}
         <div className="searchBar"> 
           <form>
             <input className="searchField" placeholder="Attraction"></input>
@@ -50,43 +76,11 @@ class AttractionsIndex extends React.Component {
         <br/>
 
         <div className="attractionsListings">
-          {/* {if (this.state.attractions.length === 0) {
-            return (<div>There are no Tweets</div>)
-          }} */}
-          {/* {this.state.attractions.map(attraction => (
-
-          ))} */}
-
-
-          {this.state.attractions.map(attraction => (
-            <AttractionsBox key={attraction.id}/> 
-            // address={attraction.address} /> 
-            // <div> {attraction.address} </div>
-          ))}
-
-          {/* {attractions.map(attraction => (
-            <AttractionIndexItem
-              attraction={attraction}
-              key={attraction.id}
-            />
-          ))} */}
-
-          <ul>
-            <li>
-              <div>
-                a
-              </div>
-            </li>
-            <li>
-              <div>
-                b
-              </div>
-            </li>
-          </ul>
+          {/* {this.renderAttractions} */}
+          {/* {attractions} */}
+          {/* <h1>what up</h1> */}
         </div>
-
-
-
+         
         <div className='attractions-main'>
           <br/> 
           <div className="attractionsIndex"> 
@@ -96,9 +90,7 @@ class AttractionsIndex extends React.Component {
       </div>
     );
   }
+} 
 
-// }
-
-
-}
 export default withRouter (AttractionsIndex);
+// export default AttractionsIndex;
