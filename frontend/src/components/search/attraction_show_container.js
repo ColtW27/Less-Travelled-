@@ -1,5 +1,5 @@
 // import { connect } from 'react-redux';
-
+ 
 // import { fetchAttraction } from '../../actions/attractions_actions';
 
 // // frontend / src / actions / attractions_actions.js
