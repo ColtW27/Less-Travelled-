@@ -15,7 +15,7 @@ import React from 'react';
 class AttractionBox extends React.Component {
   render () {
     return (
-      <div> 
+      <div className="attraction-index-item"> 
         <div className="attractionContent">
           <h2>Address: {this.props.attraction.address}</h2>
           <h2>Name: {this.props.attraction.name}</h2>
