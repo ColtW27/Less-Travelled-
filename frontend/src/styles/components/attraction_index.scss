@@ -1,16 +1,63 @@
 .attractionsListings {
-  margin-top: 126px;
+  left: 20px;
+  margin-top: 175px;
   display: flex;
-  // justify-content: space-between;
+  position: relative;
+  justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: column;
+    // border: thin solid black;
+
   div {
     margin-left: 25px;
     margin-bottom: 25px;
-    border: thin solid black;
+    // border: thin solid black;
     height: 300px; 
-    width: 700px;
+    width: 650px;
     background-color: floralwhite;
   }
+
+  .attractionsImage {
+    // height: auto;
+    // width: auto;
+    // align-self: baseline;
+    // display: flex;
+    // align-self: flex-end;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  //   // position: absolute;
+  //   // float: right; 
+  //   width: 90%;
+  //   // position: relative;
+  //   max-height: 200px;
+  //   align-self: baseline;
+  //   justify-self: baseline;
+  }
+
+  .attractionContent {
+    margin-top: 5%;
+    float: left;
+    // width: 50%;
+    width: 225px;
+    height: 200px;
+    position: absolute;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: 'Courier New', Courier, monospace;
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // font-family: monospace;
+    // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+  }
+
+  .attractionPic {
+    float: right;
+    width: 325px;
+    display: flex;
+    align-content: center;
+  }
+
 }
 
 .searchField {
@@ -82,7 +129,7 @@
 
   map {
     position: fixed;
-    top: 150px;
+    top: 190px;
     left: 750px;
    
   }
