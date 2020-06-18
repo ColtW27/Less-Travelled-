@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
+import TravelMap from '../map/map';
+import AttractionsBox from '../attractions_index/AttractionsBox';
+import SearchBar from './search';
 
 // import AttractionDetail from './attraction_detail';
 // // import BenchMap from '../bench_map/bench_map';
@@ -13,13 +16,9 @@ class AttractionShow extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      attractions: []
-    }
-  }
-
-  componentDidMount() {
-    this.props.fetchAttraction();
+    // this.state = {
+    //   attractions: []
+    // }
   }
 
   componentWillReceiveProps(newState) {
@@ -27,13 +26,6 @@ class AttractionShow extends React.Component {
   }
 
   render() {
-
-    const attractions = this.state.attractions.map((attraction) => (
-      <AttractionsBox
-        key={attraction.id}
-        attraction={attraction}
-      />
-    ));
     
     return (
       <div className='attractions-container'>
@@ -41,17 +33,35 @@ class AttractionShow extends React.Component {
         <SearchBar />
         <br />
 
-        <div className="attractionsListings">
-          {attractions.first()}
-        </div>
+         <div className="attractionShow">
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
 
-        <div className='attractions-main'>
-          <br />
-          <div className="attractionsIndex">
-          </div>
-          <map><TravelMap /></map>
-        </div>
-      </div>
+          {/* <AttractionsBox
+            key={this.state.attraction._id}
+            attraction={attraction}
+          /> */}
+           hello does this render? 
+           {/* {this.props.attractions} */}
+         </div>
+
+         <div className='attractions-main'>
+           <br />
+           <div className="attractionsIndex">
+           </div>
+           <map><TravelMap /></map>
+         </div>
+       </div>
     );
   }
 }

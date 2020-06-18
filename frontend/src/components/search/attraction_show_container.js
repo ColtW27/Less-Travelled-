@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import { fetchAttraction } from '../../actions/attractions_actions';
 
 // import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
-import {AttractionShow} from './attraction_show_page';
+import AttractionShow from './attraction_show_page';
 
 
 const mapStateToProps = (state, ownProps) => {
+  // debugger
   return {
-    attraction: state.attractions(ownProps.match.params.attraction._id)
+    // attraction: state.attractions.id
+    // attraction: state.attractions[ownProps.match.params.attraction._id]
     // attractions: state.attractions
   };
 };
