@@ -54,7 +54,7 @@ class NavBar extends React.Component {
           <ul>
             <li>Less Traveled</li>
             <li><Link to="/attractions">Attractions</Link></li>
-            <li>Add an attraction</li>
+            <li><Link to="/attractionsform">Add an attraction</Link></li>
             <li>Tall Tales</li>
             <li>States</li>
             <li>Categories</li>
