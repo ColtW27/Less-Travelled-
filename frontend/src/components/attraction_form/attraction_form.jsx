@@ -7,10 +7,10 @@ class AttractionForm extends React.Component {
     this.state = {
       name: '',
       description: '',
-      address: '', // #### MAY CHANGE NAME
+      address: '',
       // photoFile: null,
-      // rating: 3,
-      location_data: 'hello there' ,
+      rating: 3,
+      location_data: `${this.coords}` 
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.handleFile = this.handleFile.bind(this);
@@ -22,35 +22,25 @@ class AttractionForm extends React.Component {
     });
   }
 
-  // handleFile(e) {
-  //   this.setState({photoFile: e.currentTarget.files[0]})
-  // }
-
   handleSubmit(e) {
     e.preventDefault();
-    // const formData = new FormData();
-    // formData.append('attractions[title]', this.state.title)
-    // formData.append('attractions[description]', this.state.description)
-    // formData.append('attractions[whyLoveIt]', this.state.whyLoveIt)
-    // formData.append('attractions[photoFile]', this.state.photoFile)
-    // formData.append('attractions[rating]', this.state.rating)
-    // this.props.createAttraction(formData)
-    // formData.append('form[location]', this.state.rating)
     const attraction = Object.assign({}, this.state);
     this.props.createAttraction(attraction);
   }
 
-  render () {
-    const { name, description, address, location_data } = this.state;
-    const { lat, lng} = this.coords;
+  handleFile(e) {
+    this.setState({photoFile: e.currentTarget.files[0]})
+  }
 
+  render () {
+    const { name, description, address, rating, location_data } = this.state;
+    const { lat, lng} = this.coords;
 
     return (
       <div>
 
-        <h2>Add an attraction:</h2>
-
         <div className="new-attraction-container">
+          <h2>Add an attraction:</h2>
           <form onSubmit={this.handleSubmit}>
 
             <label className="attraction-field">Name</label>
@@ -85,7 +75,7 @@ class AttractionForm extends React.Component {
               className="attraction-field"
             /> */}
 
-            {/* <label className="attraction-field">Rating</label>
+            <label className="attraction-field">Rating</label>
             <input
               min="0"
               max="5"
@@ -93,25 +83,23 @@ class AttractionForm extends React.Component {
               value={rating}
               onChange={this.update('rating')}
               className="attraction-field"
-            /> */}
+            />
 
             <label className="attraction-field">Latitude</label>
             <input
               type="text"
-              onChange={this.update('location_data')}
-              value={location_data}
+              onChange={this.update('lat')}
+              value={lat}
               className="attraction-field"
             />
 
-            {/* <label className="attraction-field">Longitude</label>
+            <label className="attraction-field">Longitude</label>
             <input
               type="text"
               onChange={this.update('lng')}
               value={lng}
               className="attraction-field"
-            /> */}
-
-
+            />
 
             {/* <div className="button-holder">
               <button
@@ -121,12 +109,7 @@ class AttractionForm extends React.Component {
                 Add image
               </button>
             </div> */}
-
-
-
             <hr />
-
-
 
             <div className="button-holder">
               <input
