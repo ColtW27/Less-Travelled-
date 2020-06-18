@@ -1,11 +1,11 @@
 import axios from "axios"; 
 
-export const fetchAttractions = data => {
-  return axios.get('api/attractions')
+export const fetchAttractions = () => {
+  return axios.get('/api/attractions')
 };
 
 export const fetchAttraction = id => {
-  return axios.get(`api/attractions/${id}`)
+  return axios.get(`/api/attractions/${id}`)
 };
 
 // export const createReview = review => (
@@ -17,7 +17,7 @@ export const fetchAttraction = id => {
 // );
 
 export const createAttraction = data => {
-  return axios.post('api/attractions', data)
+  return axios.post('/api/attractions', data)
 }; 
 
 

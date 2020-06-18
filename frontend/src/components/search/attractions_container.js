@@ -5,7 +5,7 @@ import AttractionsIndex from './attractionsIndex';
 
 const mapStateToProps = (state) => {
   return {
-    attractions: Object.values(state.attractions.all)
+    attractions: Object.values(state.attractions)
   };
 };
 
