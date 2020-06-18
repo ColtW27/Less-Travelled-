@@ -1,6 +1,7 @@
 .login-form-container{
     // background-image: url(https://blog.skymed.com/wp-content/uploads/2013/10/medium_75338202782.jpg);
-    background-color: $mesaorange; 
+    // background: rgba(7, 92, 141, 0.582);
+    background: rgba(7, 92, 141, 0.856);
     display: flex; 
     justify-content: left;
     border-radius: 10px;
@@ -11,7 +12,7 @@
     justify-content: center;
     box-shadow: 2px 3px 2px 3px;
     border: 1px solid;
-    background-color: transparent;
+    // background-color: transparent;
 }
 .login-form-input{
     width: 470px;

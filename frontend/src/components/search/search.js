@@ -9,10 +9,18 @@ class SearchBar extends React.Component {
                   &nbsp;
                   <select className="categoryField">
             <option> Category </option>
+            <option> History </option>
+            <option> Religion </option>
+            <option> Art </option>
           </select>
                   &nbsp;
                   <select className="ratingField">
             <option>Rating</option>
+            <option>⭐️⭐️⭐️⭐️⭐️</option>
+            <option>⭐️⭐️⭐️⭐️</option>
+            <option>⭐️⭐️⭐️</option>
+            <option>⭐️⭐️</option>
+            <option>⭐️</option>
           </select>
                   &nbsp;
                   <input className="searchButton" type="submit" value="Search"></input>
