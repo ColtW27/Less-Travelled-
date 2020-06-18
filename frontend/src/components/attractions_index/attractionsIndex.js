@@ -35,8 +35,10 @@ class AttractionsIndex extends React.Component {
   
     return (
       <div className='attractions-container'>
+        <div>
+          <SearchBar/>
+        </div>
 
-        <SearchBar/>
         <br/>
 
         <div className="attractionsListings">
