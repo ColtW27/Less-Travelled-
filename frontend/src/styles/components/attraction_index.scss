@@ -5,9 +5,9 @@
   position: relative;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column; 
     // border: thin solid black;
-
+  //  z-index: -5;
   div {
     margin-left: 25px;
     margin-bottom: 25px;
@@ -54,11 +54,16 @@
   .attractionPic {
     float: right;
     width: 325px;
+    border-radius: 10px;
     display: flex;
     align-content: center;
   }
-
 }
+  .attraction-index-item{
+    border-radius: 10px;
+    background-color: red;
+  }
+
 
 .searchField {
   height: 40px;
@@ -85,6 +90,7 @@
   // margin-top: 100px;
   // display: flex;
   // position: fixed;
+  
   background-attachment: fixed;
   width: 100%; 
   height: 100%; 
@@ -104,6 +110,7 @@
     // float: right;
     // width: 250px;
     // background-color: red;
+    z-index: 2;
   }
 
   form {
@@ -135,6 +142,7 @@
   }
 }
 
+
 .attraction-search-form input , select{
 margin: 7px;
     // border: 5px outset;
@@ -146,6 +154,7 @@ margin: 7px;
     color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $pacificoc;;
+  
     
 }
 .attraction-search-form input::placeholder {

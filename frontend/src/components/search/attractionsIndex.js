@@ -32,6 +32,7 @@ class AttractionsIndex extends React.Component {
         <AttractionsBox
           key={idx} 
           attraction={attraction}
+          
         />
       ));
 
