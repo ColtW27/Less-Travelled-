@@ -21,8 +21,10 @@ const App = () => (
     <Modal />
 
     <Switch>
-        <AuthRoute exact path="/" component={MainPage} />
-        <ProtectedRoute exact path="/attractions" component={AttractionsContainer} />
+        {/* <AuthRoute exact path="/" component={MainPage} /> */}
+        <Route exact path="/" component={MainPage} />
+        {/* <ProtectedRoute exact path="/attractions" component={AttractionsContainer} /> */}
+        <Route exact path="/attractions" component={AttractionsContainer} />
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
     </Switch>
   </div>
