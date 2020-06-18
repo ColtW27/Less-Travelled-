@@ -1,6 +1,8 @@
 import React from "react";
+import {withRouter} from 'react-router-dom';
 import TravelMap from '../map/map';
-import AttractionIndexItem from './attraction_index_item';
+import IndexItem from './attraction_index_item';
+import AttractionsBox from './AttractionsBox'; 
 
 class AttractionsIndex extends React.Component {
   constructor(props) {
@@ -12,7 +14,9 @@ class AttractionsIndex extends React.Component {
   }
 
   componentWillMount() {
-    // this.props.fetchAttractions();  
+    // window.props = this.props; 
+    // debugger 
+    this.props.fetchAttractions();   
     // comment out the above line
   }
 
@@ -21,6 +25,7 @@ class AttractionsIndex extends React.Component {
   }
 
   render() {
+    // const {name, address, location_data, description, rating} = this.props.attractions; 
     // if (this.state.attractions.length === 0) {
     //   return (<div>There are no Attractions</div>)
     // } else {
@@ -48,12 +53,16 @@ class AttractionsIndex extends React.Component {
           {/* {if (this.state.attractions.length === 0) {
             return (<div>There are no Tweets</div>)
           }} */}
-          {this.state.attractions}
+          {/* {this.state.attractions.map(attraction => (
 
-{/* 
-          {this.state.attractions.map(attraction => (
-            <AttractionIndexItem key={attraction._id} text={attraction.text} />
           ))} */}
+
+
+          {this.state.attractions.map(attraction => (
+            <AttractionsBox key={attraction.id}/> 
+            // address={attraction.address} /> 
+            // <div> {attraction.address} </div>
+          ))}
 
           {/* {attractions.map(attraction => (
             <AttractionIndexItem
@@ -92,4 +101,4 @@ class AttractionsIndex extends React.Component {
 
 
 }
-export default AttractionsIndex;
+export default withRouter (AttractionsIndex);

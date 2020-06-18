@@ -6,43 +6,28 @@ export const RECEIVE_ATTRACTION = 'RECEIVE_ATTRACTION';
 
 export const receiveAttractions = attractions => ({
   type: RECEIVE_ATTRACTIONS,
-  attractions,
+  attractions
 });
 
-export const receiveAttraction = ({ attraction, reviews, authors }) => ({
+export const receiveAttraction = ({ attraction }) => ({
   type: RECEIVE_ATTRACTION,
-  attraction,
-  reviews,
-  authors,
+  attraction
 });
 
-// export const receiveReview = ({ review, average_rating, author }) => ({
-//   type: RECEIVE_REVIEW,
-//   review,
-//   average_rating,
-//   author,
-// });
-
-// export const createReview = review => dispatch => (
-//   APIUtil.createReview(review).then(review => (
-//     dispatch(receiveReview(review))
-//   ))
-// );
-
-export const fetchAttractions = filters => dispatch => (
-  APIUtil.fetchAttractions(filters).then(attractions => (
+export const fetchAttractions = () => dispatch => (
+  APIUtil.fetchAttractions().then((attractions) => (
     dispatch(receiveAttractions(attractions))
-  ))
+  )).catch(err => console.log(err))
 );
 
 export const fetchAttraction = id => dispatch => (
   APIUtil.fetchAttraction(id).then(payload => (
     dispatch(receiveAttraction(payload))
-  ))
+  )).catch(err => console.log(err))
 );
 
 export const createAttraction = attraction => dispatch => (
   APIUtil.createAttraction(attraction).then(attraction => (
     dispatch(receiveAttraction(attraction))
-  ))
+  )).catch(err => console.log(err))
 );
