@@ -59,7 +59,7 @@ class AttractionsIndex extends React.Component {
     return (
       <div className='attractions-container'>
         <div className="searchBar"> 
-          <form>
+          <form className="attraction-search-form">
             <input className="searchField" placeholder="Attraction"></input>
             &nbsp;
             <select className="categoryField">

@@ -1,9 +1,11 @@
 .signup-form-container{
-    // background-color: $mesaorange; 
-    background-image: url(https://hotmamatravel.com/wp-content/uploads/2020/01/vegas-road-trip-desert-drive.jpg);
+    // background-color: $mesaorange;
+    // background-attachment: ; 
+    // background-image: url(https://hotmamatravel.com/wp-content/uploads/2020/01/vegas-road-trip-desert-drive.jpg);
     //  display: flex;
+    background: rgba(7, 92, 141, 0.582);
     justify-content: left;
-    border-radius: 10%;
+    border-radius: 10px;
     width: 500px;
     height: 400px;
     padding: 20px;
@@ -15,10 +17,12 @@
     width: 470px;
     height: 50px;
     margin: 7px;
-    border: 5px outset;
-    border-radius: 30%;
-    // background-color: blue;
+    // border: 5px outset;
+    border-radius: 10px;
+    //  background: transparent;
     box-shadow: 1px 1.5px;
+    background-color: rgba(146, 146, 146, 0.356);
+    font-size: 20px;
 
 }
 .log-in-label{
