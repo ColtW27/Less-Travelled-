@@ -22,16 +22,7 @@ class NavBar extends React.Component {
       
       if (this.props.loggedIn) { 
         return (
-            <div>
-      
-                {/* <Link to={'/FIXTHIS'}>####TBD</Link>
-                <Link to={'/profile'}>Profile</Link>
-
-                <Link to={'/FIXTHIS'}>####TBD</Link>
-                
-              <Link to={'/logout'}>####TBD</Link> */}
-               
-                
+            <div>                
               <h2 className="header-name">WELCOME {currentUser.handle}!</h2>
 
                 <button onClick={this.logoutUser}>Logout</button>
@@ -52,9 +43,9 @@ class NavBar extends React.Component {
       return (
         <nav className='nav-container'>
           <ul>
-            <li>Less Traveled</li>
+            <li><Link to="/">Less Traveled</Link></li>
             <li><Link to="/attractions">Attractions</Link></li>
-            <li>Add an attraction</li>
+            <li><Link to="/attractionsform">Add an attraction</Link></li>
             <li>Tall Tales</li>
             <li>States</li>
             <li>Categories</li>
