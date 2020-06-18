@@ -21,7 +21,7 @@ class LoginForm extends React.Component {
        let that = this;
       this.props.processForm(user);
       // if (!this.state.session.errors){
-        debugger
+
         // this.props.closeModal
       // }
         // this.state.session.errors ? 
