@@ -33,13 +33,13 @@ class SignupForm extends React.Component {
     }
     render() {
       return (
-        <div className="login-form-container">
+        <div className="signup-form-container">
           <form onSubmit={this.handleSubmit}>
             <h3 className="log-in-label">Join the Less Travelled Community!</h3>
             <br />
-            <div onClick={this.props.closeModal} className="login-close-x">
+            {/* <div onClick={this.props.closeModal} className="login-close-x">
               ✕
-            </div>
+            </div> */}
 
             <label>
               <input
@@ -83,18 +83,22 @@ class SignupForm extends React.Component {
 
             <div className="signup-form-errors">{this.showErrors()}</div>
             <br />
-            <button
-              className="signup-form-main-login-button"
-              type="submit"
-              value="signup"
-            >
-              Signup
-            </button>
-            <label className="">
-              Don't have an account?
-              {this.props.otherForm}
-              {/* Link to other switch to signup form */}
-            </label>
+            <div className="bottom-form-div">
+              <button
+                className="signup-form-main-login-button"
+                type="submit"
+                value="signup"
+              >
+                Join
+              </button>
+              <br/>
+
+              <label className="">
+                Already a member?
+                {this.props.otherForm}
+                {/* Link to other switch to signup form */}
+              </label>
+            </div>
           </form>
         </div>
       );

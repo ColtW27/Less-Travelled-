@@ -14,14 +14,34 @@
     align-items: center;
     padding: 15px 100px 15px 100px;
     // color: $yellowfont;
-    background-color: rgba($gray, 0.5);
+    // background-color: rgba($gray, 0.5);
+    background-color: rgba(rgba(107, 99, 99, 0.39), 0.5);
   }
 
   ul li:first-child {
-    color: blue;
-    font-size: 24px;
+    color: $yellowfont;
+    font-size: 30px;
+    font-weight: bold;
     // background: -webkit-linear-gradient(red,yellow);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
   }
+  ul li:first-child:hover {
+
+  }
+
+  ul li {
+    font-size: 20px;
+     color: $yellowfont;
+    font-weight: bold;
+  }
+}
+
+.login-signup button{
+  background-color: $yellowfont;
+  padding: 10px;
+  border-radius: 30%;
+  font-family: $pacificoc;
+  font-size: 16px;
+  font-weight: bold;
 }
