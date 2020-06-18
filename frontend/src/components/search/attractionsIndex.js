@@ -20,40 +20,20 @@ class AttractionsIndex extends React.Component {
     this.props.fetchAttractions();   
     // comment out the above line
   }
-
+  
   componentWillReceiveProps(newState) {
     this.setState({ attractions: newState.attractions });
   }
 
-//   renderAttractions() {
-//   //   if (this.props.attractions.data.length !== 0) { 
-//   //     return (                   
-//   //         this.state.attractions.data.map(attraction =>
-//   //           <AttractionsBox
-//   //             key={attraction.id}
-//   //             attraction={attraction}
-//   //           // user={attraction.user}
-//   //           // address={attraction.address} 
-//   //           />
-//   //         )
-//   //       );                         
-//   // }
-// }
-
-// const attractions = this.props.attractions.data => {
-
-  
   
   render() {
-      
-    console.log(this.props.attractions)
-    // const attractions = this.props.attractions.map((attraction) => (
-    //     <AttractionsBox
-    //       key={attraction.id} 
-    //       attraction={attraction}
-    //     />
-    //   )); 
-    // }
+
+    const attractions = this.state.attractions.map((attraction) => (
+        <AttractionsBox
+          key={attraction.id} 
+          attraction={attraction}
+        />
+      ));
 
   
     return (
@@ -77,7 +57,7 @@ class AttractionsIndex extends React.Component {
 
         <div className="attractionsListings">
           {/* {this.renderAttractions} */}
-          {/* {attractions} */}
+            {attractions}
           {/* <h1>what up</h1> */}
         </div>
          

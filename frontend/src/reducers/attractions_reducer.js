@@ -5,12 +5,12 @@ import {
   RECEIVE_NEW_ATTRACTION
 } from '../actions/attractions_actions';
 
-const attractionsReducer = (state = { new: undefined}, action) => {
+const attractionsReducer = (state = { all: {}, new: undefined}, action) => {
   Object.freeze(state)
   let newState = Object.assign({}, state)
   switch (action.type) {
     case RECEIVE_ATTRACTIONS:
-      return action.attractions;
+      return newState.all =  action.attractions.data;
     case RECEIVE_ATTRACTION:
       const newAttraction = { [action.attraction.id]: action.attraction };
       return Object.assign({}, state, newAttraction);
