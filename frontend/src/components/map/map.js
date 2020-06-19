@@ -18,16 +18,14 @@ class TravelMap extends React.Component {
           style={mapStyles}
           initialCenter={{lat: 47.444, lng: -122.176}}>
           {
-            // attractions.forEach(attraction => {
-            //   let newWhatever = attraction.location_data
-    
+            attractions.map(garbage => {    
           
-            // // return <Marker
-            // //   title={attraction.name}
-            // //   key={attraction.id}
-            // //   position={JSON.parse(attraction.location_data)}
-            // // />
-            // })
+            return <Marker
+              title={garbage.props.attraction.name}
+              key={garbage.props.attraction.id}
+              position={{ lat: garbage.props.attraction.latitude, lng: garbage.props.attraction.longitude }}
+            />
+            })
           
           }
           <Marker onClick={this.onMapClick}

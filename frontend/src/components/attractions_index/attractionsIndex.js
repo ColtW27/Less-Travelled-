@@ -49,7 +49,7 @@ class AttractionsIndex extends React.Component {
           <br/> 
           <div className="attractionsIndex"> 
           </div>
-          <map><TravelMap /></map>
+          <map><TravelMap attractions={attractions} /></map>
         </div>
       </div>
     );
