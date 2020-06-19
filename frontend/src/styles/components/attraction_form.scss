@@ -1,12 +1,21 @@
-
+.attraction-form{
+  display: flex;  
+  flex-direction: column;
+  position: relative; 
+}
 
 .new-attraction-container {
   margin-left: 10px;
   margin-top: 75px;
-  display: flex;
-  flex-direction: column;
-  // display: inline-block;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  display: inline-block;
+
+  p {
+    font-family: $pacificoc;
+    font-size: 50px;
+    margin: 30px;
+  }
+
 
 }
 
@@ -21,3 +30,28 @@
     .attraction-field {
   
     }
+
+
+.insideDiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  align-items: flex-start;
+  margin-right: 20px;
+
+  form {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    input {
+      padding: 20px;
+      height: 40px;
+      margin: 10px;
+    }
+  }
+
+}
+
