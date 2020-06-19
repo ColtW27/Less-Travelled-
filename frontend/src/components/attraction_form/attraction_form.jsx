@@ -8,7 +8,6 @@ class AttractionForm extends React.Component {
       name: '',
       description: '',
       address: '',
-      // photoFile: null,
       rating: "",
       location_data: `${this.coords}`,
       imageUrl: '' 
