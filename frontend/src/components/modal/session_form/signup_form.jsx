@@ -6,7 +6,7 @@ class SignupForm extends React.Component {
         super(props);
         this.state = this.props.user;
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    } 
     handleChange(field) { //this keeps the state updated for every keystroke
         return (e) => (
             this.setState(
@@ -18,7 +18,15 @@ class SignupForm extends React.Component {
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
         e.preventDefault();
         const user = Object.assign({}, this.state)
-        this.props.processForm(user).then(this.props.closeModal)
+      this.props.processForm(user).then(res => {
+        if (res.type !== "RECEIVE_SESSION_ERRORS") { //checks if there are session errors returned in the promise from processing the login form
+      
+          this.props.dispatch(this.props.closeModal())//takes both dispatch and closemodal in as props
+        }; //signs in a user upon successful signup
+        if (res.type === "RECEIVE_USER_SIGN_IN"){
+          this.props.Loginuser(user)
+        }
+      });
     }
     showErrors() {
         return (
@@ -46,7 +54,7 @@ class SignupForm extends React.Component {
                 type="text"
                 onChange={this.handleChange("handle")}
                 value={this.state.handle}
-                placeholder="Handle"
+                placeholder="Name"
                 className="signup-form-input"
               />
             </label>

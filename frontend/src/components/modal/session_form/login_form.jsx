@@ -13,22 +13,19 @@ class LoginForm extends React.Component {
                 { [field]: e.currentTarget.value }
             )
         )
-    };
+    }; 
 
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
-        e.preventDefault();
-        const user = Object.assign({}, this.state)
-       let that = this;
-      this.props.processForm(user);
-      // if (!this.state.session.errors){
+      e.preventDefault();
+      const user = Object.assign({}, this.state);
+  
+      this.props.processForm(user).then(res=>{
+        if (res.type !== "RECEIVE_SESSION_ERRORS"){ //checks if there are session errors returned in the promise from processing the login form
+          this.props.dispatch(this.props.closeModal())//takes both dispatch and closemodal in as props
+        };
+      });
+    };
 
-        // this.props.closeModal
-      // }
-        // this.state.session.errors ? 
-        //   this.props.closeModal : let j;
-        
-      
-    }
     showErrors() {
         return (
             <ul>
@@ -40,6 +37,7 @@ class LoginForm extends React.Component {
             </ul>
         );
     }
+
     render() {
       return (
         <div className="login-form-container">
@@ -92,6 +90,5 @@ class LoginForm extends React.Component {
     }
 
 }
-
 
 export default withRouter(LoginForm);
