@@ -33,9 +33,10 @@ router.post("/",
             user: req.user.id,
             name: req.body.name,
             address: req.body.address,
-            location_data: req.body.location_data,
             description: req.body.description,
-            rating: req.body.rating
+            rating: req.body.rating,
+            latitude: req.body.latitude,
+            longitude: req.body.longitude
         });
 
        return newAttraction.save().then(attraction => res.json(attraction));

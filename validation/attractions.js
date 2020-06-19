@@ -6,9 +6,10 @@ module.exports = function validateAttractionInput(data) {
 
     data.name = validText(data.name) ? data.name : '';
     data.address = validText(data.address) ? data.address : '';
-    data.location_data = validText(data.location_data) ? data.location_data : '';
     data.description = validText(data.description) ? data.description : '';
     data.rating = validText(data.rating) ? data.rating : '';
+    data.longitude = validText(data.longitude) ? data.longitude : '';
+    data.latitude = validText(data.latitude) ? data.latitude : '';
 
 
     if(Validator.isEmpty(data.name)) {
@@ -17,10 +18,6 @@ module.exports = function validateAttractionInput(data) {
 
     if(Validator.isEmpty(data.address)) {
         errors.address = "Address field is required";
-    }
-
-    if(Validator.isEmpty(data.location_data)) {
-        errors.location_data = "Location field is required";
     }
 
     if(Validator.isEmpty(data.description)) {
