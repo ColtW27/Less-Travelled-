@@ -1,6 +1,6 @@
 import React from "react";
 import {withRouter} from 'react-router-dom';
-import TravelMap from '../map/map';
+import TravelMap from '../map/map_container';
 import IndexItem from './attraction_index_item';
 import AttractionsBox from './AttractionsBox'; 
 
@@ -65,7 +65,9 @@ class AttractionsIndex extends React.Component {
           <br/> 
           <div className="attractionsIndex"> 
           </div>
-          <map><TravelMap /></map>
+          <map><TravelMap 
+                attractions={this.state.attractions}
+          /></map>
         </div>
       </div>
     );

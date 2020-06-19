@@ -1,30 +1,40 @@
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-import MapComponent from './map_container'
-
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 const mapStyles = {
   width: '650px',
   height: '600px'
 };
 
-
 class TravelMap extends React.Component {
-  constructor(props) {
-    super(props)
-   }
+
+
   render() {
+    const {attractions} = this.props
+
     return (
-        <Map
-          // className='maps-main-container'
-          google={this.props.google}
+        <Map google={this.props.google}
           zoom={9}
           style={mapStyles}
-          initialCenter={{ lat: 47.444, lng: -122.176}}
-        />
-    );
+          initialCenter={{lat: 47.444, lng: -122.176}}>
+          {
+            // attractions.forEach(attraction => {
+            //   let newWhatever = attraction.location_data
+    
+          
+            // // return <Marker
+            // //   title={attraction.name}
+            // //   key={attraction.id}
+            // //   position={JSON.parse(attraction.location_data)}
+            // // />
+            // })
+          
+          }
+          <Marker onClick={this.onMapClick}
+                name={'Current location'} />
+        </Map>
+    )
   }
-
 }
 
 export default GoogleApiWrapper({

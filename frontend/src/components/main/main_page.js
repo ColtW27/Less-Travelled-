@@ -9,20 +9,8 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className='main-page-container'>
-        <h1>LessTraveled Main Page</h1>
         <div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+          <BackgroundVideo />
         </div>
         <footer>
           Copyright &copy; 2020 LessTraveled
