@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createAttraction } from '../../actions/attractions_actions';
+import { createAttraction } from '../../actions/attractions_actions'; 
 import AttractionForm from './attraction_form';
 
 
