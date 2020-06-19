@@ -10,10 +10,12 @@ const attractionsReducer = (state = { all: {}, new: undefined}, action) => {
   let newState = Object.assign({}, state)
   switch (action.type) {
     case RECEIVE_ATTRACTIONS:
-      return newState.all =  action.attractions.data;
-      // return newState.all =  action.attractions.data._id;
+      action.attractions.data.forEach(attraction => {
+        newState.all[attraction._id] = attraction
+      })
+      return newState.all
     case RECEIVE_ATTRACTION:
-      const newAttraction = { [action.attraction.id]: action.attraction };
+      const newAttraction = { [action.attraction._id]: action.attraction };
       return Object.assign({}, state, newAttraction);
     case RECEIVE_NEW_ATTRACTION:
       return newState.new = action.attraction.data

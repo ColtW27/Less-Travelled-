@@ -26,13 +26,14 @@ class AttractionsIndex extends React.Component {
 
   render() {
     
-    const attractions = this.state.attractions.map((attraction) => (
+     const attractions = this.state.attractions.map(attraction => (
         <AttractionsBox
-          key={attraction._id} 
-          attraction={attraction}
-        />
-      ));
-  
+                  key={attraction._id} 
+                  attraction={attraction}
+                  fetchAttractions={this.props.fetchAttractions}
+                />
+      ))
+
     return (
       <div className='attractions-container'>
         <div>
