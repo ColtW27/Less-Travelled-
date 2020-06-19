@@ -27,6 +27,9 @@ const AttractionSchema = new Schema({
     rating: {
         type: Number,
     },
+    imageUrl: {
+        type: String
+    },
     date: {
         type: Date,
         default: Date.now

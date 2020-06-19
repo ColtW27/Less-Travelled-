@@ -36,7 +36,8 @@ router.post("/",
             description: req.body.description,
             rating: req.body.rating,
             latitude: req.body.latitude,
-            longitude: req.body.longitude
+            longitude: req.body.longitude,
+            imageUrl: req.body.imageUrl,
         });
 
        return newAttraction.save().then(attraction => res.json(attraction));

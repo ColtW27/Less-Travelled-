@@ -10,6 +10,7 @@ module.exports = function validateAttractionInput(data) {
     data.rating = validText(data.rating) ? data.rating : '';
     data.longitude = validText(data.longitude) ? data.longitude : '';
     data.latitude = validText(data.latitude) ? data.latitude : '';
+    data.imageUrl = validText(data.imageUrl)? data.imageUrl: '';
 
 
     if(Validator.isEmpty(data.name)) {
