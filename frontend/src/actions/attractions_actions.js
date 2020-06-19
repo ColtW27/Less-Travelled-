@@ -10,7 +10,7 @@ export const receiveAttractions = (attractions) => ({
   attractions
 });
 
-export const receiveAttraction = ({ attraction }) => ({
+export const receiveAttraction = ( attraction ) => ({
   type: RECEIVE_ATTRACTION,
   attraction
 });
@@ -44,8 +44,8 @@ export const fetchAttractions = () => dispatch => (
 );
 
 export const fetchAttraction = id => dispatch => (
-  APIUtil.fetchAttraction(id).then(payload => (
-    dispatch(receiveAttraction(payload))
+  APIUtil.fetchAttraction(id).then(attraction => (
+    dispatch(receiveAttraction(attraction))
   )).catch(err => console.log(err))
 );
 

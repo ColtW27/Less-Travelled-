@@ -14,10 +14,22 @@ import {Link} from 'react-router-dom';
 //   }; 
 
 class AttractionBox extends React.Component {
+  
+    constructor(props){
+      super(props)
+    }
 
   // handleClick() {
 
   // }
+
+  componentDidMount(){
+    this.props.fetchAttractions();
+  }
+
+  componentWillReceiveProps(newState){
+    this.setState({attractions: newState.attractions});
+  }
 
   render () {
     return (

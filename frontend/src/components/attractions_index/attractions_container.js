@@ -7,7 +7,7 @@ const mapStateToProps = (state) => {
   return {
     // attractions: Object.values(state.attractions.data)
     // attractions: Object.values(state.attractions.all)
-    attractions: state.attractions
+    attractions: Object.values(state.attractions)
   };
 };
 

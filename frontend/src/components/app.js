@@ -31,7 +31,7 @@ const App = () => (
         <Route exact path="/attractions" component={AttractionsContainer} />
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
         <AuthRoute exact path="/attractions" component={AttractionsContainer} />
-      <Route exact path="/attractions/:id" component={AttractionsShowContainer}/>
+      <Route path="/attractions/:id" component={AttractionsShowContainer}/>
       <Route
          exact path="/login" component={PleaseLogin}/>
         {/* <h1> {console.log()} </h1> */}

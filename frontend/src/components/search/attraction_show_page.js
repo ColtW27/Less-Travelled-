@@ -11,17 +11,29 @@ class AttractionShow extends React.Component {
     super(props);
   }
 
-  componentWillReceiveProps(newState) {
-    this.setState({ attractions: newState.attractions });
+  componentDidMount(){
+    this.props.fetchAttraction();
+    this.props.fetchAttractions();
   }
 
+
+  // componentWillReceiveProps(newState) {
+  //   this.setState({ attractions: newState.attractions });
+  // }
+
   render() {
-    
+    const attraction = this.props.attraction
+    if (!attraction) {
+
+      return null
+    }
+
+
     return (
       <div className='attractions-show-container'>
-        <div>
+        {/* <div>
           <SearchBar />
-        </div>
+        </div> */}
 
         <br />
 
@@ -32,7 +44,11 @@ class AttractionShow extends React.Component {
             attraction={attraction}
           /> */}
            <p> hello does this render? </p>
-           {/* {this.props.attractions} */}
+           {attraction.name}
+           {attraction.description}
+           {attraction.address}
+           {attraction.rating}
+           <img src={attraction.imageUrl} className="show-page-img"></img>
          </div>
 
          <div className='attractions-main'>
