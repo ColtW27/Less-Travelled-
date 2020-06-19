@@ -1,9 +1,22 @@
 
 
 .new-attraction-container {
+  margin-left: 10px;
   margin-top: 75px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  // display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+.new-attraction-button {
+  width: 200px;
+  height: 40px;
+  font-family: monospace;
+  font-size: large;
+  background-color: wheat;
+  margin-left: 10px;
 }
     .attraction-field {
   
