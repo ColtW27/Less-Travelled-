@@ -14,9 +14,11 @@ const AttractionSchema = new Schema({
         type: String,
         required: true
     },
-    location_data: {
-        type: String,
-        required: true
+    latitude: {
+        type: Number
+    },
+    longitude: {
+        type: Number
     },
     description: {
         type: String,
