@@ -9,7 +9,9 @@ class AttractionForm extends React.Component {
       description: '',
       address: '',
       rating: "",
-      location_data: `${this.coords}`,
+      // location_data: `${this.coords}`,
+      longitude: "",
+      latitude: "",
       imageUrl: '' 
     }
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +36,7 @@ class AttractionForm extends React.Component {
   }
 
   render () {
-    const { name, description, address, rating, imageUrl } = this.state;
+    const { name, description, address, rating, imageUrl, longitude, latitude } = this.state;
     const { lat, lng} = this.coords;
 
     return (
@@ -98,8 +100,8 @@ class AttractionForm extends React.Component {
               {/* <label className="attraction-field">Latitude</label> */}
               <input
                 type="text"
-                onChange={this.update('lat')}
-                value={lat}
+                onChange={this.update('latitude')}
+                value={latitude}
                 className="attraction-field"
                 placeholder="Latitude"
               />
@@ -107,8 +109,8 @@ class AttractionForm extends React.Component {
               {/* <label className="attraction-field">Longitude</label> */}
               <input
                 type="text"
-                onChange={this.update('lng')}
-                value={lng}
+                onChange={this.update('longitude')}
+                value={longitude}
                 className="attraction-field"
                 placeholder="Longitude"
               />
