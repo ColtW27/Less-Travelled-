@@ -1,10 +1,76 @@
-
-
-.new-attraction-container {
-  margin-top: 75px;
-  display: inline-block;
+.attraction-form{
+  display: flex;  
+  flex-direction: column;
+  position: relative; 
+  height: 100vh;
+  background-image: url(https://www.bloomandoil.com/app/uploads/2019/11/Homepage_Wide-Main-1-2048x1591.jpg);
 
 }
-    .attraction-field {
+
+.new-attraction-container {
+  // margin-left: 10px;
+  // height: 1500px;
+  // margin-bottom: -50000px;
+  margin-top: 75px;
+  height:100%;
+  // background-image: url(https://d2azv234xtg0bl.cloudfront.net/wp-content/uploads/2018/06/AdobeStock_101124444-696x465.jpeg);
+  // background-image: url(https://www.bloomandoil.com/app/uploads/2019/11/Homepage_Wide-Main-1-2048x1591.jpg);
+  background-size: cover; 
+
+  display: inline-block;
   
+  p {
+    font-family: $pacificoc;
+    font-size: 50px;
+    margin: 30px;
+    color: $yellowfont; 
+  }
+
+
+}
+
+.new-attraction-button {
+  width: 200px;
+  height: 40px;
+  font-family: monospace;
+  font-size: large;
+  background-color: wheat;
+  margin-left: 10px;
+}
+    // .attraction-rating {
+    //   font-size: 55px;
+    // }
+// input[type=number] {
+//     height: 30000000px;
+// }
+
+.insideDiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  align-items: flex-start;
+  margin-right: 20px;
+
+  form {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    input {
+      padding: 10px;
+      height: 40px;
+      margin: 10px;
+      margin-left: 40px;
     }
+  }
+
+}
+
+// footer {
+//   display: flex;
+//   width: 100%;
+//   background-color: black;
+//   // position: absolute;
+// }
