@@ -15,7 +15,7 @@
     height: 300px; 
     width: 650px;
     border-radius: 10px;
-    background-color: floralwhite;
+    background-color: oldlace;
   }
 
   .attractionsImage {
@@ -26,16 +26,34 @@
     border-radius: 10px;
   }
 
+  .attractionTitle{
+    font-size: x-large;
+    font-weight: 800;
+  }
+
+  .attractionAddress{
+    font-size: large;
+  }
+
+  .attractionDescription{
+    font-size: smaller;
+    margin-top: 10px;
+  }
+
+  .attractionRating{
+    margin-top: 40px;
+  }
   .attractionContent {
     margin-top: 5%;
     float: left;
     // width: 50%;
     width: 225px;
-    height: 200px;
+    height: 240px;
     position: absolute;
     overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    color: black;
   }
 
   .attractionPic {
