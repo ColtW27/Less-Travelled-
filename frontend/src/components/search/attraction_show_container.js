@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
   // debugger
   return {
     // attraction: state.attractions.id
-    // attraction: state.attractions[ownProps.match.params.attraction._id]
+    attraction: state.attractions[ownProps.match.params.attraction._id]
     // attractions: state.attractions
   };
 };
