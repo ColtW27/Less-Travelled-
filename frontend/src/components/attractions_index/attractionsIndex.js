@@ -28,7 +28,7 @@ class AttractionsIndex extends React.Component {
     
     const attractions = this.state.attractions.map((attraction) => (
         <AttractionsBox
-          key={attraction.id} 
+          key={attraction._id} 
           attraction={attraction}
         />
       ));

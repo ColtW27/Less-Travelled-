@@ -7,6 +7,9 @@ import NavBarContainer from './nav/navbar_container';
 import AttractionsForm from './attraction_form/attraction_form_container'
 
 import AttractionsContainer from './attractions_index/attractions_container'
+
+import AttractionsShowContainer from './search/attraction_show_container';
+
 // import AttractionShowContainer from './search/attraction_show_container';
 
 import Modal from './modal/modal'
@@ -28,7 +31,11 @@ const App = () => (
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
 
         <AuthRoute exact path="/attractions" component={AttractionsContainer} />
-      {/* <ProtectedRoute exact path={`/attractions/${this.props.attraction._id}`} component={AttractionShowContainer} /> */}
+
+      <Route exact path="/attractions/:id" component={AttractionsShowContainer}/>
+        {/* <h1> {console.log()} </h1> */}
+      {/* <AuthRoute exact path={`/attractions/${this.props.attraction._id}`} component={AttractionsShowContainer} /> */}
+      {/* <Route path="/attractions/:id" component={AttractionsShowContainer} /> */}
 
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
 

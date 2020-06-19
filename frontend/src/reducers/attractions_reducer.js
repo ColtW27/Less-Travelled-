@@ -11,6 +11,7 @@ const attractionsReducer = (state = { all: {}, new: undefined}, action) => {
   switch (action.type) {
     case RECEIVE_ATTRACTIONS:
       return newState.all =  action.attractions.data;
+      // return newState.all =  action.attractions.data._id;
     case RECEIVE_ATTRACTION:
       const newAttraction = { [action.attraction.id]: action.attraction };
       return Object.assign({}, state, newAttraction);
