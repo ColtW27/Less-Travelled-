@@ -5,9 +5,8 @@
   position: relative;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
-    // border: thin solid black;
-
+  flex-direction: column; 
+   width: 100%;
   div {
     margin-left: 25px;
     margin-bottom: 25px;
@@ -54,11 +53,18 @@
   .attractionPic {
     float: right;
     width: 325px;
+    border-radius: 10px;
     display: flex;
     align-content: center;
+
+
+  }
+}
+  .attraction-index-item{
+    border-radius: 10px;
+   
   }
 
-}
 
 .searchField {
   height: 40px;
@@ -85,6 +91,7 @@
   // margin-top: 100px;
   // display: flex;
   // position: fixed;
+  
   background-attachment: fixed;
   width: 100%; 
   height: 100%; 
@@ -94,36 +101,19 @@
 
 
   .searchBar {
-    // margin-top: 50px;
     padding-top: 85px;
-    // padding-left: 100px;
     position: fixed;
-    // display: flex;
-    // justify-content: center;
     left: 24px;
-    // float: right;
-    // width: 250px;
-    // background-color: red;
+    z-index: 2;
   }
 
-  form {
-    // background-color: green;
-  }
+ 
 
 }
-// .searchBar {
-//   form {
-//     margin-top: 100px;
-//   }
-// }
 
 .attractions-main {  
-  // background-color: blue;
-  form {
-    // margin-top: 100px;
-  }
+ 
   .attractionsIndex {
-    // margin-top: 100px;
     // background-color: gray;
   }
 
@@ -134,6 +124,7 @@
    
   }
 }
+
 
 .attraction-search-form input , select{
 margin: 7px;
@@ -146,6 +137,7 @@ margin: 7px;
     color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $pacificoc;;
+  
     
 }
 .attraction-search-form input::placeholder {

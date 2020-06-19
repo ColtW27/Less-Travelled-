@@ -1,6 +1,8 @@
+
 import { connect } from 'react-redux';
 
 import { fetchAttraction } from '../../actions/attractions_actions';
+
 
 // import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
 import AttractionShow from './attraction_show_page';
