@@ -1,23 +1,29 @@
-// import { connect } from 'react-redux';
- 
-// import { fetchAttraction } from '../../actions/attractions_actions';
 
-// // frontend / src / actions / attractions_actions.js
-// // import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
-// import { AttractionShow } from './attraction_show_page';
+import { connect } from 'react-redux';
+
+import { fetchAttraction } from '../../actions/attractions_actions';
 
 
-// const mapStateToProps = (state) => {
-//   return {
-//     attractions: state.attractions
-//   };
-// };
+// import { selectReviewsForBench, selectBench } from '../../reducers/selectors';
+import AttractionShow from './attraction_show_page';
 
 
-// const mapDispatchToProps = dispatch => ({
-//   // fetchAttractions: () => dispatch(fetchAttractions())
-//   fetchAttraction: id => dispatch(fetchAttraction(id))
-// });
+const mapStateToProps = (state, ownProps) => {
+  // debugger
+  return {
+    // attraction: state.attractions.id
+    // attraction: state.attractions[ownProps.match.params.attraction._id]
+    // attractions: state.attractions
+  };
+};
 
-// export default connect(mapStateToProps,mapDispatchToProps)(AttractionShow);
+
+const mapDispatchToProps = dispatch => {
+  return {
+    // fetchAttractions: () => dispatch(fetchAttractions())
+    fetchAttraction: id => dispatch(fetchAttraction(id))
+  }
+};
+
+export default connect(mapStateToProps,mapDispatchToProps)(AttractionShow);
 
