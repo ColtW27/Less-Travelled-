@@ -1,0 +1,45 @@
+
+.attractions-show-container {
+  // background-image: url(https://i.guim.co.uk/img/media/8a7ac4fbab07bdf3a19fa238d67d7cdf0587f27b/0_329_4992_2995/master/4992.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=a942605e99399862606c87ed1ac7ab9e);
+
+  padding-top: 80px;
+  padding-left: 25px;
+
+
+}
+
+.attraction-show-container {
+  width: 300px;
+  padding-bottom: 10px;
+  position: fixed;
+  left: 50px;
+  top: 100px;
+
+
+
+
+}
+
+.attraction-title {
+
+  font-size: 40px;
+  text-decoration: underline black;
+  text-emphasis: 700;
+  font-family: $pacificoc;
+
+}
+
+.attraction-description {
+  padding-top: 7px;
+
+  font-size: 40px;
+  width: 400px;
+
+}
+
+.show-page-img {
+  position: fixed;
+  left: 600px;
+  bottom: 200px;
+  border-radius: 10px;
+}

@@ -6,6 +6,13 @@ import AttractionsBox from '../attractions_index/AttractionsBox';
 import SearchBar from './search';
 
 
+const imageStyles = {
+  height: "500px",
+  width: "500px"
+
+}
+
+
 class AttractionShow extends React.Component {
   constructor(props) {
     super(props);
@@ -17,9 +24,6 @@ class AttractionShow extends React.Component {
   }
 
 
-  // componentWillReceiveProps(newState) {
-  //   this.setState({ attractions: newState.attractions });
-  // }
 
   render() {
     const attraction = this.props.attraction
@@ -27,6 +31,7 @@ class AttractionShow extends React.Component {
 
       return null
     }
+    
 
 
     return (
@@ -43,12 +48,14 @@ class AttractionShow extends React.Component {
             key={this.state.attraction._id}
             attraction={attraction}
           /> */}
-           <p> hello does this render? </p>
-           {attraction.name}
-           {attraction.description}
-           {attraction.address}
-           {attraction.rating}
-           <img src={attraction.imageUrl} className="show-page-img"></img>
+          <ul className='attraction-show-container'>
+           <li className='attraction-title'>{attraction.name}</li>
+           <li className='attraction-description'>{attraction.description}</li>
+           <br></br>
+           <li className='attraction-description'>{attraction.address}</li>
+           <li className='attraction-description'>{attraction.rating}</li>
+           <li><img  style={imageStyles} src={attraction.imageUrl} className="show-page-img"></img></li>
+           </ul>
          </div>
 
          <div className='attractions-main'>
