@@ -6,7 +6,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column; 
-   width: 100%;
+  width: 100%;
+
   div {
     margin-left: 25px;
     margin-bottom: 25px;
@@ -33,12 +34,6 @@
     height: 200px;
     position: absolute;
     overflow: hidden;
-    // font-family: Arial, Helvetica, sans-serif;
-    // font-family: 'Courier New', Courier, monospace;
-    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    // font-family: monospace;
-    // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
   }
@@ -49,8 +44,6 @@
     border-radius: 10px;
     display: flex;
     align-content: center;
-
-
   }
 }
   .attraction-index-item{
@@ -81,15 +74,9 @@
 }
 
 .attractions-container {
-  // margin-top: 100px;
-  // display: flex;
-  // position: fixed;
-  
   background-attachment: fixed;
   width: 100%; 
   height: 100%; 
-  // height: 1500px; 
-  // background-color: green;
   background-image: url(https://www.mensjournal.com/wp-content/uploads/2019/12/Desert-Road-Trip-6-dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
 
 
@@ -99,16 +86,9 @@
     left: 24px;
     z-index: 2;
   }
-
- 
-
 }
 
 .attractions-main {  
- 
-  .attractionsIndex {
-    // background-color: gray;
-  }
 
   map {
     position: fixed;
@@ -120,14 +100,12 @@
 
 
 .attraction-search-form input , select{
-margin: 7px;
-    // border: 5px outset;
-    border-radius: 10px;
-    //  background: transparent;
-    box-shadow: 1px 1.5px;
-    background-color: rgba(146, 146, 146, 0.726);
-    font-size: 20px;
-    color: rgb(7, 6, 6);
+  margin: 7px;
+  border-radius: 10px;
+  box-shadow: 1px 1.5px;
+  background-color: rgba(146, 146, 146, 0.726);
+  font-size: 20px;
+  color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $pacificoc;;
   

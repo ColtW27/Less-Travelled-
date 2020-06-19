@@ -12,6 +12,9 @@ class SearchBar extends React.Component {
             <option> History </option>
             <option> Religion </option>
             <option> Art </option>
+            <option> Kitsch </option>
+            <option> Eats </option>
+            <option> Wowser Bananas! </option>
           </select>
                   &nbsp;
                   <select className="ratingField">
