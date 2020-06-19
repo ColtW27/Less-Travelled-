@@ -10,7 +10,8 @@ class AttractionForm extends React.Component {
       address: '',
       // photoFile: null,
       rating: "",
-      location_data: `${this.coords}` 
+      location_data: `${this.coords}`,
+      imageUrl: '' 
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.handleFile = this.handleFile.bind(this);
@@ -34,7 +35,7 @@ class AttractionForm extends React.Component {
   }
 
   render () {
-    const { name, description, address, rating, location_data } = this.state;
+    const { name, description, address, rating, imageUrl } = this.state;
     const { lat, lng} = this.coords;
 
     return (
@@ -95,8 +96,6 @@ class AttractionForm extends React.Component {
                 placeholder="Rating"
               />
 
-              <br/> 
-
               {/* <label className="attraction-field">Latitude</label> */}
               <input
                 type="text"
@@ -113,6 +112,14 @@ class AttractionForm extends React.Component {
                 value={lng}
                 className="attraction-field"
                 placeholder="Longitude"
+              />
+
+              <input
+                type="file"
+                // onChange={this.update('lng')}
+                value={imageUrl}
+                className="attraction-photo-file"
+                placeholder="Browse"
               />
 
               {/* <div className="button-holder">
