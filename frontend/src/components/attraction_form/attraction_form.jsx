@@ -90,7 +90,7 @@ class AttractionForm extends React.Component {
                 type="number"
                 value={rating}
                 onChange={this.update('rating')}
-                className="attraction-field"
+                className="attraction-rating"
                 id="rating"
                 placeholder="Rating"
               />
@@ -128,11 +128,14 @@ class AttractionForm extends React.Component {
               <div className="button-holder">
                 <input
                   type="submit"
-                  value="Add attraction"
+                  value="Add this attraction"
                   className="new-attraction-button"
                 />
               </div>
             </form>
+            {/* <footer>
+              this is the footer
+            </footer> */}
           </div>
         </div>
       </div>
