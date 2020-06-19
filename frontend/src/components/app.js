@@ -9,9 +9,9 @@ import AttractionsForm from './attraction_form/attraction_form_container'
 import AttractionsContainer from './attractions_index/attractions_container'
 
 import AttractionsShowContainer from './search/attraction_show_container';
-
+import PleaseLogin from './please_login/please_login';
 // import AttractionShowContainer from './search/attraction_show_container';
-
+// import LoginFormContainer from './modal/session_form/login_form_container';
 import Modal from './modal/modal'
 import MainPage from './main/main_page';
 
@@ -30,10 +30,10 @@ const App = () => (
         {/* <ProtectedRoute exact path="/attractions" component={AttractionsContainer} /> */}
         <Route exact path="/attractions" component={AttractionsContainer} />
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
-
         <AuthRoute exact path="/attractions" component={AttractionsContainer} />
-
       <Route exact path="/attractions/:id" component={AttractionsShowContainer}/>
+      <Route
+         exact path="/login" component={PleaseLogin}/>
         {/* <h1> {console.log()} </h1> */}
       {/* <AuthRoute exact path={`/attractions/${this.props.attraction._id}`} component={AttractionsShowContainer} /> */}
       {/* <Route path="/attractions/:id" component={AttractionsShowContainer} /> */}
