@@ -39,12 +39,10 @@ class AttractionBox extends React.Component {
           <div className="attractionContent">
             {/* <h1>{this.props.attraction._id}</h1> */}
 
-            <h2>Address: {this.props.attraction.address}</h2>
-            <h2>Name: {this.props.attraction.name}</h2>
+            <h2> {this.props.attraction.name}</h2>
+            <br/>
+            <h2> {this.props.attraction.address}</h2>
             {/* <h2>Location_data: {this.props.attraction.location_data}</h2> */}
-            <h1>Description: {this.props.attraction.description || "No description available"}</h1>
-
-        
             <h2>Rating: {this.props.attraction.rating}</h2>
             <h5>Description: {this.props.attraction.description || "No description available"}</h5>
           </div>

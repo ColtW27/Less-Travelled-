@@ -11,8 +11,10 @@ import AttractionShow from './attraction_show_page';
 const mapStateToProps = (state, ownProps) => {
   return {
     // attraction: state.attractions.id
+
     attraction: state.attractions[ownProps.match.params.id]
     
+
   };
 };
 

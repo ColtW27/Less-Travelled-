@@ -11,23 +11,21 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions} = this.props
-
+    console.log(attractions)
     return (
         <Map google={this.props.google}
           zoom={9}
           style={mapStyles}
           initialCenter={{lat: 47.444, lng: -122.176}}>
           {
-            // attractions.forEach(attraction => {
-            //   let newWhatever = attraction.location_data
-    
+            attractions.map(garbage => {    
           
-            // // return <Marker
-            // //   title={attraction.name}
-            // //   key={attraction.id}
-            // //   position={JSON.parse(attraction.location_data)}
-            // // />
-            // })
+            return <Marker
+              title={garbage.props.attraction.name}
+              key={garbage.props.attraction.id}
+              position={{ lat: garbage.props.attraction.latitude, lng: garbage.props.attraction.longitude }}
+            />
+            })
           
           }
           <Marker onClick={this.onMapClick}

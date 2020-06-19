@@ -25,7 +25,9 @@ class NavBar extends React.Component {
             <div>                
               <h2 className="header-name">WELCOME {currentUser.handle}!</h2>
 
-                <button onClick={this.logoutUser}>Logout</button>
+                <button onClick={this.logoutUser}
+                className="main-page-logout"
+                >Logout</button>
             </div>
         );
       } else {
@@ -48,7 +50,6 @@ class NavBar extends React.Component {
             <li><Link to="/attractionsform">Add an attraction</Link></li>
             <li>Tall Tales</li>
             <li>States</li>
-            <li>Categories</li>
             <li>{ this.getLinks() }</li>
           </ul>    
         </nav>
