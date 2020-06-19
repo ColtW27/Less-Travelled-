@@ -16,7 +16,7 @@ class TravelMap extends React.Component {
         <Map google={this.props.google}
           zoom={9}
           style={mapStyles}
-          initialCenter={{lat: 40.7128, lng: 74.0060}}>
+          initialCenter={{lat: 47.444, lng: -122.176}}>
           {
             attractions.map(garbage => {    
           
