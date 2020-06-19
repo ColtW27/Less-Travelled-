@@ -5,20 +5,10 @@ import TravelMap from '../map/map';
 import AttractionsBox from '../attractions_index/AttractionsBox';
 import SearchBar from './search';
 
-// import AttractionDetail from './attraction_detail';
-// // import BenchMap from '../bench_map/bench_map';
-// // import ReviewFormContainer from './review_form_container';
-// import { ProtectedRoute } from '../../util/route_util';
-// import AttractionBox from './AttractionsBox';
-// // import { ReviewLink } from '../../util/link_util';
 
 class AttractionShow extends React.Component {
   constructor(props) {
     super(props);
-
-    // this.state = {
-    //   attractions: []
-    // }
   }
 
   componentWillReceiveProps(newState) {
@@ -28,30 +18,20 @@ class AttractionShow extends React.Component {
   render() {
     
     return (
-      <div className='attractions-container'>
+      <div className='attractions-show-container'>
+        <div>
+          <SearchBar />
+        </div>
 
-        <SearchBar />
         <br />
 
          <div className="attractionShow">
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
 
           {/* <AttractionsBox
             key={this.state.attraction._id}
             attraction={attraction}
           /> */}
-           hello does this render? 
+           <p> hello does this render? </p>
            {/* {this.props.attractions} */}
          </div>
 
