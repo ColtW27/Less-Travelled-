@@ -114,8 +114,8 @@ class AttractionForm extends React.Component {
               />
 
               <input
-                type="file"
-                // onChange={this.update('lng')}
+                type="text"
+                onChange={this.update('imageUrl')}
                 value={imageUrl}
                 className="attraction-photo-file"
                 placeholder="Browse"

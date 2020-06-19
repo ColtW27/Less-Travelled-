@@ -11,7 +11,7 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions} = this.props
-
+    console.log(attractions)
     return (
         <Map google={this.props.google}
           zoom={9}
