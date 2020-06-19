@@ -14,8 +14,7 @@ import AttractionsShowContainer from './search/attraction_show_container';
 
 import Modal from './modal/modal'
 import MainPage from './main/main_page';
-// import LoginFormContainer from './session/login_form_container'; ####
-// import SignupFormContainer from './session/signup_form_container'; ####
+
 
 
 const App = () => (
@@ -24,6 +23,8 @@ const App = () => (
     <Modal />
 
     <Switch>
+
+
         {/* <AuthRoute exact path="/" component={MainPage} /> */}
         <Route exact path="/" component={MainPage} />
         {/* <ProtectedRoute exact path="/attractions" component={AttractionsContainer} /> */}
@@ -38,7 +39,6 @@ const App = () => (
       {/* <Route path="/attractions/:id" component={AttractionsShowContainer} /> */}
 
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
-
 
     </Switch>
   </div>
