@@ -89,7 +89,6 @@ class SignupForm extends React.Component {
             </label>
             <br />
 
-            <div className="signup-form-errors">{this.showErrors()}</div>
             <br />
             <div className="bottom-form-div">
               <button
@@ -107,6 +106,7 @@ class SignupForm extends React.Component {
                 {/* Link to other switch to signup form */}
               </label>
             </div>
+            <div className="signup-form-errors">{this.showErrors()}</div>
           </form>
         </div>
       );

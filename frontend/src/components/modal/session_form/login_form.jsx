@@ -72,7 +72,6 @@ class LoginForm extends React.Component {
             </label>
             <br />
 
-            <div className="login-form-errors">{this.showErrors()}</div>
             <br />
             <div className="login-bottom-form-div">
               <button
@@ -85,9 +84,9 @@ class LoginForm extends React.Component {
               <label className="">
                 Don't have an account?
                 {this.props.otherForm}
-                {/* Link to other switch to signup form */}
               </label>
             </div>
+          <div className="login-form-errors">{this.showErrors()}</div>
           </form>
         </div>
       );
