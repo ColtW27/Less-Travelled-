@@ -1,28 +1,45 @@
-import * as APIUtil from '../util/talltail_api_util';
+import * as APIUtil from '../util/talltale_api_util';
 
-export const RECEIVE_TALLTAILS = 'RECEIVE_TALLTAILS';
+export const RECEIVE_TALLTALES = 'RECEIVE_TALLTALES';
 
-export const RECEIVE_TALLTAIL = 'RECEIVE_TALLTAIL';
+export const RECEIVE_TALLTALE = 'RECEIVE_TALLTALE';
 
-export const RECEIVE_NEW_TALLTAIL = 'RECEIVE_NEW_TALLTAIL';
+export const RECEIVE_NEW_TALLTALE = 'RECEIVE_NEW_TALLTALE';
 
 
-export const receiveTalltails = (talltails) => ({
-    type: RECEIVE_TALLTAILS,
-    talltails
+export const receiveTalltales = (talltales) => ({
+    type: RECEIVE_TALLTALES,
+    talltales
 });
 
-export const receiveTalltail = (talltail) => ({
-    type: RECEIVE_TALLTAIL,
-    talltail
+export const receiveTalltale = (talltale) => ({
+    type: RECEIVE_TALLTALE,
+    talltale
 });
 
-export const receiveNewTalltail = (talltail) => ({
-    type: RECEIVE_NEW_TALLTAIL,
-    talltail
+export const receiveNewTalltale = (talltale) => ({
+    type: RECEIVE_NEW_TALLTALE,
+    talltale
 });
 
 
 export const fetchTalltales = () => dispatch => (
-    APIUtil.fetchTalltales().then(talltails)
-)
+    APIUtil.fetchTalltales().then(talltales => (
+
+        dispatch(receiveTalltales(talltales))
+    )).catch(err => console.log(err))
+);
+
+export const fetchTalltale = id => dispatch => (
+    APIUtil.fetchTalltale(id).then(talltale => (
+
+        dispatch(receiveTalltale(talltale))
+    )).catch(err => console.log(err))
+);
+
+export const createTalltale = talltale => dispatch => (
+    APIUtil.createTalltale(talltale).then(talltale => (
+
+        dispatch(receiveNewTalltale(talltale))
+    ))
+);

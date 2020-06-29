@@ -24,4 +24,4 @@ class TalltalesIndex extends React.Component {
     }
 }
 
-export default withRouter ()
+export default withRouter (TalltalesIndex)
