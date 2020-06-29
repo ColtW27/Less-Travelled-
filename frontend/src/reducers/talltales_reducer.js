@@ -3,7 +3,10 @@ import { RECEIVE_TALLTALES,
          RECEIVE_NEW_TALLTALE
 } from '../actions/talltale_actions';
 
-const talltalesReducer = (state = {}, action) => {
+const initialState = {
+    talltales: {}
+}
+const talltalesReducer = (state = initialState, action) => {
     Object.freeze(state);
     let newState = Object.assign( {}, state)
     switch (action.type) {
@@ -18,7 +21,7 @@ const talltalesReducer = (state = {}, action) => {
 
         case RECEIVE_NEW_TALLTALE:
             return newState.new = action.talltale.data
-            
+
         default:
             return state;
     };

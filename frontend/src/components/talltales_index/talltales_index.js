@@ -10,13 +10,13 @@ class TalltalesIndex extends React.Component {
 
 
 
-    redner(){
-
+    render(){
+        // const talltales = 
 
         return(
 
             <div className="talltales-index-container">
-
+                <div>Can you see me?</div>
 
             </div>
 

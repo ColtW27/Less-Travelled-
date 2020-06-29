@@ -7,7 +7,7 @@ const mSTP = (state, ownProps) => ({
 })
 
 const mDTP = dispatch => ({
-    
+    fetchTalltales: () => dispatch(fetchTalltales())
 })
 
 export default connect(mSTP, mDTP)(TalltalesIndex);
