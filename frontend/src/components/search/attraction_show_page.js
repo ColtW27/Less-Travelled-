@@ -16,6 +16,7 @@ const imageStyles = {
 class AttractionShow extends React.Component {
   constructor(props) {
     super(props);
+
   }
 
   componentDidMount(){
@@ -25,16 +26,18 @@ class AttractionShow extends React.Component {
 
 
 
+
+
   render() {
     const attraction = this.props.attraction
     if (!attraction) {
-
       return null
     }
     
 
-
+    
     return (
+      
       <div className='attractions-show-container'>
         {/* <div>
           <SearchBar />
@@ -62,7 +65,7 @@ class AttractionShow extends React.Component {
            <br />
            <div className="attractionsIndex">
            </div>
-           {/* <map><TravelMap attractions={attractions}/></map> */}
+           <map><TravelMap attraction={[attraction]}/></map>
          </div>
        </div>
     );

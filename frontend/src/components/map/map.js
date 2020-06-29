@@ -6,20 +6,34 @@ const mapStyles = {
   height: '600px'
 };
 
+
+function statusChecker(input) {
+        return  <Marker
+            title={input.name}
+            key={input.id}
+            position={{ lat: input.latitude, lng: input.longitude }}
+          />
+}
+
+
+
+
+
 class TravelMap extends React.Component {
 
 
   render() {
-    const {attractions} = this.props
-    console.log(attractions)
+    const {attractions, attraction} = this.props
     return (
         <Map google={this.props.google}
           zoom={9}
           style={mapStyles}
           initialCenter={{lat: 40.7128, lng: -73.935242}}>
           {
+            (attraction != undefined) ? 
+              statusChecker(attraction)
+            :
             attractions.map(garbage => {    
-          
             return <Marker
               title={garbage.props.attraction.name}
               key={garbage.props.attraction.id}
