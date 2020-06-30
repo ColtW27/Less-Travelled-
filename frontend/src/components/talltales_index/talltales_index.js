@@ -1,23 +1,40 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
+import TalltalesIndexItem from './taltales_index_item';
 class TalltalesIndex extends React.Component {
     constructor(props){
         super(props);
-
+        this.state = { talltales: this.props.talltales }
     }
 
 
 
 
     render(){
-        // const talltales = 
+        // const talltales =  this.state.talltales.map(talltale => (
+        //     <TalltalesIndexItem
+        //         key={talltales._id}
+        //         talltale={talltale}
+        //         fetchTalltale={this.props.fetchTalltale}
+        //     />
+        // ))
 
         return(
+        
 
             <div className="talltales-index-container">
-                <div>Can you see me?</div>
-
+                <div>
+                    {
+                       this.state.talltales.map(talltale => (
+            <TalltalesIndexItem
+                        key={talltale._id}
+                        talltale={talltale}
+                        fetchTalltale={this.props.fetchTalltale}
+                    />
+        ))
+                    }
+                </div>
+            
             </div>
 
         );

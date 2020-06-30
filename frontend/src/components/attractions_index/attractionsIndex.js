@@ -17,7 +17,8 @@ class AttractionsIndex extends React.Component {
   componentDidMount() {
     // window.props = this.props; 
     // debugger 
-    this.props.fetchAttractions();   
+    this.props.fetchAttractions();
+      
   }
   
   componentWillReceiveProps(newState) {
