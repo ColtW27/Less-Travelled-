@@ -5,9 +5,11 @@ import Talltalesform from './talltales_form';
 
 const mSTP = state => ({
     currentUser: state.session.user,
+    talltales: {
     title: '',
     author_id: '',
     body: ''
+    }
 });
 
 const mDTP = dispatch => ({
