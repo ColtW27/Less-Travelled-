@@ -4,11 +4,14 @@ import Talltalesform from './talltales_form';
 
 
 const mSTP = state => ({
-
+    currentUser: state.session.user,
+    title: '',
+    author_id: '',
+    body: ''
 });
 
 const mDTP = dispatch => ({
-
+    createTalltale: talltale => dispatch(createTalltale(talltale))
 });
 
 export default connect(mSTP, mDTP)(Talltalesform);
