@@ -15,17 +15,17 @@
 https://less-travelled.herokuapp.com/
 
 ### Technologies
-#### Less Travelled was built using primarily Javascript-based Libraries.
+#### Less Travelled was built using primarily Javascript and its Libraries.
 
 #### Database
 * MangoDB - Modern database using clusters to store data.
 #### Backend
-* Node.js
+* Node.js - non-blocking and highly scaleable runtime environment for JavaScript-based network applications.
 #### Framework
-* Express.js
+* Express.js - minimalistic and flexible Node.js framework.
 #### Frontend
-* Javascript - Language that allows our logic to be embedded in our views.
-* React - Javascript library that allows the application to update and rerender only the new information, making for a faster application with less frequent server requests and a more fluid user experience.
+* Javascript - Language that allows us to effectively implement Event Driven Programming.
+* React - Javascript library that allows our application to update and rerender only the new information, making for a faster application with less frequent server requests and a more fluid user experience.
 * Redux - Javascript library that allows the app to contain and manage front end state in a predictable and efficient manner.
 
 ### Features
