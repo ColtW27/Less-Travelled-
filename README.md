@@ -6,9 +6,10 @@
 * Signup for an account.
 * Login to an account with verifiable auth.
 * View an index of Attractions.
-* View attractions in detail.
-* Locate attractions on an interactive map.
-* Leave reviews and rating on attractions.
+* View Attractions in detail.
+* Locate Attractions on an interactive map.
+* Leave reviews and rating on Attractions.
+* Filter for Attractions by name, category, and rating.
 
 
 #### View Less Travelled here:
