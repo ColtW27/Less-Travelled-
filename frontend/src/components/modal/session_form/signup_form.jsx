@@ -48,7 +48,8 @@ class SignupForm extends React.Component {
             {/* <div onClick={this.props.closeModal} className="login-close-x">
               ✕
             </div> */}
-
+            <div className="signup-form-errors">{this.showErrors()}</div>
+            
             <label>
               <input
                 type="text"
@@ -106,7 +107,7 @@ class SignupForm extends React.Component {
                 {/* Link to other switch to signup form */}
               </label>
             </div>
-            <div className="signup-form-errors">{this.showErrors()}</div>
+            
           </form>
         </div>
       );

@@ -9,7 +9,7 @@
     justify-content: left;
     border-radius: 10px;
     width: 500px;
-    height: 400px;
+    // height: 400px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -54,6 +54,12 @@
 }
 
 .signup-form-errors {
-    background: white;
+    background: transparent;
     width: 200px;
+}
+
+.signup-form-errors ul li {
+    color: floralwhite;
+    margin-left: 10px;
+    font-family: "Pacifico", cursive;
 }
