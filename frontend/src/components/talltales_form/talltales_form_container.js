@@ -7,7 +7,6 @@ const mSTP = state => ({
     currentUser: state.session.user,
     talltales: {
     title: '',
-    author_id: '',
     body: ''
     }
 });

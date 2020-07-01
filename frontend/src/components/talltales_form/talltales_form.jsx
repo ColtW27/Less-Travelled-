@@ -20,11 +20,14 @@ class Talltalesform extends React.Component {
     }
 
     render() {
-      const { title, author_id, body} = this.state;
+      const { title, body} = this.state;
       return(
-          <div>
+          <div className="talltales-form-container">
               <h3>Talltales form</h3>
-              <form onSubmit={this.handleSubmit}>
+              <form 
+              onSubmit={this.handleSubmit}
+              className="talltales-form"
+              >
                 <label htmlFor="title">
                   <input 
                   type="text"
