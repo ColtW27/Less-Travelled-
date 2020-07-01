@@ -51,6 +51,9 @@ class LoginForm extends React.Component {
             {/* <div onClick={this.props.closeModal} className="login-close-x">
               ✕
             </div> */}
+
+            <div className="login-form-errors">{this.showErrors()}</div>
+
             <label>
               <input
                 type="text"
@@ -86,7 +89,7 @@ class LoginForm extends React.Component {
                 {this.props.otherForm}
               </label>
             </div>
-          <div className="login-form-errors">{this.showErrors()}</div>
+          
           </form>
         </div>
       );

@@ -6,7 +6,7 @@
     justify-content: left;
     border-radius: 10px;
     width: 500px;
-    height: 250px;
+    // height: 250px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -57,6 +57,13 @@
 }
 
 .login-form-errors {
-    background: white;
+    background: transparent;
     width: 200px;
+    color: floralwhite;
+}
+
+.login-form-errors ul li {
+    color: floralwhite;
+    margin-left: 10px;
+    font-family: "Pacifico", cursive;
 }
