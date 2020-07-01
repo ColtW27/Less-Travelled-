@@ -1,6 +1,8 @@
 import React from 'react';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
+const apiKey = require('../../config/keys').apiKeyName;
+
 const mapStyles = {
   width: '650px',
   height: '600px'
@@ -50,5 +52,6 @@ class TravelMap extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: (`${process.env.REACT_APP_GOOGLEMAP_API_KEY}`)
+  apiKey: (`${apiKey}`)
 })(TravelMap);
+
