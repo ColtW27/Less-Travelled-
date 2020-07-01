@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
-import TravelMap from '../map/map';
-import AttractionsBox from '../attractions_index/AttractionsBox';
-import SearchBar from './search';
+// import TravelMap from '../map/map';
+// import AttractionsBox from '../attractions_index/AttractionsBox';
+// import SearchBar from './search';
 
 
 const imageStyles = {
@@ -14,10 +14,10 @@ const imageStyles = {
 
 
 class AttractionShow extends React.Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
+  // }
 
-  }
 
   componentDidMount(){
     this.props.fetchAttraction();
@@ -57,7 +57,7 @@ class AttractionShow extends React.Component {
            <br></br>
            <li className='attraction-description'>{attraction.address}</li>
            <li className='attraction-description'>{attraction.rating}</li>
-           <li><img  style={imageStyles} src={attraction.imageUrl} className="show-page-img"></img></li>
+           <li><img  style={imageStyles} src={attraction.imageUrl} className="show-page-img" alt="Attraction"></img></li>
            </ul>
          </div>
 

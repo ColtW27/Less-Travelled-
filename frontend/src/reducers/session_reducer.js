@@ -21,6 +21,7 @@ export default function(state = initialState, action) {
     case RECEIVE_USER_SIGN_IN:
       // ...state,
       // is
+      break;
     default:
       return state;
   }

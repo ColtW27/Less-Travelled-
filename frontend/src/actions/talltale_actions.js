@@ -17,7 +17,7 @@ export const receiveTalltale = (talltale) => ({
     talltale
 });
 
-export const receiveNewTalltale = (talltale) => ({
+export const receiveNewTalltale = talltale => ({
     type: RECEIVE_NEW_TALLTALE,
     talltale
 });

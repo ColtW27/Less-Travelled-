@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBarContainer from '../nav/navbar_container';
+// import NavBarContainer from '../nav/navbar_container';
 import BackgroundVideo from '../backgroundVideo/backgroundVideo';
-import TravelMap from '../map/map'
+// import TravelMap from '../map/map'
 
 
 class MainPage extends React.Component {

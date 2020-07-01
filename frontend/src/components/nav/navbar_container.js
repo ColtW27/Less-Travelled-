@@ -1,7 +1,7 @@
 // src/components/nav/navbar_container.js
  
 import { connect } from 'react-redux';
-import { logout, fetchUsers } from '../../actions/session_actions';
+import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 import NavBar from './navbar';

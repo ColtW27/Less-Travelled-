@@ -18,7 +18,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
       e.preventDefault();
       const user = Object.assign({}, this.state);
-      const that = this;
+    
       this.props.processForm(user).then(res=>{
         if (res.type !== "RECEIVE_SESSION_ERRORS"){ //checks if there are session errors returned in the promise from processing the login form
           this.props.dispatch(this.props.closeModal())

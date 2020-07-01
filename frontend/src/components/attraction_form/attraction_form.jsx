@@ -37,7 +37,7 @@ class AttractionForm extends React.Component {
 
   render () {
     const { name, description, address, rating, imageUrl, longitude, latitude } = this.state;
-    const { lat, lng} = this.coords;
+    // const { lat, lng} = this.coords;
 
     return (
       <div className="attraction-form">
