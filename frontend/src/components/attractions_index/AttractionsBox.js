@@ -46,7 +46,7 @@ class AttractionBox extends React.Component {
 
 
           <div className="attractionPic">
-            <img className="attractionsImage" src={this.props.attraction.imageUrl} />
+            <img className="attractionsImage" src={this.props.attraction.imageUrl} alt="Attaction" />
           </div>
 
         </div>

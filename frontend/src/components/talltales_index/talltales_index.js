@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import TalltalesIndexItem from './taltales_index_item';
 class TalltalesIndex extends React.Component {
@@ -34,7 +35,7 @@ class TalltalesIndex extends React.Component {
         ))
                     }
                 </div>
-            
+                <Link to="/talltalesform" >Add A Talltale </Link>
             </div>
 
         );
