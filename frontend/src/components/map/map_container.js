@@ -20,7 +20,7 @@ const mDTP = dispatch => {
 }
 
 
-export default connect(mSTP, null)(TravelMap)
+export default connect(null, null)(TravelMap)
 
 
 
