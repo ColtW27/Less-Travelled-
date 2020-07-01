@@ -28,15 +28,18 @@ https://less-travelled.herokuapp.com/
 * Javascript - Language that allows us to effectively implement Event Driven Programming.
 * React - Javascript library that allows our application to update and rerender only the new information, making for a faster application with less frequent server requests and a more fluid user experience.
 * Redux - Javascript library that allows the app to contain and manage front end state in a predictable and efficient manner.
-
+#### APIS
+* Google Maps API - Interactive and accurate location mapping.
 ### Features
 #### User Authentication
 * This allows users to create a profile in order to add attractions to the map and add personal travel stories as 'Talltales'. 
 #### Attraction's Index
-* This allows attractions to be added to the database, storing data including the attraction's name, location, rating, and description.
+* Displays a list of attractions in a given location.
 #### Attraction Show Pages
 * Users can view individual attractions in  closer detail, with larger pictures and a full description of the oddity. Reviews will also be available from this page.
-#### Attraction Search
+#### Add Attractions
+* This allows attractions to be added to the database by users, storing data including the attraction's name, location, rating, and description.
+#### Attraction Search/Filter
 * The attraction search feature will make filtering attarctions simple. Filters will include location, category, rating, etc. 
 #### Reviews
 * Users can leave reviews on the attractions, including their favorite aspects and recommendations for visiting and getting the most from the attraction.
