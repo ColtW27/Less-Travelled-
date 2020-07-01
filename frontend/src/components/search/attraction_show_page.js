@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
-// import TravelMap from '../map/map';
+import TravelMap from '../map/map';
 // import AttractionsBox from '../attractions_index/AttractionsBox';
 // import SearchBar from './search';
 
