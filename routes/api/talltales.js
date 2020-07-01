@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const passport = require("passport");
 const validateTalltaleInput = require('../../validation/talltales');
-const Review = require("../../models/Talltale");
 const Talltale = require("../../models/Talltale");
 
 router.get("/test", (req, res) => res.json({ msg: "This is the talltales route" }));
