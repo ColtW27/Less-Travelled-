@@ -8,25 +8,48 @@ class AttractionsIndex extends React.Component {
   constructor(props) {
     super(props);
     // this.renderAttractions = this.renderAttractions.bind(this);
-
     this.state = {
-      attractions: []
+      attractions: this.props.attractions,
+      searchTerm: ""
     }
+    this.handleQuery = this.handleQuery.bind(this);
   }
 
-  componentWillMount() {
-    // window.props = this.props; 
-    // debugger 
+  componentDidMount() {
+
     this.props.fetchAttractions();
       
   }
-  
-  componentWillReceiveProps(newState) {
-    this.setState({ attractions: newState.attractions });
-  }
 
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.searchTerm !== this.state.searchTerm){
+      // this.props.fetchAttractions();
+      this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
+        .toLowerCase()
+        .includes(this.state.searchTerm
+          .toLowerCase()))})
+    }
+    if(prevProps.attractions !== this.props.attractions){
+      // this.props.fetchAttractions();
+      this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
+        .toLowerCase()
+        .includes(this.state.searchTerm
+          .toLowerCase()))})
+    }
+  }
+  
+  // componentWillReceiveProps(newState) {
+  //   this.setState({ attractions: newState.attractions });
+  // }
+
+  handleQuery(query){
+    return (e) => {
+      e.preventDefault();
+      this.setState({searchTerm: query})
+    }
+  }
   render() {
-    
+    if (this.state.attractions.length === 0) return null;
      const attractions = this.state.attractions.map(attraction => (
         <AttractionsBox
                   key={attraction._id} 
@@ -38,7 +61,7 @@ class AttractionsIndex extends React.Component {
     return (
       <div className='attractions-container'>
         <div>
-          <SearchBar/>
+          <SearchBar handleQuery={this.handleQuery}/>
         </div>
 
         <br/>

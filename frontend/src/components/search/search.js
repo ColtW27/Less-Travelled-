@@ -85,7 +85,7 @@ class SearchBar extends React.Component {
             <option>⭐️</option>
           </select>
                   &nbsp;
-                  <input className="searchButton" type="submit" value="Search" onClick={this.onSearch}></input>
+                  <input className="searchButton" type="submit" value="Search" onClick={this.props.handleQuery(this.state.attractionQuery)}></input>
         </form>
       </div>
     )
