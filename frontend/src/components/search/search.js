@@ -20,24 +20,7 @@ class SearchBar extends React.Component {
       [key]: e.target.value
     })
   }
-  // updateSearch(e) {
-  //   e.preventDefault(); 
-  //   let query = "";
-  //   query += e.target.value;
-  //   alert('query:', query);
-  //   this.setState({ [attractionQuery]: query});
-  //   // const {value} = e.target; 
-  //   // alert(e.target.value); 
-  //   // console.log(e.target.value); 
-  //   this.setState({attractionQuery : e.target.value}); 
-  //   alert(e.target.value);
-  //   // alert(value); 
-  //   // console.log(this.state.attractionQuery);
-  //   console.log(this.state);
-  //   // console.log(value);
-  //   // alert(this.state.attractionQuery);
-  //   // alert("type your search query");
-  // }
+  
   
   onSearch(e) {
     return this.props.fetchAttractions
@@ -45,12 +28,7 @@ class SearchBar extends React.Component {
       attractions.map(attraction => {
       attraction.name.includes(this.state.attractionQuery); 
       })  
-    } 
-    )
-    // this.state.attractionQuery; 
-    // e.preventDefault(); 
-    // alert('this onSearch function should hit the fetch attraction action')
-    // this.props.fetchAttractions().then(); 
+    })
   }
 
 
