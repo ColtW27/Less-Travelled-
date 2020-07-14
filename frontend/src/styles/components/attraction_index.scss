@@ -11,7 +11,6 @@
   div {
     margin-left: 25px;
     margin-bottom: 25px;
-    // border: thin solid black;
     height: 300px; 
     width: 650px;
     border-radius: 10px;
@@ -133,4 +132,13 @@
   color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $pacificoc;;
+}
+
+.search-result-count {
+  display: flex;
+  position: fixed;
+  top: 150px;
+  left: 37px;
+  background-color: blue;
+
 }

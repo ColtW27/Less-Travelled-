@@ -85,7 +85,7 @@ class AttractionsIndex extends React.Component {
         </div>
 
         <br/>
-        <div >
+        <div className="search-result-count">
           {attractions.length} search results
         </div>
 
