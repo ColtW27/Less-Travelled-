@@ -55,7 +55,7 @@ class AttractionsIndex extends React.Component {
 
         <br />
 
-        <div className="no-matches">
+        <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
       </div>
 
@@ -86,7 +86,7 @@ class AttractionsIndex extends React.Component {
 
         <br/>
         <div className="search-result-count">
-          {attractions.length} search results
+          {attractions.length} search resul(s)
         </div>
 
         <div className="attractionsListings">
