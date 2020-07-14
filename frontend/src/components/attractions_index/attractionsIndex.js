@@ -7,7 +7,7 @@ import SearchBar from '../search/search'
 class AttractionsIndex extends React.Component {
   constructor(props) {
     super(props);
-
+t
     this.state = {
       attractions: this.props.attractions,
       searchTerm: ""
