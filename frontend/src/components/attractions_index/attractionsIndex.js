@@ -43,8 +43,33 @@ class AttractionsIndex extends React.Component {
       this.setState({searchTerm: query})
     }
   }
+
+  noMatches(attractions){
+    return(
+
+     
+      <div className='attractions-container'>
+        <div>
+          <SearchBar handleQuery={this.handleQuery} />
+        </div>
+
+        <br />
+
+        <div className="search-result-count">
+          Sorry, there do not appear to be any matches for your search.
+      </div>
+
+        <div className='attractions-main'>
+          <br />
+          <div className="attractionsIndex">
+          </div>
+          <map><TravelMap attractions={attractions} /></map>
+        </div>
+      </div>
+    )
+  }
   render() {
-    if (this.state.attractions.length === 0) return null;
+    // if (this.state.attractions.length === 0) return this.noMatches(attractions);
      const attractions = this.state.attractions.map(attraction => (
         <AttractionsBox
                   key={attraction._id} 
@@ -52,7 +77,7 @@ class AttractionsIndex extends React.Component {
                   fetchAttractions={this.props.fetchAttractions}
                 />
       ))
-
+    if (this.state.attractions.length === 0) return this.noMatches(attractions);
     return (
       <div className='attractions-container'>
         <div>
@@ -60,8 +85,12 @@ class AttractionsIndex extends React.Component {
         </div>
 
         <br/>
+        <div className="search-result-count">
+          {attractions.length} search result(s)
+        </div>
 
         <div className="attractionsListings">
+        
             {attractions}
         </div>
          
