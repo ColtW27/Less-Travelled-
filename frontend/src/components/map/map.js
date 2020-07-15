@@ -2,7 +2,7 @@ import React from 'react';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
-console.log(gKey)
+// console.log(gKey)
 
 const mapStyles = {
   width: '650px',
@@ -34,7 +34,7 @@ class TravelMap extends React.Component {
           style={mapStyles}
           initialCenter={{lat: 40.7128, lng: -73.935242}}>
           {
-            (attraction != undefined) ? 
+            (attraction !== undefined) ? 
               statusChecker(attraction)
             :
             attractions.map(garbage => {    

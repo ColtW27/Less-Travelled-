@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { withRouter } from 'react-router-dom';
-import { fetchAttraction } from '../../util/attraction_api_util';
+// import { fetchAttraction } from '../../util/attraction_api_util';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -24,9 +24,11 @@ class SearchBar extends React.Component {
   
   
   onSearch(e) {
+    e.preventDefault();
     return this.props.fetchAttractions
     .then( attractions => {
       attractions.map(attraction => {
+   
       attraction.name.includes(this.state.attractionQuery); 
       })  
     })
