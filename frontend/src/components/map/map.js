@@ -29,6 +29,7 @@ class TravelMap extends React.Component {
     const {attractions, attraction} = this.props
     return (
         <Map google={this.props.google}
+
           zoom={9}
           style={mapStyles}
           initialCenter={{lat: 40.7128, lng: -73.935242}}>
