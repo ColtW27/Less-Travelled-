@@ -1,1 +1,28 @@
 
+.main-page-description {
+    display: flex;
+    position: fixed;
+    top: 120px;
+    left: 5%;
+    width: 50%;
+    flex-wrap: wrap;
+    // margin-left: 6%;
+    font-size: 28px;
+    font-family: $pacificoc;
+    line-height: 150%;
+    
+
+
+}
+
+.main-page-footer {
+   display: flex;
+    position: fixed;
+    bottom: 0px;
+    // left: 5%;
+    padding-left: 5%; 
+    padding-top: 1%; 
+    width: 100vw;
+    height: 5%;
+    background-color: $navbackground;
+}
