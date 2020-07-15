@@ -4,6 +4,7 @@ import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 console.log(gKey)
 
+
 const mapStyles = {
   width: '650px',
   height: '600px'
