@@ -8,7 +8,8 @@ class SearchBar extends React.Component {
 
     this.state = {
       attractionQuery: "",
-      category: ""
+      category: "",
+      rating: ""
     }
 
     this.updateSearch = this.updateSearch.bind(this); 
@@ -72,7 +73,16 @@ class SearchBar extends React.Component {
             <option>1</option>
           </select>
                   &nbsp;
-                  <input className="searchButton" type="submit" value="Search" onClick={this.props.handleQuery(this.state.attractionQuery)}></input>
+                  <input 
+                  className="searchButton" 
+                  type="submit" 
+                  value="Search" 
+                  onClick={
+                    // this.props.handleQuery(this.state.attractionQuery)
+                    this.props.handleRating(this.state.rating)
+                    // this.props.handleAll(this.state.attractionQuery, this.state.category, this.state.rating)
+                    } 
+                  />
         </form>
       </div>
     )
