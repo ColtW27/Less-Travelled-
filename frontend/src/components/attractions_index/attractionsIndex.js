@@ -34,9 +34,9 @@ class AttractionsIndex extends React.Component {
           //   this.setState({attractions: this.state.attractions.filter(attraction => attraction.category
           //     .includes(this.state.category))})
           // }
-          // if(!this.state.rating < 6){
+          // if(this.state.rating < 6){
           //   this.setState({attractions: this.state.attractions.filter(attraction => attraction.rating
-          //     .includes(this.state.rating))})
+          //     === (this.state.rating))})
           // }
     }
     if(prevProps.attractions !== this.props.attractions){
