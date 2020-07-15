@@ -10,7 +10,8 @@ class AttractionsIndex extends React.Component {
 
     this.state = {
       attractions: this.props.attractions,
-      searchTerm: ""
+      searchTerm: "",
+      category: ""
     }
     this.handleQuery = this.handleQuery.bind(this);
   }
@@ -27,6 +28,11 @@ class AttractionsIndex extends React.Component {
         .toLowerCase()
         .includes(this.state.searchTerm
           .toLowerCase()))})
+
+          if(this.state.category.length !== 0 ){
+            this.setState({attractions: this.state.attractions.filter(attraction => attraction.category
+              .includes(this.state.category))})
+          }
     }
     if(prevProps.attractions !== this.props.attractions){
       this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
@@ -43,6 +49,12 @@ class AttractionsIndex extends React.Component {
       this.setState({searchTerm: query})
     }
   }
+  handleCategory(query){
+    return (e) => {
+      e.preventDefault();
+      this.setState({category: query})
+    }
+  }
 
   noMatches(attractions){
     return(
@@ -50,7 +62,9 @@ class AttractionsIndex extends React.Component {
      
       <div className='attractions-container'>
         <div>
-          <SearchBar handleQuery={this.handleQuery} />
+          <SearchBar 
+          handleQuery={this.handleQuery}
+          handleCategory={this.handleCategory} />
         </div>
 
         <br />
