@@ -1,13 +1,14 @@
 import React from 'react'; 
 import { withRouter } from 'react-router-dom';
-import { fetchAttraction } from '../../util/attraction_api_util';
+// import { fetchAttraction } from '../../util/attraction_api_util';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props); 
 
     this.state = {
-      attractionQuery: ""
+      attractionQuery: "",
+      category: ""
     }
 
     this.updateSearch = this.updateSearch.bind(this); 
@@ -23,9 +24,11 @@ class SearchBar extends React.Component {
   
   
   onSearch(e) {
+    e.preventDefault();
     return this.props.fetchAttractions
     .then( attractions => {
       attractions.map(attraction => {
+   
       attraction.name.includes(this.state.attractionQuery); 
       })  
     })
@@ -44,7 +47,10 @@ class SearchBar extends React.Component {
           onChange={this.updateSearch('attractionQuery')}
           ></input>
                   &nbsp;
-                  <select className="categoryField">
+                  <select className="categoryField"
+                  value={this.state.category}
+                  onChange={this.updateSearch('category')}
+                  >
             <option> Category </option>
             <option> History </option>
             <option> Religion </option>
@@ -54,13 +60,16 @@ class SearchBar extends React.Component {
             <option> Wowser Bananas! </option>
           </select>
                   &nbsp;
-                  <select className="ratingField">
+                  <select className="ratingField"
+                  value={this.state.rating}
+                  onChange={this.updateSearch('rating')}
+                  >
             <option>Rating</option>
-            <option>⭐️⭐️⭐️⭐️⭐️</option>
-            <option>⭐️⭐️⭐️⭐️</option>
-            <option>⭐️⭐️⭐️</option>
-            <option>⭐️⭐️</option>
-            <option>⭐️</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
           </select>
                   &nbsp;
                   <input className="searchButton" type="submit" value="Search" onClick={this.props.handleQuery(this.state.attractionQuery)}></input>

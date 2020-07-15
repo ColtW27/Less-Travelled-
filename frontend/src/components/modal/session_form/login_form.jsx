@@ -84,7 +84,8 @@ class LoginForm extends React.Component {
               >
                 Log in
               </button>
-              <label className="">
+           
+              <label className="dont-have-account">
                 Don't have an account?
                 {this.props.otherForm}
               </label>
