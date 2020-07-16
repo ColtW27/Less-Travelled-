@@ -38,10 +38,6 @@ class AttractionsIndex extends React.Component {
           //   this.setState({attractions: this.state.attractions.filter(attraction => attraction.category
           //     .includes(this.state.category))})
           // }
-          // if(!this.state.rating < 6){
-          //   this.setState({attractions: this.state.attractions.filter(attraction => attraction.rating
-          //     === (this.state.rating))})
-          // }
 
     if(prevState.rating !== this.state.rating){
       this.setState({attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating)})
@@ -62,12 +58,6 @@ class AttractionsIndex extends React.Component {
       // }
 
 
-      // if (!this.state.rating < 6) {
-      //   this.setState({
-      //     attractions: this.state.attractions.filter(attraction => 
-      //       attraction.rating === this.state.rating)
-      //   })
-      // }
     if (prevProps.rating !== this.props.rating) {
       this.setState({ attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating) })
     }
@@ -78,27 +68,46 @@ class AttractionsIndex extends React.Component {
   handleQuery(query){
     return (e) => {
       e.preventDefault();
-      this.setState({searchTerm: query})
+      this.setState({
+        searchTerm: query, 
+        category: this.state.category, 
+        rating: this.state.rating
+      })
     }
   }
   handleCategory(query){
     return (e) => {
       e.preventDefault();
-      this.setState({category: query})
+      this.setState({
+        searchTerm: this.state.searchTerm, 
+        category: query, 
+        rating: this.state.rating
+      })
     }
   }
   handleRating(query){
     return (e) => {
       e.preventDefault();
-      this.setState({rating: query})
+      this.setState({
+        searchTerm: this.state.searchTerm, 
+        category: this.state.category, 
+        rating: query
+        })
     }
     // console.log(query);
   }
   
-  handleAll(query, category, rating) {
+  handleAll(query, rating) {
+  // handleAll(field, query) {
+    // return (e) => {
+    //   e.preventDefault(); 
+    //   this.setState({
+    //     [field]: query
+    //   })
+    // }
     this.handleQuery(query);
     // this.handleCategory(category); 
-    // this.handleRating(rating);  
+    this.handleRating(rating);  
   }
 
   noMatches(attractions){
@@ -108,10 +117,10 @@ class AttractionsIndex extends React.Component {
       <div className='attractions-container'>
         <div>
           <SearchBar 
-          // handleQuery={this.handleQuery}
+          handleQuery={this.handleQuery}
           // handleCategory={this.handleCategory}
           handleRating={this.handleRating}
-              // handleAll={this.handleAll}
+              handleAll={this.handleAll}
            />
         </div>
 
@@ -144,10 +153,9 @@ class AttractionsIndex extends React.Component {
       <div className='attractions-container'>
         <div>
           <SearchBar 
-          // handleQuery={this.handleQuery}
+          handleQuery={this.handleQuery}
             handleRating={this.handleRating}
-
-            // handleAll={this.handleAll}
+            handleAll={this.handleAll}
 
           />
         </div>

@@ -78,8 +78,15 @@ class SearchBar extends React.Component {
                   type="submit" 
                   value="Search" 
                   onClick={
-                    // this.props.handleQuery(this.state.attractionQuery)
-                    this.props.handleRating(this.state.rating)
+                    // () => {
+                    //   console.log('props: ', this.props);  
+                    //   this.props.handleRating(this.state.rating);  
+                    //   this.props.handleQuery(this.state.attractionQuery);
+                    // }
+                    console.log('props: ', this.props), 
+                    // this.props.handleRating(this.state.rating), 
+                    this.props.handleQuery(this.state.attractionQuery) 
+                    // this.handleAll(this.state.rating, this.stateattractionQuery)
                     // this.props.handleAll(this.state.attractionQuery, this.state.category, this.state.rating)
                     } 
                   />
