@@ -9,7 +9,8 @@ class AttractionsIndex extends React.Component {
     super(props);
 
     this.state = {
-      attractions: this.props.attractions,
+      allAttractions: this.props.attractions,
+      attractions: this.props.attractions, 
       searchTerm: "",
       category: "",
       rating: ""
@@ -27,28 +28,66 @@ class AttractionsIndex extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+
+    // debugger 
+
+    if (prevProps.attractions !== this.props.attractions) {
+      // debugger 
+      this.setState({ 
+        allAttractions: this.props.attractions, 
+        attractions: this.props.attractions 
+      })
+    }
+
+    let newAttractions = this.state.allAttractions; 
+
+    // if (prevState !== this.state) {
+    //   this.setState({
+    //     attractions: this.props.attractions.filter(attraction => attraction.name
+    //       .toLowerCase()
+    //       .includes(this.state.searchTerm
+    //         .toLowerCase()))
+    //   })
+    // }
+
     if(prevState.searchTerm !== this.state.searchTerm){
-      this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
-        .toLowerCase()
-        .includes(this.state.searchTerm
-          .toLowerCase()))})
+      // debugger 
+      newAttractions = newAttractions.filter(attraction => {
+        return (
+          attraction.name.toLowerCase()
+          .includes(this.state.searchTerm.toLowerCase()) 
+        )
+      })
+    }
+    if (prevState.rating !== this.state.rating) {
+      // debugger 
+        newAttractions = newAttractions.filter(attraction => {
+          return (attraction.rating == this.state.rating)  
+        })
+    }
+
+    if (this.state.attractions !== newAttractions) {
+      // debugger 
+      this.setState({attractions: newAttractions}); 
     }
 
           // if(this.state.category.length !== 0 ){
-          //   this.setState({attractions: this.state.attractions.filter(attraction => attraction.category
-          //     .includes(this.state.category))})
+              // this.setState({attractions: this.state.attractions.filter(attraction => attraction.category
+              //   .includes(this.state.category))})
           // }
 
-    if(prevState.rating !== this.state.rating){
-      this.setState({attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating)})
-    }
+    // if(prevState.rating !== this.state.rating){
+    //   this.setState({attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating)})
+    // }
 
-    if(prevProps.attractions !== this.props.attractions){
-      this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
-        .toLowerCase()
-        .includes(this.state.searchTerm
-          .toLowerCase()))})
-    }
+
+    // if(prevProps.attractions !== this.props.attractions){
+    //   this.setState({attractions: this.props.attractions})
+    //   // this.setState({attractions: this.props.attractions.filter(attraction => attraction.name
+    //   //   .toLowerCase()
+    //   //   .includes(this.state.searchTerm
+    //   //     .toLowerCase()))})
+    // }
 
       // if (this.state.category.length !== 0) {
       //   this.setState({
@@ -58,9 +97,9 @@ class AttractionsIndex extends React.Component {
       // }
 
 
-    if (prevProps.rating !== this.props.rating) {
-      this.setState({ attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating) })
-    }
+    // if (prevProps.rating !== this.props.rating) {
+    //   this.setState({ attractions: this.props.attractions.filter(attraction => attraction.rating == this.state.rating) })
+    // }
   }
 
   
@@ -97,7 +136,11 @@ class AttractionsIndex extends React.Component {
     // console.log(query);
   }
   
-  handleAll(query, rating) {
+  handleAll({attractionQuery:searchTerm, rating}) {
+    return (e) => {
+      e.preventDefault(); 
+      this.setState({searchTerm, rating})
+    } 
   // handleAll(field, query) {
     // return (e) => {
     //   e.preventDefault(); 
@@ -105,9 +148,9 @@ class AttractionsIndex extends React.Component {
     //     [field]: query
     //   })
     // }
-    this.handleQuery(query);
+    // this.handleQuery(query);
     // this.handleCategory(category); 
-    this.handleRating(rating);  
+    // this.handleRating(rating);  
   }
 
   noMatches(attractions){

@@ -13,7 +13,7 @@ class SearchBar extends React.Component {
     }
 
     this.updateSearch = this.updateSearch.bind(this); 
-    this.onSearch = this.onSearch.bind(this);
+    // this.onSearch = this.onSearch.bind(this);
   }
 
   updateSearch(key) {
@@ -24,16 +24,16 @@ class SearchBar extends React.Component {
   }
   
   
-  onSearch(e) {
-    e.preventDefault();
-    return this.props.fetchAttractions
-    .then( attractions => {
-      attractions.map(attraction => {
+  // onSearch(e) {
+  //   e.preventDefault();
+  //   return this.props.fetchAttractions
+  //   .then( attractions => {
+  //     attractions.map(attraction => {
    
-      attraction.name.includes(this.state.attractionQuery); 
-      })  
-    })
-  }
+  //     attraction.name.includes(this.state.attractionQuery); 
+  //     })  
+  //   })
+  // }
 
 
   render() {
@@ -83,9 +83,10 @@ class SearchBar extends React.Component {
                     //   this.props.handleRating(this.state.rating);  
                     //   this.props.handleQuery(this.state.attractionQuery);
                     // }
-                    console.log('props: ', this.props), 
-                    // this.props.handleRating(this.state.rating), 
-                    this.props.handleQuery(this.state.attractionQuery) 
+                    // console.log('props: ', this.props), 
+                    this.props.handleAll(this.state)
+                    // this.props.handleRating(this.state.rating) 
+                    // this.props.handleQuery(this.state.attractionQuery) 
                     // this.handleAll(this.state.rating, this.stateattractionQuery)
                     // this.props.handleAll(this.state.attractionQuery, this.state.category, this.state.rating)
                     } 
