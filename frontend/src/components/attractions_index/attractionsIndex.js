@@ -30,6 +30,20 @@ class AttractionsIndex extends React.Component {
   componentDidUpdate(prevProps, prevState) {
 
     // debugger 
+    // if (!prevProps) {
+    //   this.setState({
+    //     allAttractions: this.props.attractions,
+    //     attractions: this.props.attractions
+    //   })    
+    //   // return   
+    // } else if (prevProps.attractions !== this.props.attractions) {
+    //   // debugger 
+    //   this.setState({
+    //     allAttractions: this.prevState.attractions,
+    //     attractions: this.prevState.attractions
+    //   })
+    //   // return
+    // }
 
     if (prevProps.attractions !== this.props.attractions) {
       // debugger 
@@ -37,9 +51,10 @@ class AttractionsIndex extends React.Component {
         allAttractions: this.props.attractions, 
         attractions: this.props.attractions 
       })
+      return 
     }
 
-    let newAttractions = this.state.allAttractions; 
+    let newAttractions = this.state.attractions; 
 
     // if (prevState !== this.state) {
     //   this.setState({
@@ -67,7 +82,7 @@ class AttractionsIndex extends React.Component {
     }
 
     if (this.state.attractions !== newAttractions) {
-      // debugger 
+      debugger 
       this.setState({attractions: newAttractions}); 
     }
 
