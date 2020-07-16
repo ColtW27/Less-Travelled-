@@ -54,6 +54,7 @@ class AttractionsIndex extends React.Component {
       return 
     }
 
+    // let newAttractions = this.state.allAttractions; 
     let newAttractions = this.state.attractions; 
 
     // if (prevState !== this.state) {
@@ -67,7 +68,8 @@ class AttractionsIndex extends React.Component {
 
     if(prevState.searchTerm !== this.state.searchTerm){
       // debugger 
-      newAttractions = newAttractions.filter(attraction => {
+      // newAttractions = newAttractions.filter(attraction => {
+      newAttractions = this.state.allAttractions.filter(attraction => {
         return (
           attraction.name.toLowerCase()
           .includes(this.state.searchTerm.toLowerCase()) 
@@ -76,7 +78,8 @@ class AttractionsIndex extends React.Component {
     }
     if (prevState.rating !== this.state.rating) {
       // debugger 
-        newAttractions = newAttractions.filter(attraction => {
+        // newAttractions = newAttractions.filter(attraction => {
+        newAttractions = this.state.allAttractions.filter(attraction => {
           return (attraction.rating == this.state.rating)  
         })
     }
