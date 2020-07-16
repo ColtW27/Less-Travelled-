@@ -53,7 +53,7 @@ class AttractionsIndex extends React.Component {
       })
       return 
     }
-
+    
     // let newAttractions = this.state.allAttractions; 
     let newAttractions = this.state.attractions; 
 
