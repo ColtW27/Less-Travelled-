@@ -52,7 +52,6 @@ class SearchBar extends React.Component {
                   value={this.state.category}
                   onChange={this.updateSearch('category')}
                   >
-            <option> Category </option>
             <option> History </option>
             <option> Religion </option>
             <option> Art </option>

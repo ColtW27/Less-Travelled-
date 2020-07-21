@@ -26,10 +26,7 @@ const App = () => (
 
     <Switch>
 
-
-        {/* <AuthRoute exact path="/" component={MainPage} /> */}
         <Route exact path="/" component={MainPage} />
-        {/* <ProtectedRoute exact path="/attractions" component={AttractionsContainer} /> */}
         <Route exact path="/attractions" component={AttractionsContainer} />
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
         <AuthRoute exact path="/attractions" component={AttractionsContainer} />
@@ -38,9 +35,6 @@ const App = () => (
          exact path="/login" component={PleaseLogin}/>
       <Route
          exact path="/talltales" component={TalltalesShowContainer}/>
-        {/* <h1> {console.log()} </h1> */}
-      {/* <AuthRoute exact path={`/attractions/${this.props.attraction._id}`} component={AttractionsShowContainer} /> */}
-      {/* <Route path="/attractions/:id" component={AttractionsShowContainer} /> */}
 
         <ProtectedRoute exact path="/attractionsform" component={AttractionsForm} />
         <ProtectedRoute exact path="/talltalesform" component={TalltalesForm} />
