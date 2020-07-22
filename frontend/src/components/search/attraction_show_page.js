@@ -61,12 +61,14 @@ class AttractionShow extends React.Component {
            </ul>
          </div>
 
-         <div className='attractions-main'>
-           <br />
-           <div className="attractionsIndex">
-           </div>
-           <map><TravelMap attraction={[attraction]}/></map>
-         </div>
+         {/* <div className='attractions-main'> */}
+           {/* <br /> */}
+           {/* <div className="attractionsIndex"> */}
+           {/* </div> */}
+           <map className="attraction-map">
+             <TravelMap attraction={[attraction]}/>
+           </map>
+         {/* </div> */}
        </div>
     );
   }
