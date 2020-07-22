@@ -7,6 +7,12 @@ class SignupForm extends React.Component {
         this.state = this.props.user;
         this.handleSubmit = this.handleSubmit.bind(this);
     } 
+  componentDidMount() {
+    this.props.clearErrors()
+  }
+  componentWillUnmount() {
+    this.props.clearErrors()
+  }
     handleChange(field) { //this keeps the state updated for every keystroke
         return (e) => (
             this.setState(
@@ -91,7 +97,10 @@ class SignupForm extends React.Component {
             <br />
 
             <br />
-            <div className="bottom-form-div">
+            <div 
+            className="bottom-form-div"
+             
+            >
               <button
                 className="signup-form-main-login-button"
                 type="submit"
@@ -100,10 +109,11 @@ class SignupForm extends React.Component {
                 Join
               </button>
               <br/>
-
-              <label className="">
+              <div className="already-a-member">
                 Already a member?
-                {this.props.otherForm}
+              </div>
+              <label for="login form button">
+                {this.props.otherForm} 
                 {/* Link to other switch to signup form */}
               </label>
             </div>

@@ -1,0 +1,51 @@
+
+.attractions-show-container {
+  // background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5c7elN6K48UuVUqr44nCactnT1-h2joikIg&usqp=CAU);
+  background-color: rgba(110, 110, 110, 0.466);
+  padding-top: 80px;
+  padding-left: 25px;
+  height: 100vh;
+  // width: 98vw;
+}
+
+.attraction-show-container {
+  width: 300px;
+  padding-bottom: 10px;
+  position: fixed;
+  left: 50px;
+  top: 600px;
+}
+
+.attraction-title {
+  color: $yellowfont;
+  font-size: 20px;
+  // text-decoration: underline black;
+  text-emphasis: 700;
+  font-family: $pacificoc;
+  margin-bottom: 1vh;
+}
+
+.attraction-description {
+  font-family: $pacificoc;
+  color: $yellowfont;
+  padding-top: 7px;
+  font-size: 16px;
+  width: 43vw;
+}
+
+.show-page-img {
+  position: fixed;
+  left: 3vw;
+  top: 12.7vh;
+  width: 43vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.attraction-map {
+  position: fixed;
+  top: 12.7vh;
+  left: 50vw;
+  height: 75vh;
+  width: 45vw;
+}

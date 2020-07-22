@@ -2,31 +2,22 @@
   display: flex;  
   flex-direction: column;
   position: relative; 
-  height: 100vh;
+  // height: 100vh;
   background-image: url(https://www.bloomandoil.com/app/uploads/2019/11/Homepage_Wide-Main-1-2048x1591.jpg);
 
 }
 
 .new-attraction-container {
-  // margin-left: 10px;
-  // height: 1500px;
-  // margin-bottom: -50000px;
   margin-top: 75px;
-  height:100%;
-  // background-image: url(https://d2azv234xtg0bl.cloudfront.net/wp-content/uploads/2018/06/AdobeStock_101124444-696x465.jpeg);
-  // background-image: url(https://www.bloomandoil.com/app/uploads/2019/11/Homepage_Wide-Main-1-2048x1591.jpg);
+  height:100vh;
   background-size: cover; 
-
   display: inline-block;
-  
   p {
     font-family: $pacificoc;
     font-size: 50px;
     margin: 30px;
     color: $yellowfont; 
   }
-
-
 }
 
 .new-attraction-button {
