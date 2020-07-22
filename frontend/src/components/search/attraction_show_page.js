@@ -30,11 +30,10 @@ class AttractionShow extends React.Component {
            <li className='attraction-description'>{attraction.description}</li>
            <br></br>
            <li className='attraction-description'>{attraction.address}</li>
-           <li className='attraction-description'>{attraction.rating}</li>
+           <li className='attraction-description'>Rating: {attraction.rating}</li>
            <li>
              <img 
               className="show-page-img" 
-              // style={imageStyles}
               src={attraction.imageUrl}
               alt="Attraction">
             </img>
