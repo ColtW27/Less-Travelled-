@@ -57,9 +57,6 @@ class LoginForm extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <h3 className="log-in-label">Welcome Back!</h3>
             <br />
-            {/* <div onClick={this.props.closeModal} className="login-close-x">
-              ✕
-            </div> */}
 
             <div className="login-form-errors">{this.showErrors()}</div>
 
@@ -92,7 +89,16 @@ class LoginForm extends React.Component {
                 Log in
               </button>
             </div>
-            
+            <div className="login-bottom-form-div">
+              <button
+                className="login-form-main-login-button"
+                onClick={this.demoLogin}
+                type="submit"
+                value="login"
+              >
+                Demo Log in
+              </button>
+            </div>
           
 
             <div className="login-bottom-form-div">
@@ -105,24 +111,7 @@ class LoginForm extends React.Component {
               </button>
             </div>
             
-          
           </form>
-          <div className="login-bottom-form-div">
-            <button
-              className="login-form-main-login-button"
-              onClick={this.demoLogin}
-              // onClick={this.props.processForm({
-              //   user: {
-              //     email: "lilly3@lilly.com",
-              //     password: "123456"
-              //   }
-              // })}
-              type="submit"
-              value="login"
-            >
-              Demo Log in
-              </button>
-          </div>
         </div>
       );
     }
