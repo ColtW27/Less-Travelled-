@@ -4,7 +4,8 @@ class AboutUs extends React.Component {
     render(){
       return(
         <div>
-            About 
+              <h1>Meet the Team</h1> 
+
         </div>
         )
     }
