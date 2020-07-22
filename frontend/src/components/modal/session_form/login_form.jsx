@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { clearErrors } from '../../../actions/session_actions';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -15,7 +16,12 @@ class LoginForm extends React.Component {
             )
         )
     }; 
-
+  componentDidMount() {
+    this.props.clearErrors()
+  }
+  componentWillUnmount() {
+    this.props.clearErrors()
+  }
     handleSubmit(e) { //calls dispatch with login function w/ the current user state, then closes modal.
       e.preventDefault();
       const user = Object.assign({}, this.state);
@@ -99,7 +105,7 @@ class LoginForm extends React.Component {
                 Demo Log in
               </button>
             </div>
-          x
+          
 
             <div className="login-bottom-form-div">
               <button

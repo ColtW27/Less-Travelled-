@@ -7,6 +7,12 @@ class SignupForm extends React.Component {
         this.state = this.props.user;
         this.handleSubmit = this.handleSubmit.bind(this);
     } 
+  componentDidMount() {
+    this.props.clearErrors()
+  }
+  componentWillUnmount() {
+    this.props.clearErrors()
+  }
     handleChange(field) { //this keeps the state updated for every keystroke
         return (e) => (
             this.setState(
