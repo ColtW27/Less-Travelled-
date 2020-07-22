@@ -3,8 +3,8 @@
     // background-attachment: ; 
     // background-image: url(https://hotmamatravel.com/wp-content/uploads/2020/01/vegas-road-trip-desert-drive.jpg);
     //  display: flex;
-    // background: rgba(7, 92, 141, 0.582);
-    background: rgba(7, 92, 141, 0.856);
+    background: rgba(44, 49, 53, 0.829);
+    // background: rgba(7, 92, 141, 0.856);
     justify-content: left;
     border-radius: 10px;
     width: 500px;
@@ -52,7 +52,9 @@
     width: 96%;
 
 }
-
+.bottom-form-div button:hover {
+    background-color: gray;
+}
 .signup-form-errors {
     background: transparent;
     width: 200px;
@@ -62,4 +64,12 @@
     color: floralwhite;
     margin-left: 10px;
     font-family: "Pacifico", cursive;
+}
+
+.already-a-member {
+    display: flex;
+    justify-content: center;
+    color: $yellowfont;
+    font-family: "Pacifico", cursive;
+    padding-bottom: 5px;
 }

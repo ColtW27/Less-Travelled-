@@ -103,10 +103,11 @@ class SignupForm extends React.Component {
                 Join
               </button>
               <br/>
-
-              <label className="">
+              <div className="already-a-member">
                 Already a member?
-                {this.props.otherForm}
+              </div>
+              <label for="login form button">
+                {this.props.otherForm} 
                 {/* Link to other switch to signup form */}
               </label>
             </div>
