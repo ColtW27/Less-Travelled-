@@ -28,19 +28,22 @@
 .attraction-description {
   padding-top: 7px;
   font-size: 16px;
-  width: 200%;
-
+  width: 43vw;
 }
 
 .show-page-img {
   position: fixed;
-  left: 50px;
-  top: 100px;
+  left: 3vw;
+  top: 12.7vh;
+  width: 43vw;
+  height: 60vh;
   border-radius: 10px;
 }
 
 .attraction-map {
   position: fixed;
-  top: 100px;
-  left: 700px;
+  top: 12.7vh;
+  left: 50vw;
+  height: 75vh;
+  width: 45vw;
 }
