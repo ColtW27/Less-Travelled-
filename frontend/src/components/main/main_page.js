@@ -20,7 +20,7 @@ class MainPage extends React.Component {
           Copyright &copy; 2020 LessTraveled
           Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
           <Link
-          to="/about"
+          to="/aboutus"
           >About us</Link>
         </footer>
       </div>
