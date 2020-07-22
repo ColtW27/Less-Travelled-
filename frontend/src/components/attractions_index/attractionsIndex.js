@@ -85,7 +85,7 @@ class AttractionsIndex extends React.Component {
     }
 
     if (this.state.attractions !== newAttractions) {
-      debugger 
+      // debugger 
       this.setState({attractions: newAttractions}); 
     }
 
