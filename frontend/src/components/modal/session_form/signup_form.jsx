@@ -91,7 +91,10 @@ class SignupForm extends React.Component {
             <br />
 
             <br />
-            <div className="bottom-form-div">
+            <div 
+            className="bottom-form-div"
+             
+            >
               <button
                 className="signup-form-main-login-button"
                 type="submit"
