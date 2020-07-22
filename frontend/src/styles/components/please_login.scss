@@ -1,7 +1,9 @@
 
 
 .please-Login{
+    // position: fixed;
     height: 100vh;
+    // width: 100vw;
     font-family: $pacificoc;
     // color: $yellowfont;
     font-size: 275%;
@@ -9,7 +11,8 @@
     padding-top: 250px;
     padding-left: 20%;
     display: flex;
-    top: 100px;
+    // position: relative;
+    // top: 100px;
     background-image: url(https://images-na.ssl-images-amazon.com/images/I/91Fe5ZxvVoL._AC_SL1500_.jpg);
 
 }

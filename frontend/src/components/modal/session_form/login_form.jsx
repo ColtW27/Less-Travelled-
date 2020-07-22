@@ -99,7 +99,7 @@ class LoginForm extends React.Component {
                 Demo Log in
               </button>
             </div>
-          
+          x
 
             <div className="login-bottom-form-div">
               <button
@@ -107,7 +107,10 @@ class LoginForm extends React.Component {
                 type="submit"
                 value="signup"
               >
-                Sign up
+                <label for="login form button">
+                  {this.props.otherForm}
+                  {/* Link to other switch to signup form */}
+                </label>
               </button>
             </div>
             
