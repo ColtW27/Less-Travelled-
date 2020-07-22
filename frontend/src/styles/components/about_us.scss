@@ -1,0 +1,19 @@
+.title-container {
+    position: fixed;
+    top: 12vh;
+    left: 45vw;
+}
+.about-us-container {
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 18vh;
+   padding-left: 5vh;
+
+}
+
+.about-us-team-item {
+// display: flex;
+border: 1px solid black;
+width: 20vw;
+height: 70vh;
+}

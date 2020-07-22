@@ -45,7 +45,7 @@ class NavBar extends React.Component {
       return (
         <nav className='nav-container'>
           <ul>
-            <li><Link to="/">Less Traveled</Link></li>
+            <li><Link to="/">LessTravelled</Link></li>
             <li><Link to="/attractions">Attractions</Link></li>
             <li><Link to="/attractionsform">Add an attraction</Link></li>
 
