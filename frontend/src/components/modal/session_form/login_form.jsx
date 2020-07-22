@@ -6,6 +6,7 @@ class LoginForm extends React.Component {
         super(props);
         this.state = this.props.user;
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoLogin = this.demoLogin.bind(this);
     }
     handleChange(field) { //this keeps the state updated for every keystroke
         return (e) => (
@@ -24,7 +25,6 @@ class LoginForm extends React.Component {
           this.props.dispatch(this.props.closeModal())
           // .then(() => that.props.history.push('/attractions'))
           this.props.history.push('/attractions')
-
           //takes both dispatch and closemodal in as props
         };
       });
@@ -40,6 +40,15 @@ class LoginForm extends React.Component {
                 ))}
             </ul>
         );
+    }
+
+    demoLogin() {
+      const user = { 
+          email: "lilly3@lilly.com",
+          password: "123456"
+      }
+      this.props.processForm(user)
+      .then(this.props.closeModal())
     }
 
     render() {
@@ -84,15 +93,7 @@ class LoginForm extends React.Component {
               </button>
             </div>
             
-            <div className="login-bottom-form-div">
-              <button
-                className="login-form-main-login-button"
-                type="submit"
-                value="login"
-              >
-                Demo Log in
-              </button>
-            </div>
+          
 
             <div className="login-bottom-form-div">
               <button
@@ -106,6 +107,22 @@ class LoginForm extends React.Component {
             
           
           </form>
+          <div className="login-bottom-form-div">
+            <button
+              className="login-form-main-login-button"
+              onClick={this.demoLogin}
+              // onClick={this.props.processForm({
+              //   user: {
+              //     email: "lilly3@lilly.com",
+              //     password: "123456"
+              //   }
+              // })}
+              type="submit"
+              value="login"
+            >
+              Demo Log in
+              </button>
+          </div>
         </div>
       );
     }
