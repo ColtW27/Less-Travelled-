@@ -63,7 +63,7 @@ class LoginForm extends React.Component {
                 className="login-form-input"
               />
             </label>
-            <br />
+            <br/>
             <label>
               <input
                 type="password"
@@ -73,9 +73,7 @@ class LoginForm extends React.Component {
                 className="login-form-input"
               />
             </label>
-            <br />
-
-            <br />
+            <br/>
             <div className="login-bottom-form-div">
               <button
                 className="login-form-main-login-button"
@@ -84,12 +82,28 @@ class LoginForm extends React.Component {
               >
                 Log in
               </button>
-           
-              <label className="dont-have-account">
-                Don't have an account?
-                {this.props.otherForm}
-              </label>
             </div>
+            
+            <div className="login-bottom-form-div">
+              <button
+                className="login-form-main-login-button"
+                type="submit"
+                value="login"
+              >
+                Demo Log in
+              </button>
+            </div>
+
+            <div className="login-bottom-form-div">
+              <button
+                className="login-form-main-login-button"
+                type="submit"
+                value="signup"
+              >
+                Sign up
+              </button>
+            </div>
+            
           
           </form>
         </div>

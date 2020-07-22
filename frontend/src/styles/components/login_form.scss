@@ -40,7 +40,6 @@
 .login-bottom-form-div{
     display: flex;
     justify-content: center;
-    // margin: 13px;
     border-radius: 30%;
     font-family: $pacificoc;
     color: $yellowfont;
@@ -52,8 +51,12 @@
     font-family: $pacificoc;
     font-weight: bold;
     padding: 5px;
-    border-radius: 30%;
+    border-radius: 8px;
+    width: 96%;
     
+}
+.login-bottom-form-div button:hover {
+    background-color: gray;
 }
 
 .login-form-errors {
@@ -70,4 +73,6 @@
 
 .dont-have-account {
     padding: 5px;
+    color: $yellowfont;
+    font-family: "Pacifico", cursive;
 }
