@@ -10,40 +10,54 @@
 }
 .title-container h1 {
     font-family: $pacificoc;
-    font-size: 30px;
+    font-size: 35px;
     color: $yellowfont;
 }
 .about-us-container {
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
    padding-top: 18vh;
    padding-left: 5vh;
 
 }
 
 .about-us-team-item {
-border: 1px solid black;
-width: 20vw;
-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 20vw;
+    height: 70vh;
+    background-color: rgb(240, 161, 88);
+    border-radius: 2%;
 }
 .about-us-team-item img {
     height: 15vw;
-    // width: 20vw;
+    border-radius: 2% 2% 0% 0%;;
 }
 .about-us-team-item h2,h3 {
     display: flex;
     justify-content: center;
     font-family: $pacificoc;
-    font-size: x-large;
-    padding: 5%;
+    color: $yellowfont;
+    font-size: 30px;
+    padding: 3%;
 }
 
 .about-us-team-item ul {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+//    justify-content: space-evenly;
 
 }
 .about-us-team-item ul li{
     font-size: x-large;
     padding: 2%;
+    margin-top: 5%;
+    
+}
+.about-us-team-item ul a{
+    color: black;
     cursor: pointer;
-    // color: ;
+    color: $yellowfont;
 }

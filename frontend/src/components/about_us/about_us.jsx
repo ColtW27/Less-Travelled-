@@ -17,7 +17,7 @@ class AboutUs extends React.Component {
                 <li><a href="https://www.linkedin.com/in/colton-wilmouth-80b507132/">Linked In</a></li>
                 <li><a href="https://coltw27.github.io/">Portfolio</a></li>
                 <li><a href="https://github.com/ColtW27">Github</a></li>
-                <li><a href="">Angelslist</a></li>
+                <li><a href="">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -31,7 +31,7 @@ class AboutUs extends React.Component {
                 <li><a href="">Linked In</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Github</a></li>
-                <li><a href="">Angelslist</a></li>
+                <li><a href="">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -45,7 +45,7 @@ class AboutUs extends React.Component {
                 <li><a href="">Linked In</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Github</a></li>
-                <li><a href="">Angelslist</a></li>
+                <li><a href="">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -59,7 +59,7 @@ class AboutUs extends React.Component {
                 <li><a href="">Linked In</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Github</a></li>
-                <li><a href="">Angelslist</a></li>
+                <li><a href="">Angellist</a></li>
                   </ul>
             </div>
           </div>
