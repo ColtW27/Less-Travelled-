@@ -1,5 +1,4 @@
 import React from 'react';
-
 class AboutUs extends React.Component {
   render(){
     return(
@@ -8,7 +7,7 @@ class AboutUs extends React.Component {
             <h1>Meet the Team</h1> 
       </div>
         <div className= "about-us-container">
-          <div className="about-us-team-item">
+          <div className="about-us-team-item grow">
             <div>
                 <img src="../../../Colt_profile.JPG" alt="Colt Profile Picture"/>
                   <h2>Colton Wilmouth</h2>
@@ -22,7 +21,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-          <div className="about-us-team-item">
+                <div className="about-us-team-item grow">
             <div>
                 <img src="../../../Colt_profile.JPG" alt="Colt Profile Picture"/>
                   <h2>Rahul Jain</h2>
@@ -36,7 +35,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-          <div className="about-us-team-item">
+                <div className="about-us-team-item grow">
             <div>
                 <img src="../../../Colt_profile.JPG" alt="Colt Profile Picture"/>
                   <h2>Carl Godlewski</h2>
@@ -50,7 +49,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-          <div className="about-us-team-item">
+                <div className="about-us-team-item grow">
             <div>
                 <img src="../../../Colt_profile.JPG" alt="Colt Profile Picture"/>
                   <h2>Jon Romero</h2>

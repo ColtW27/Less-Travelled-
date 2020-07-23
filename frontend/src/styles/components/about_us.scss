@@ -1,8 +1,10 @@
 .outer-about-container {
-   background-color: rgba(146, 146, 146, 0.726);
    height: 100vh; 
+   background-image: url(https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg);
 
 }
+
+
 .title-container {
     position: fixed;
     top: 12vh;
@@ -27,7 +29,8 @@
     border: 1px solid black;
     width: 20vw;
     height: 70vh;
-    background-color: rgb(240, 161, 88);
+    // background-color: transparent;
+    background-color: rgba(250, 123, 4, 0.514);
     border-radius: 2%;
 }
 .about-us-team-item img {
@@ -57,7 +60,13 @@
     
 }
 .about-us-team-item ul a{
+    font-family: $pacificoc;
+    text-decoration: none;
     color: black;
     cursor: pointer;
     color: $yellowfont;
+}
+.about-us-team-item ul a:hover{
+    color: black;
+    // color: $yellowfont;
 }
