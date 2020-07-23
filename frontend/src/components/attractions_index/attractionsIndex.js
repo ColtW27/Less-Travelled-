@@ -69,7 +69,7 @@ class AttractionsIndex extends React.Component {
     if(prevState.searchTerm !== this.state.searchTerm){
       // debugger 
       // newAttractions = newAttractions.filter(attraction => {
-      newAttractions = this.state.allAttractions.filter(attraction => {
+      newAttractions = newAttractions.filter(attraction => {
         return (
           attraction.name.toLowerCase()
           .includes(this.state.searchTerm.toLowerCase()) 
@@ -235,7 +235,8 @@ class AttractionsIndex extends React.Component {
           <br/> 
           <div className="attractionsIndex"> 
           </div>
-          <map><TravelMap attractions={attractions} /></map>
+          <map className="attraction-map">
+            <TravelMap attractions={attractions} /></map>
         </div>
       </div>
     );
