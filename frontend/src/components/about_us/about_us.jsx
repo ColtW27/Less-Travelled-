@@ -13,10 +13,10 @@ class AboutUs extends React.Component {
                   <h2>Colton Wilmouth</h2>
                   <h3>Team Lead</h3>
                   <ul>
-                <li><a href="https://www.linkedin.com/in/colton-wilmouth-80b507132/">Linked In</a></li>
-                <li><a href="https://coltw27.github.io/">Portfolio</a></li>
-                <li><a href="https://github.com/ColtW27">Github</a></li>
-                <li><a href="">Angellist</a></li>
+                <li><a href="https://www.linkedin.com/in/colton-wilmouth-80b507132/" target="_blank">Linked In</a></li>
+                <li><a href="https://coltw27.github.io/" target="_blank">Portfolio</a></li>
+                <li><a href="https://github.com/ColtW27" target="_blank">Github</a></li>
+                <li><a href="https://angel.co/u/colton-wilmouth" target="_blank">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -27,10 +27,10 @@ class AboutUs extends React.Component {
                   <h2>Rahul Jain</h2>
                   <h3>Flex</h3>
                  <ul>
-                <li><a href="">Linked In</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Github</a></li>
-                <li><a href="">Angellist</a></li>
+                <li><a href=""target="_blank">Linked In</a></li>
+                <li><a href=""target="_blank">Portfolio</a></li>
+                <li><a href=""target="_blank">Github</a></li>
+                <li><a href=""target="_blank">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -41,10 +41,10 @@ class AboutUs extends React.Component {
                   <h2>Carl Godlewski</h2>
                   <h3>Front End Lead</h3>
                 <ul>
-                <li><a href="">Linked In</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Github</a></li>
-                <li><a href="">Angellist</a></li>
+                <li><a href=""target="_blank">Linked In</a></li>
+                <li><a href=""target="_blank">Portfolio</a></li>
+                <li><a href=""target="_blank">Github</a></li>
+                <li><a href=""target="_blank">Angellist</a></li>
                   </ul>
             </div>
           </div>
@@ -55,10 +55,10 @@ class AboutUs extends React.Component {
                   <h2>Jon Romero</h2>
                   <h3>Back End Lead</h3>
                   <ul>
-                <li><a href="">Linked In</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Github</a></li>
-                <li><a href="">Angellist</a></li>
+                <li><a href=""target="_blank">Linked In</a></li>
+                <li><a href=""target="_blank">Portfolio</a></li>
+                <li><a href=""target="_blank">Github</a></li>
+                <li><a href=""target="_blank">Angellist</a></li>
                   </ul>
             </div>
           </div>

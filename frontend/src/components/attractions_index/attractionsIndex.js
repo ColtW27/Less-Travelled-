@@ -204,10 +204,10 @@ class AttractionsIndex extends React.Component {
     // if (this.state.attractions.length === 0) return this.noMatches(attractions);
      const attractions = this.state.attractions.map(attraction => (
         <AttractionsBox
-                  key={attraction._id} 
-                  attraction={attraction}
-                  fetchAttractions={this.props.fetchAttractions}
-                />
+          key={attraction._id} 
+          attraction={attraction}
+          fetchAttractions={this.props.fetchAttractions}
+        />
       ))
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
     return (

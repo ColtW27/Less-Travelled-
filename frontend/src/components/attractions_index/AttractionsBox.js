@@ -15,14 +15,6 @@ import {Link} from 'react-router-dom';
 
 class AttractionBox extends React.Component {
   
-    // constructor(props){
-    //   super(props)
-    // }
-
-
-  // componentDidMount(){
-  //   this.props.fetchAttractions();
-  // }
 
   componentWillReceiveProps(newState){
     this.setState({attractions: newState.attractions});
@@ -32,9 +24,8 @@ class AttractionBox extends React.Component {
     return (
 
       <Link to={`/attractions/${this.props.attraction._id}`}>
-        <div> 
+        <div className="attraction-box"> 
           <div className="attractionContent">
-            {/* <h1>{this.props.attraction._id}</h1> */}
 
             <h2 className="attractionTitle"> {this.props.attraction.name}</h2>
             <br/>
