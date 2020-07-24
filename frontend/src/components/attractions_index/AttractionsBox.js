@@ -14,11 +14,7 @@ import {Link} from 'react-router-dom';
 //   }; 
 
 class AttractionBox extends React.Component {
-  
 
-  componentWillReceiveProps(newState){
-    this.setState({attractions: newState.attractions});
-  }
 
   render () {
     return (
