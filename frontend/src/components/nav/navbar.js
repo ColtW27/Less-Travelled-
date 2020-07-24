@@ -26,13 +26,13 @@ class NavBar extends React.Component {
               <h2 className="header-name">Hi {currentUser.handle}!</h2>
 
                 <button onClick={this.logoutUser}
-                className="main-page-logout"
+                className="main-page-logout grow"
                 >Logout</button>
             </div>
         );
       } else {
         return (
-          <nav className="login-signup">
+          <nav className="login-signup grow">
             <button onClick={() => openModal('login')}>Login</button>
       &nbsp; &nbsp;
             <button onClick={() => openModal('signup')}>Signup</button>
@@ -45,9 +45,9 @@ class NavBar extends React.Component {
       return (
         <nav className='nav-container'>
           <ul>
-            <li><Link to="/">LessTravelled</Link></li>
-            <li><Link to="/attractions">Attractions</Link></li>
-            <li><Link to="/attractionsform">Add an attraction</Link></li>
+            <li className='grow'><Link to="/">LessTravelled</Link></li>
+            <li className='grow'><Link to="/attractions">Attractions</Link></li>
+            <li className='grow'><Link to="/attractionsform">Add an attraction</Link></li>
             {/* <li> <Link
               className="about-us-link"
               to="/aboutus"

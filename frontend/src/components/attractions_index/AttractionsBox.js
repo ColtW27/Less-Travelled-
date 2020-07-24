@@ -24,7 +24,7 @@ class AttractionBox extends React.Component {
     return (
 
       <Link to={`/attractions/${this.props.attraction._id}`}>
-        <div className="attraction-box"> 
+        <div className="attraction-box grow"> 
           <div className="attractionContent">
 
             <h2 className="attractionTitle"> {this.props.attraction.name}</h2>

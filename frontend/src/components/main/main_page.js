@@ -18,7 +18,7 @@ class MainPage extends React.Component {
         </div>
         <footer className="main-page-footer">
           <div className="copyright">
-            Copyright &copy; 2020 LessTraveled
+            Copyright &copy; 2020 LessTravelled
           Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
           </div>
           
