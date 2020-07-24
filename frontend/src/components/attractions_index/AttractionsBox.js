@@ -19,9 +19,9 @@ class AttractionBox extends React.Component {
   render () {
     return (
 
-      <Link to={`/attractions/${this.props.attraction._id}`}>
-
-        <div className="attraction-box grow"> 
+      
+        <Link to={`/attractions/${this.props.attraction._id}`} className="attraction-box-a" >
+      <div className="attraction-box grow"> 
 
           <div className="attractionContent">
 
@@ -40,7 +40,7 @@ class AttractionBox extends React.Component {
           </div>
 
         </div>
-      </Link>
+         </Link>
     );
   }
 }
