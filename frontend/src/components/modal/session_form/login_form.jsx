@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { clearErrors } from '../../../actions/session_actions';
 
 class LoginForm extends React.Component {
     constructor(props) {
