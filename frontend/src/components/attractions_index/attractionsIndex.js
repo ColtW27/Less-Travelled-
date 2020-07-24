@@ -35,7 +35,7 @@ class AttractionsIndex extends React.Component {
     //     allAttractions: this.props.attractions,
     //     attractions: this.props.attractions
     //   })    
-    //   // return   
+    //   return   
     // } else if (prevProps.attractions !== this.props.attractions) {
     //   // debugger 
     //   this.setState({
@@ -44,7 +44,8 @@ class AttractionsIndex extends React.Component {
     //   })
     //   // return
     // }
-
+   
+    // }
     if (prevProps.attractions !== this.props.attractions) {
       // debugger 
       this.setState({ 

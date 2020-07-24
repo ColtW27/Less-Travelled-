@@ -48,7 +48,7 @@ class SearchBar extends React.Component {
           onChange={this.updateSearch('attractionQuery')}
           ></input>
                   &nbsp;
-                  <select className="categoryField"
+                  {/* <select className="categoryField"
                   value={this.state.category}
                   onChange={this.updateSearch('category')}
                   >
@@ -71,7 +71,7 @@ class SearchBar extends React.Component {
             <option>3</option>
             <option>2</option>
             <option>1</option>
-          </select>
+          </select> */}
                   &nbsp;
                   <input 
                   className="searchButton" 
