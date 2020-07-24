@@ -28,12 +28,17 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions, attraction} = this.props
+    
+
     return (
         <Map google={this.props.google}
 
           zoom={9}
           // style={mapStyles}
-          initialCenter={{lat: 40.7128, lng: -73.935242}}>
+          // initialCenter={{lat: 40.7128, lng: -73.935242}}
+          initialCenter={!!attraction ? {lat: attraction[0].latitude, lng: attraction[0].longitude} : {lat: 40.7128, lng: -73.935242}}
+          
+          >
           {
             (attraction !== undefined) ? 
               statusChecker(attraction)
@@ -53,10 +58,6 @@ class TravelMap extends React.Component {
     )
   }
 }
-
-// export default GoogleApiWrapper({
-//   apiKey: (`${process.env.REACT_APP_GOOGLEMAP_API_KEY}`)
-// })(TravelMap);
 
 export default GoogleApiWrapper({
     apiKey: (`${gKey}`)

@@ -160,15 +160,18 @@ class AttractionsIndex extends React.Component {
       this.setState({searchTerm, rating})
     } 
   // handleAll(field, query) {
-    // return (e) => {
-    //   e.preventDefault(); 
-    //   this.setState({
-    //     [field]: query
-    //   })
-    // }
-    // this.handleQuery(query);
-    // this.handleCategory(category); 
-    // this.handleRating(rating);  
+  //   return (e) => {
+  //     e.preventDefault(); 
+  //     this.setState({
+  //       [field]: query
+  //     })
+  //   }
+  //   this.handleQuery(query);
+  //   this.handleCategory(category); 
+  //   this.handleRating(rating);  
+  // }
+
+
   }
 
   noMatches(attractions){
@@ -178,9 +181,6 @@ class AttractionsIndex extends React.Component {
       <div className='attractions-container'>
         <div>
           <SearchBar 
-          handleQuery={this.handleQuery}
-          // handleCategory={this.handleCategory}
-          handleRating={this.handleRating}
               handleAll={this.handleAll}
            />
         </div>
@@ -200,6 +200,8 @@ class AttractionsIndex extends React.Component {
       </div>
     )
   }
+
+
   render() {
     // if (this.state.attractions.length === 0) return this.noMatches(attractions);
      const attractions = this.state.attractions.map(attraction => (
