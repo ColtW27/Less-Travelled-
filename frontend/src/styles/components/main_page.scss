@@ -17,6 +17,7 @@
 
 .main-page-footer {
    display: flex;
+//    justify-content: space-evenly;
     position: fixed;
     bottom: 0px;
     // left: 5%;
@@ -25,4 +26,16 @@
     width: 100vw;
     height: 5%;
     background-color: $navbackground;
+    // margin: 2%;
+}
+.copyright {
+    padding-right: 2%;
+}
+.about-us-link {
+    color: black;
+   
+}
+.about-us-link:hover {
+    
+    font-weight: bold;;
 }

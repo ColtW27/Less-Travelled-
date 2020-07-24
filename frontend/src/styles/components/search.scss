@@ -1,0 +1,59 @@
+//** There is a search related ruleaset in attraction_index.scss, that is nested.
+.searchField {
+    height: 40px;
+    width: 400px;
+}
+.searchField:hover {
+    background-color: rgba(121, 121, 121, 0.712);
+}
+
+.categoryField {
+  height: 46px;
+  width: 150px;
+
+}
+.categoryField:hover {
+  background-color: rgba(121, 121, 121, 0.712);
+}
+
+.ratingField {
+  height: 46px;
+  width: 150px;
+}
+.ratingField:hover{
+  background-color: rgba(121, 121, 121, 0.712);
+}
+.searchButton {
+  height: 46px;
+  width: 150px;
+}
+.searchButton:hover{
+  background-color: rgba(121, 121, 121, 0.712);
+}
+.attraction-search-form input , select{
+  margin: 7px;
+  border-radius: 10px;
+  box-shadow: 1px 1.5px;
+  background-color: rgba(146, 146, 146, 0.726);
+  font-size: 20px;
+  color: rgb(7, 6, 6);
+  font-weight: bold;
+  font-family: $pacificoc;;
+  
+    
+}
+.attraction-search-form input::placeholder {
+  color: rgb(7, 6, 6);
+  font-weight: bold;
+  font-family: $pacificoc;;
+}
+
+.search-result-count {
+  display: flex;
+  position: fixed;
+  top: 150px;
+  left: 37px;
+  background-color: rgba(146, 146, 146, 0.726);;
+  padding: 5px;
+  border-radius: 8px;
+}

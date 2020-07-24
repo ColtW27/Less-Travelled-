@@ -26,10 +26,13 @@
     font-size: 20px;
     font-weight: bold;
   }
-
+  
   a {
     text-decoration: none;
     color: $yellowfont;
+  }
+  a:hover {
+    color: black;
   }
 }
 
@@ -41,6 +44,9 @@
   font-family: $pacificoc;
   font-size: 16px;
   font-weight: bold;
+}
+.login-signup button:hover {
+  background-color: rgba(114, 104, 104, 0.815);
 }
 .main-page-logout{
    background-color: rgba(128, 128, 128, 0.5);

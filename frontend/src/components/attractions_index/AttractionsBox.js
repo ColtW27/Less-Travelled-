@@ -14,27 +14,16 @@ import {Link} from 'react-router-dom';
 //   }; 
 
 class AttractionBox extends React.Component {
-  
-    // constructor(props){
-    //   super(props)
-    // }
 
-
-  // componentDidMount(){
-  //   this.props.fetchAttractions();
-  // }
-
-  componentWillReceiveProps(newState){
-    this.setState({attractions: newState.attractions});
-  }
 
   render () {
     return (
 
       <Link to={`/attractions/${this.props.attraction._id}`}>
-        <div className="attractionContainer"> 
+
+        <div className="attraction-box grow"> 
+
           <div className="attractionContent">
-            {/* <h1>{this.props.attraction._id}</h1> */}
 
             <h2 className="attractionTitle"> {this.props.attraction.name}</h2>
             <h2 className="attractionRating">Rating: {this.props.attraction.rating}</h2>

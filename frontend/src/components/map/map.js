@@ -53,7 +53,9 @@ class TravelMap extends React.Component {
           
           }
           <Marker onClick={this.onMapClick}
-                name={'Current location'} />
+                name={'Current location'} 
+                
+                />
         </Map>
     )
   }
