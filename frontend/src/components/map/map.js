@@ -59,10 +59,6 @@ class TravelMap extends React.Component {
   }
 }
 
-// export default GoogleApiWrapper({
-//   apiKey: (`${process.env.REACT_APP_GOOGLEMAP_API_KEY}`)
-// })(TravelMap);
-
 export default GoogleApiWrapper({
     apiKey: (`${gKey}`)
   })(TravelMap);
