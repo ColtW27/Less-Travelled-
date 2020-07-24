@@ -20,15 +20,18 @@ class AttractionBox extends React.Component {
     return (
 
       <Link to={`/attractions/${this.props.attraction._id}`}>
+
         <div className="attraction-box grow"> 
+
           <div className="attractionContent">
 
             <h2 className="attractionTitle"> {this.props.attraction.name}</h2>
+            <h2 className="attractionRating">Rating: {this.props.attraction.rating}</h2>
             <br/>
             <h2 className="attractionAddress"> {this.props.attraction.address}</h2>
             {/* <h2>Location_data: {this.props.attraction.location_data}</h2> */}
             <h5 className="attractionDescription">{this.props.attraction.description || "No description available"}</h5>
-            <h2 className="attractionRating">Rating: {this.props.attraction.rating}</h2>
+            
           </div>
 
 
