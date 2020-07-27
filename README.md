@@ -46,3 +46,13 @@ https://less-travelled.herokuapp.com/
 
 ### Future direction
 * Drawing routes from attraction to attraction for trip planning, including time and distance calculation.
+
+### About the Developers
+#### Colton Wilmouth - Team Lead
+  * Github - https://github.com/ColtW27
+#### Rahul Jain - Flex
+  * Github - https://github.com/rahulj93
+#### Jon Romero - Backend Lead
+  * Github - https://github.com/duskstone
+#### Carl Godlewski - Frontend Lead
+  * Github - https://github.com/CGodl
