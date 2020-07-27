@@ -14,7 +14,8 @@ https://less-travelled.herokuapp.com/
 * Leave reviews and rating on Attractions.
 * Filter for Attractions by name, category, and rating.
 
-
+### Planning
+ See our Wireframes here - https://github.com/ColtW27/Less-Travelled-/wiki/Wire-Frames
 ### Technologies
 #### Less Travelled was built using primarily Javascript and its Libraries.
 
