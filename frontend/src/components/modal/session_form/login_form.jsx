@@ -7,7 +7,7 @@ class LoginForm extends React.Component {
         this.state = this.props.user;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
-    }
+    } 
     handleChange(field) { //this keeps the state updated for every keystroke
         return (e) => (
             this.setState(
@@ -74,7 +74,7 @@ class LoginForm extends React.Component {
                 className="login-form-input"
               />
             </label>
-            <br/>
+            <br />
             <label>
               <input
                 type="password"
@@ -84,10 +84,9 @@ class LoginForm extends React.Component {
                 className="login-form-input"
               />
             </label>
-            <br/>
+            <br />
             <div className="login-bottom-form-div">
               <button
-                className="login-form-main-login-button"
                 type="submit"
                 value="login"
               >
@@ -96,7 +95,6 @@ class LoginForm extends React.Component {
             </div>
             <div className="login-bottom-form-div">
               <button
-                className="login-form-main-login-button"
                 onClick={this.demoLogin}
                 type="submit"
                 value="login"
@@ -104,21 +102,13 @@ class LoginForm extends React.Component {
                 Demo Log in
               </button>
             </div>
-          
 
             <div className="login-bottom-form-div">
-              <button
-                className="login-form-main-login-button"
-                type="submit"
-                value="signup"
-              >
                 <label for="login form button">
                   {this.props.otherForm}
                   {/* Link to other switch to signup form */}
                 </label>
-              </button>
             </div>
-            
           </form>
         </div>
       );

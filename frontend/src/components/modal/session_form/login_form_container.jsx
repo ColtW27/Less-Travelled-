@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => ({
   },
   errors: Object.values(state.errors.session),
   formType: "login"
-});
+}); 
 
 const mapDispatchToProps = dispatch => {
   return {
