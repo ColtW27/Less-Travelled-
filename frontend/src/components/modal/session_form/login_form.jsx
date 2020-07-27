@@ -104,10 +104,8 @@ class LoginForm extends React.Component {
             </div>
 
             <div className="login-bottom-form-div">
-                <label for="login form button">
                   {this.props.otherForm}
                   {/* Link to other switch to signup form */}
-                </label>
             </div>
           </form>
         </div>
