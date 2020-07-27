@@ -25,15 +25,15 @@ class AboutUs extends React.Component {
 
                 <div className="about-us-team-item grow">
             <div>
-                <img src="../../../Colt_profile.JPG" alt="Rahul Profile"/>
+                <img src="../../../rahul_jain.jpeg" alt="Rahul Profile"/>
                   <h2>Rahul Jain</h2>
                   <h3>Flex</h3>
 
                  <ul>
                 <li><a href="https://www.linkedin.com/in/rahul-jain-ny/"target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href=""target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-                <li><a href=""target="_blank" rel="noopener noreferrer">Github</a></li>
-                <li><a href=""target="_blank" rel="noopener noreferrer">Angellist</a></li>
+                <li><a href="https://rahulj93.github.io/"target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                <li><a href="https://github.com/rahulj93"target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://angel.co/u/rahul-jain-ny"target="_blank" rel="noopener noreferrer">Angellist</a></li>
 
                   </ul>
             </div>
