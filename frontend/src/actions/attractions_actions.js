@@ -15,7 +15,6 @@ export const receiveAttraction = ( attraction ) => ({
   attraction
 });
 
-
 export const receiveNewAttraction = attraction => ({
   type: RECEIVE_NEW_ATTRACTION,
   attraction
@@ -54,5 +53,4 @@ export const createAttraction = attraction => dispatch => (
   APIUtil.createAttraction(attraction)
     .then(attraction => (dispatch(receiveNewAttraction(attraction))
   ))
-
 );
