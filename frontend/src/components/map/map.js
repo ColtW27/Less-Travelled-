@@ -4,14 +4,6 @@ import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 // console.log(gKey)
 
-
-const mapStyles = {
-  width: '650px',
-  height: '600px'
-};
-
-
-
 function statusChecker(input) {
         return  <Marker
             title={input.name}
@@ -19,10 +11,6 @@ function statusChecker(input) {
             position={{ lat: input.latitude, lng: input.longitude }}
           />
 }
-
-
-
-
 
 class TravelMap extends React.Component {
 
@@ -33,8 +21,6 @@ class TravelMap extends React.Component {
         <Map google={this.props.google}
 
           zoom={9}
-          // style={mapStyles}
-          // initialCenter={{lat: 40.7128, lng: -73.935242}}
           initialCenter={!!attraction ? {lat: attraction[0].latitude, lng: attraction[0].longitude} : {lat: 40.7128, lng: -73.935242}}
           >
           {
