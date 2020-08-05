@@ -26,7 +26,6 @@ class SignupForm extends React.Component {
         const user = Object.assign({}, this.state)
       this.props.processForm(user).then(res => {
         if (res.type !== "RECEIVE_SESSION_ERRORS") { //checks if there are session errors returned in the promise from processing the login form
-      
           this.props.dispatch(this.props.closeModal())//takes both dispatch and closemodal in as props
         }; //signs in a user upon successful signup
         if (res.type === "RECEIVE_USER_SIGN_IN"){
