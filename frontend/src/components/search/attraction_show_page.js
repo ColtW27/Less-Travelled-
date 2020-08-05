@@ -18,29 +18,30 @@ class AttractionShow extends React.Component {
     }
   
     return (
-      <div className='attractions-show-container'>
-  
-         <div className="attractionShow">
-
-          <ul className='attraction-show-container'>
-           <li>
-             <img 
-              className="show-page-img" 
-              src={attraction.imageUrl}
-              alt="Attraction">
-            </img>
-           </li>
-           <li className='attraction-title'>{attraction.name}</li>
-           <li className='attraction-description'>{attraction.description}</li>
-           <br></br>
-           <li className='attraction-description'>{attraction.address}</li>
-           <li className='attraction-description'>Rating: {attraction.rating}</li>
-           </ul>
-         </div>
-           <map className="attraction-map">
-             <TravelMap attraction={[attraction]}/>
-           </map>
-       </div>
+      <div className="attractions-show-container">
+        <div className="attractionShow">
+          <ul className="attraction-show-container">
+            <li>
+              <img
+                className="show-page-img"
+                src={attraction.imageUrl}
+                alt="Attraction"
+              ></img>
+            </li>
+            {/* <br></br> */}
+            <li className="attraction-title">{attraction.name}</li>
+            <li className="attraction-description">
+              Rating: {attraction.rating}
+            </li>
+            <li className="attraction-description">Location: {attraction.address}</li>
+          <li className="attraction-description">{attraction.description}</li>
+          </ul>
+          <br></br>
+        </div>
+        <map className="attraction-map">
+          <TravelMap attraction={[attraction]} />
+        </map>
+      </div>
     );
   }
 }
