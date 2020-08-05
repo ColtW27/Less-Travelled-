@@ -19,16 +19,10 @@ class AttractionShow extends React.Component {
   
     return (
       <div className='attractions-show-container'>
-      <br />
-
+  
          <div className="attractionShow">
 
           <ul className='attraction-show-container'>
-           <li className='attraction-title'>{attraction.name}</li>
-           <li className='attraction-description'>{attraction.description}</li>
-           <br></br>
-           <li className='attraction-description'>{attraction.address}</li>
-           <li className='attraction-description'>Rating: {attraction.rating}</li>
            <li>
              <img 
               className="show-page-img" 
@@ -36,6 +30,11 @@ class AttractionShow extends React.Component {
               alt="Attraction">
             </img>
            </li>
+           <li className='attraction-title'>{attraction.name}</li>
+           <li className='attraction-description'>{attraction.description}</li>
+           <br></br>
+           <li className='attraction-description'>{attraction.address}</li>
+           <li className='attraction-description'>Rating: {attraction.rating}</li>
            </ul>
          </div>
            <map className="attraction-map">
