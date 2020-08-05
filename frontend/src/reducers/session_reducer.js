@@ -13,15 +13,12 @@ export default function(state = initialState, action) {
         user: undefined
       };
     case RECEIVE_CURRENT_USER:
-      // debugger
       return {
         isAuthenticated: (!!action.currentUser),
         user: action.currentUser
       };
     case RECEIVE_USER_SIGN_IN:
-      // ...state,
-      // is
-      break;
+      return state;
     default:
       return state;
   }
