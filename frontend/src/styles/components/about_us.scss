@@ -52,15 +52,14 @@
     display: flex;
     flex-direction: column;
    align-items: center;
-//    justify-content: space-evenly;
-
+   justify-content: space-evenly;
+    // align-items: space-between;
+    height: 30%;
 }
 .about-us-team-item ul li{
-    font-size: x-large;
-    padding: 2%;
-    margin-top: 5%;
-    
+    font-size: 140%;
 }
+
 .about-us-team-item ul a{
     font-family: $pacificoc;
     text-decoration: none;
