@@ -7,7 +7,7 @@ class AboutUs extends React.Component {
             <h1>Meet the Team</h1> 
       </div>
         <div className= "about-us-container">
-          <div className="about-us-team-item grow">
+          <div className="about-us-team-item colt grow">
             <div>
                 <img src="../../../Colt_profile.JPG" alt="Colt Profile "/>
                   <h2>Colton Wilmouth</h2>
@@ -23,7 +23,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-                <div className="about-us-team-item grow">
+                <div className="about-us-team-item rahul grow">
             <div>
                 <img src="../../../rahul_jain.jpeg" alt="Rahul Profile"/>
                   <h2>Rahul Jain</h2>
@@ -39,7 +39,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-                <div className="about-us-team-item grow">
+                <div className="about-us-team-item carl grow">
             <div>
                 <img src="../../../Carl_profile.JPG" alt="Carl Profile"/>
                   <h2>Carl Godlewski</h2>
@@ -55,7 +55,7 @@ class AboutUs extends React.Component {
             </div>
           </div>
 
-                <div className="about-us-team-item grow">
+                <div className="about-us-team-item jon grow">
             <div>
                 <img src="../../../Jon_profile.jpeg" alt="Jon Profile"/>
                   <h2>Jon Romero</h2>
