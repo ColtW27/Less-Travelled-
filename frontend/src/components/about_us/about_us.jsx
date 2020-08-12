@@ -57,7 +57,7 @@ class AboutUs extends React.Component {
 
                 <div className="about-us-team-item grow">
             <div>
-                <img src="../../../Jon_profile.JPG" alt="Jon Profile"/>
+                <img src="../../../Jon_profile.jpeg" alt="Jon Profile"/>
                   <h2>Jon Romero</h2>
                   <h3>Back End Lead</h3>
                   <ul>
