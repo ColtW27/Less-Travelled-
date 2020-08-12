@@ -41,7 +41,7 @@ class AboutUs extends React.Component {
 
                 <div className="about-us-team-item grow">
             <div>
-                <img src="../../../Colt_profile.JPG" alt="Carl Profile"/>
+                <img src="../../../Carl_profile.JPG" alt="Carl Profile"/>
                   <h2>Carl Godlewski</h2>
                   <h3>Front End Lead</h3>
 
@@ -57,7 +57,7 @@ class AboutUs extends React.Component {
 
                 <div className="about-us-team-item grow">
             <div>
-                <img src="../../../Colt_profile.JPG" alt="Jon Profile"/>
+                <img src="../../../Jon_profile.JPG" alt="Jon Profile"/>
                   <h2>Jon Romero</h2>
                   <h3>Back End Lead</h3>
                   <ul>
