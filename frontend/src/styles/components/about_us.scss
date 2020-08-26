@@ -3,8 +3,6 @@
    background-image: url(https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg);
 
 }
-
-
 .title-container {
     position: fixed;
     top: 12vh;
@@ -20,9 +18,7 @@
     justify-content: space-evenly;
    padding-top: 18vh;
    padding-left: 5vh;
-
 }
-
 .about-us-team-item {
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +34,6 @@
     width: 20vw;
     border-radius: 2% 2% 0% 0%;;
 }
-
 .about-us-team-item h2,h3 {
     display: flex;
     justify-content: center;
@@ -47,19 +42,16 @@
     font-size: 30px;
     padding: 3%;
 }
-
 .about-us-team-item ul {
     display: flex;
     flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
-    // align-items: space-between;
     height: 30%;
 }
 .about-us-team-item ul li{
     font-size: 140%;
 }
-
 .about-us-team-item ul a{
     font-family: $pacificoc;
     text-decoration: none;
@@ -69,5 +61,4 @@
 }
 .about-us-team-item ul a:hover{
     color: black;
-    // color: $yellowfont;
 }

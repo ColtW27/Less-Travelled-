@@ -22,9 +22,7 @@ class AttractionsIndex extends React.Component {
   }
 
   componentDidMount() {
-
-    this.props.fetchAttractions();
-      
+    this.props.fetchAttractions();  
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -121,8 +119,6 @@ class AttractionsIndex extends React.Component {
     // }
   }
 
-  
-  
   handleQuery(query){
     return (e) => {
       e.preventDefault();
@@ -150,7 +146,7 @@ class AttractionsIndex extends React.Component {
         searchTerm: this.state.searchTerm, 
         category: this.state.category, 
         rating: query
-        })
+      })
     }
     // console.log(query);
   }
@@ -171,26 +167,21 @@ class AttractionsIndex extends React.Component {
   //   this.handleCategory(category); 
   //   this.handleRating(rating);  
   // }
-
-
   }
 
   noMatches(attractions){
     return(
-
-     
       <div className='attractions-container'>
         <div>
           <SearchBar 
               handleAll={this.handleAll}
            />
         </div>
-
-        <br />
+        <br/>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
-      </div>
+        </div>
 
         <div className='attractions-main'>
           <br />
@@ -202,9 +193,7 @@ class AttractionsIndex extends React.Component {
     )
   }
 
-
   render() {
-    // if (this.state.attractions.length === 0) return this.noMatches(attractions);
      const attractions = this.state.attractions.map(attraction => (
         <AttractionsBox
           key={attraction._id} 
@@ -220,7 +209,6 @@ class AttractionsIndex extends React.Component {
           handleQuery={this.handleQuery}
             handleRating={this.handleRating}
             handleAll={this.handleAll}
-
           />
         </div>
 
