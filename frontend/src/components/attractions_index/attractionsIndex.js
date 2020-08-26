@@ -22,9 +22,7 @@ class AttractionsIndex extends React.Component {
   }
 
   componentDidMount() {
-
-    this.props.fetchAttractions();
-      
+    this.props.fetchAttractions();  
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -177,20 +175,17 @@ class AttractionsIndex extends React.Component {
 
   noMatches(attractions){
     return(
-
-     
       <div className='attractions-container'>
         <div>
           <SearchBar 
               handleAll={this.handleAll}
            />
         </div>
-
-        <br />
+        <br/>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
-      </div>
+        </div>
 
         <div className='attractions-main'>
           <br />
@@ -201,7 +196,6 @@ class AttractionsIndex extends React.Component {
       </div>
     )
   }
-
 
   render() {
     // if (this.state.attractions.length === 0) return this.noMatches(attractions);
@@ -220,7 +214,6 @@ class AttractionsIndex extends React.Component {
           handleQuery={this.handleQuery}
             handleRating={this.handleRating}
             handleAll={this.handleAll}
-
           />
         </div>
 
