@@ -206,26 +206,20 @@ class AttractionsIndex extends React.Component {
       <div className='attractions-container'>
         <div>
           <SearchBar 
-          handleQuery={this.handleQuery}
+            handleQuery={this.handleQuery}
             handleRating={this.handleRating}
             handleAll={this.handleAll}
           />
         </div>
-
         <br/>
         <div className="search-result-count">
           {attractions.length} search result(s)
         </div>
-
         <div className="attractionsListings">
-        
-            {attractions}
+          {attractions}
         </div>
-         
         <div className='attractions-main'>
           <br/> 
-          <div className="attractionsIndex"> 
-          </div>
           <map className="attraction-map">
             <TravelMap attractions={attractions} /></map>
         </div>
