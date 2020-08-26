@@ -19,19 +19,18 @@ class NavBar extends React.Component {
   
       if (this.props.loggedIn) { 
         return (
-            <div className="welcome-user">                
-              <h2 className="header-name">Hi {currentUser.handle}!</h2>
-
-                <button onClick={this.logoutUser}
-                className="main-page-logout grow"
-                >Logout</button>
-            </div>
+          <div className="welcome-user">                
+            <h2 className="header-name">Hi {currentUser.handle}!</h2>
+              <button onClick={this.logoutUser}
+              className="main-page-logout grow"
+              >Logout</button>
+          </div>
         );
       } else {
         return (
           <nav className="login-signup grow">
             <button onClick={() => openModal('login')}>Login</button>
-      &nbsp; &nbsp;
+            &nbsp; &nbsp;
             <button onClick={() => openModal('signup')}>Signup</button>
           </nav>
         );
