@@ -120,7 +120,7 @@ class AttractionForm extends React.Component {
                 onChange={this.update('imageUrl')}
                 value={imageUrl}
                 className="attraction-photo-file"
-                placeholder="Browse"
+                placeholder="Image URL"
               />
 
               {/* <div className="button-holder">
