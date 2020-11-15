@@ -1,7 +1,7 @@
 .nav-container {
   position: fixed;
   width: 100vw;
-  font-family: $pacificoc;
+  // font-family: $pacificoc;
   z-index: 5;
   color: $yellowfont;
   
@@ -19,6 +19,7 @@
   ul li:first-child {
     font-size: 30px;
     font-weight: bold;
+    font-family: $pacificoc;
 
   }
 
@@ -29,7 +30,7 @@
   
   a {
     text-decoration: none;
-    color: $yellowfont;
+    color: black;
   }
   a:hover {
     color: black;
