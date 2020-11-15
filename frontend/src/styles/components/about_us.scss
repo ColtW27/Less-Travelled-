@@ -1,5 +1,6 @@
 .about-us-background-container {
     height: 100vh;
+    min-width: 100vw;
     width: 100vw;
     background-image: url('../images/lt-aboutUs-background.jpg');
     background-size: cover;
@@ -9,6 +10,11 @@
 
 .about-us-container {
     display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    bottom: 45px;
+    left: 200px;
+
     // display: flex;
     // flex-direction: row;
     // flex-wrap: wrap;
@@ -23,7 +29,7 @@
     max-width: 255px;
     background: white;
     display: inline-block;
-    margin: 20px 50px 15px;
+    // margin: 20px 50px 15px;
     padding: 15px 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -69,14 +75,9 @@
     width: 18vw;
     max-width: 248px;
     min-width: 240px;
+    min-height: 174px;
     border-radius: 2% 2% 0% 0%;;
 }
-
-
-
-
-
-
 
 
 .about-us-polaroid h2 {
