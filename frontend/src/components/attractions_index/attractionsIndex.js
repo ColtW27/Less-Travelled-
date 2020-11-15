@@ -2,7 +2,8 @@ import React from "react";
 import {withRouter} from 'react-router-dom';
 import TravelMap from '../map/map';
 import AttractionsBox from './AttractionsBox'; 
-import SearchBar from '../search/search'
+import SearchBar from '../search/search';
+import { Link } from 'react-router-dom';
 
 class AttractionsIndex extends React.Component {
   constructor(props) {
@@ -212,6 +213,9 @@ class AttractionsIndex extends React.Component {
           />
         </div>
         <br/>
+          <div className="Blue">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
         <div className="search-result-count">
           {attractions.length} search result(s)
         </div>

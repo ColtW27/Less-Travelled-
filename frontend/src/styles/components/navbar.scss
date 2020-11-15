@@ -34,20 +34,17 @@
     color: black;
   }
 }
-
+.Blue{
+  background-color: aqua;
+}
 .login-signup button {
-  // background-color: $yellowfont;
-  background-color: none;
-  // padding: 10px;
-  // border-radius: 30%;
+  background: none;
   font-family: DejaVu Sans Mono, monospace;
   border: none;
   font-size: 16px;
-  // font-weight: bold;
+  font-weight: bold;
 }
-.login-signup button:hover {
-  background-color: rgba(114, 104, 104, 0.815);
-}
+
 .login-signup button:focus {
   outline: none;
 }

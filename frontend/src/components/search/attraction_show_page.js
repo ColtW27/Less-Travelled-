@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import TravelMap from '../map/map';
   
@@ -19,7 +19,7 @@ class AttractionShow extends React.Component {
   
     return (
       <div className="attractions-show-container">
-        <div className="attractionShow">
+        <div className="attractionShow"> 
           <ul className="attraction-show-container">
             <li>
               <img

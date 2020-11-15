@@ -43,7 +43,7 @@ class NavBar extends React.Component {
         <ul>
           <li className='grow'><Link to="/">LessTravelled</Link></li>
           <li className='grow'><Link to="/attractions">Attractions</Link></li>
-          <li className='grow'><Link to="/attractionsform">Add an attraction</Link></li>
+          {/* <li className='grow'><Link to="/attractionsform">Add an attraction</Link></li> */}
           <li className='grow'><Link to="/aboutus" className="about-us-link">Meet the Team</Link></li>
           {/* <li><Link to="/talltales">Tall Tales</Link></li> */}
           {/* <li>States</li> */}
