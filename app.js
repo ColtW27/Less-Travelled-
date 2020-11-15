@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
     password: "123456"
   })
   user.save();
-  res.send("Hello World again")
+  res.send("MongoDB is working")
 });
 
 app.use(passport.initialize());

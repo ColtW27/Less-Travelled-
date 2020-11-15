@@ -1,64 +1,128 @@
-.outer-about-container {
-   height: 100vh; 
-   background-image: url(https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg);
+.about-us-background-container {
+    height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    background-image: url('../images/lt-aboutUs-background.jpg');
+    background-size: cover;
+    overflow: hidden;
+};
 
-}
-.title-container {
-    position: fixed;
-    top: 12vh;
-    left: 45vw;
-}
-.title-container h1 {
-    font-family: $pacificoc;
-    font-size: 35px;
-    color: $yellowfont;
-}
+
 .about-us-container {
-    display: flex;
-    justify-content: space-evenly;
-   padding-top: 18vh;
-   padding-left: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    bottom: 45px;
+    left: 200px;
+
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-self: flex-end;
+//    padding-top: 18vh;
+//    padding-left: 5vh;
 }
-.about-us-team-item {
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    width: 20vw;
-    height: 70vh;
-    // background-color: transparent;
-    background-color: rgba(250, 123, 4, 0.514);
-    border-radius: 2%;
+
+.about-us-polaroid {
+    // background: #dbe1e2;
+    max-width: 255px;
+    background: white;
+    display: inline-block;
+    // margin: 20px 50px 15px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+
+    font-family: $handwriting;
 }
-.about-us-team-item img{
-     height: 30vh;
-    width: 20vw;
+
+.about-us-polaroid:nth-child(1) {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(2deg);
+  }
+
+
+
+.about-us-polaroid:nth-child(2) {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(2deg);
+  }
+
+  .about-us-polaroid:nth-child(3) {
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(2deg);
+  }
+
+  .about-us-polaroid:nth-child(4) {
+    -webkit-transform: rotate(-17deg);
+    -moz-transform: rotate(2deg);
+  }
+
+
+
+
+.about-us-polaroid img{
+    height: 27vh;
+    width: 18vw;
+    max-width: 248px;
+    min-width: 240px;
+    min-height: 174px;
     border-radius: 2% 2% 0% 0%;;
 }
-.about-us-team-item h2,h3 {
+
+
+.about-us-polaroid h2 {
     display: flex;
     justify-content: center;
-    font-family: $pacificoc;
-    color: $yellowfont;
-    font-size: 30px;
-    padding: 3%;
+    
+    font-size: 40px;
 }
-.about-us-team-item ul {
+
+.about-us-polaroid h3 {
     display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-    height: 30%;
+    justify-content: center;
+
+    font-size: 24px;
+    scroll-padding-bottom: 5%;
+
 }
+
+.polaroid-links-list {
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 50%;
+    margin: auto;
+
+}
+
+
+
 .about-us-team-item ul li{
     font-size: 140%;
 }
-.about-us-team-item ul a{
-    font-family: $pacificoc;
+
+
+.polaroid-links-list a{
+    font-size: 20px;
     text-decoration: none;
     color: black;
+
     cursor: pointer;
-    color: $yellowfont;
+   
 }
-.about-us-team-item ul a:hover{
-    color: black;
+
+.polaroid-links-list a:hover {
 }
