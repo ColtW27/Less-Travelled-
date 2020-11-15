@@ -8,16 +8,19 @@
 
 
 .about-us-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-self: flex-end;
 //    padding-top: 18vh;
 //    padding-left: 5vh;
 }
 
 .about-us-polaroid {
     // background: #dbe1e2;
+    max-width: 255px;
     background: white;
     display: inline-block;
     margin: 20px 50px 15px;
@@ -62,8 +65,10 @@
 
 
 .about-us-polaroid img{
-     height: 27vh;
+    height: 27vh;
     width: 18vw;
+    max-width: 248px;
+    min-width: 240px;
     border-radius: 2% 2% 0% 0%;;
 }
 
