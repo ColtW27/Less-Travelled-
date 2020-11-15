@@ -67,9 +67,6 @@
     -moz-transform: rotate(2deg);
   }
 
-
-
-
 .about-us-polaroid img{
     height: 27vh;
     width: 18vw;
@@ -108,21 +105,15 @@
 
 }
 
-
-
-.about-us-team-item ul li{
-    font-size: 140%;
-}
-
-
 .polaroid-links-list a{
     font-size: 20px;
     text-decoration: none;
     color: black;
-
     cursor: pointer;
-   
 }
 
 .polaroid-links-list a:hover {
-}
+    color: red;
+    text-decoration: underline;
+
+};
