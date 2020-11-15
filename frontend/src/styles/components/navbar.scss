@@ -1,7 +1,6 @@
 .nav-container {
   position: fixed;
   width: 100vw;
-  // font-family: $pacificoc;
   z-index: 5;
   color: $yellowfont;
   
@@ -13,18 +12,16 @@
     align-items: center;
     padding: 15px 100px 15px 100px;
     background-color: $navbackground;
-    // width: 100%;
   }
 
   ul li:first-child {
     font-size: 30px;
     font-weight: bold;
     font-family: $pacificoc;
-
   }
 
   ul li {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
   }
   
