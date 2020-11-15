@@ -23,6 +23,7 @@
   ul li {
     font-size: 17px;
     font-weight: bold;
+    font-family: DejaVu Sans Mono, monospace;
   }
   
   a {
@@ -34,17 +35,21 @@
   }
 }
 
-.login-signup button{
+.login-signup button {
   // background-color: $yellowfont;
-  background-color: rgba(128, 128, 128, 0.5);
-  padding: 10px;
-  border-radius: 30%;
-  font-family: $pacificoc;
+  background-color: none;
+  // padding: 10px;
+  // border-radius: 30%;
+  font-family: DejaVu Sans Mono, monospace;
+  border: none;
   font-size: 16px;
-  font-weight: bold;
+  // font-weight: bold;
 }
 .login-signup button:hover {
   background-color: rgba(114, 104, 104, 0.815);
+}
+.login-signup button:focus {
+  outline: none;
 }
 .main-page-logout{
    background-color: rgba(128, 128, 128, 0.5);
