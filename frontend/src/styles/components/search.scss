@@ -1,7 +1,7 @@
 //** There is a search related ruleaset in attraction_index.scss, that is nested.
 .searchField {
     height: 40px;
-    width: 400px;
+    width: 500px;
 }
 .searchField:hover {
     background-color: rgba(121, 121, 121, 0.712);
@@ -24,8 +24,9 @@
   background-color: rgba(121, 121, 121, 0.712);
 }
 .searchButton {
-  height: 46px;
-  width: 150px;
+  height: 36px;
+  width: 40px;
+  background: none;
 }
 .searchButton:hover{
   background-color: rgba(121, 121, 121, 0.712);

@@ -90,7 +90,7 @@ class SearchBar extends React.Component {
                     // this.handleAll(this.state.rating, this.stateattractionQuery)
                     // this.props.handleAll(this.state.attractionQuery, this.state.category, this.state.rating)
                     } 
-                  >Search  </button>
+                  >   🔍  </button> {/* Add a search icon here */}
         </form>
       </div>
     )
