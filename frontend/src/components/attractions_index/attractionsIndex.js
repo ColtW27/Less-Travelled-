@@ -80,7 +80,7 @@ class AttractionsIndex extends React.Component {
       // debugger 
         // newAttractions = newAttractions.filter(attraction => {
         newAttractions = this.state.allAttractions.filter(attraction => {
-          return (attraction.rating == this.state.rating)  
+          return (attraction.rating === this.state.rating)  
         })
     }
 
