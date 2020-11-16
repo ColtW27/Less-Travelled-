@@ -53,3 +53,24 @@
   height: 75vh;
   width: 45vw;
 }
+
+
+ 
+
+.AddAttraction {
+  left: 100px;
+  display: flex;
+  position: fixed;
+  top: 150px;
+  left: 20%;
+  font-size: 17px;
+  font-family: DejaVu Sans Mono, monospace;
+
+  a {
+    text-decoration: none;
+    color: aqua;
+  }
+  a:hover {
+    color: greenyellow;
+  }
+}

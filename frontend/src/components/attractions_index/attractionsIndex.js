@@ -179,6 +179,9 @@ class AttractionsIndex extends React.Component {
            />
         </div>
         <br/>
+        <div className="AddAttraction">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
@@ -213,12 +216,12 @@ class AttractionsIndex extends React.Component {
           />
         </div>
         <br/>
-          <div className="Blue">
-          <Link to="/attractionsform">Add an attraction</Link> 
-          </div>
         <div className="search-result-count">
           {attractions.length} search result(s)
         </div>
+          <div className="AddAttraction">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
         <div className="attractionsListings">
           {attractions}
         </div>
