@@ -2,7 +2,7 @@
   position: fixed;
   width: 100vw;
   z-index: 5;
-  color: $yellowfont;
+  // color: $yellowfont;
   
 
   ul {
@@ -11,7 +11,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 100px 15px 100px;
-    background-color: $navbackground;
+    // background-color: $navbackground;
+    // background-color: #1d2d50;
+    background-color: #322f3d;
   }
 
   ul li:first-child {
@@ -22,13 +24,15 @@
 
   ul li {
     font-size: 17px;
+    
     font-weight: bold;
     font-family: DejaVu Sans Mono, monospace;
   }
   
   a {
     text-decoration: none;
-    color: black;
+    // color: greenyellow;
+    color: whitesmoke;
   }
   a:hover {
     color: black;
