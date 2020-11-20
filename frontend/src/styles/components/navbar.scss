@@ -17,14 +17,13 @@
   }
 
   ul li:first-child {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     font-family: $pacificoc;
   }
 
   ul li {
-    font-size: 17px;
-    
+    font-size: 13px;
     font-weight: bold;
     font-family: DejaVu Sans Mono, monospace;
   }
@@ -35,7 +34,7 @@
     color: whitesmoke;
   }
   a:hover {
-    color: black;
+    color: greenyellow;
   }
 }
 
@@ -43,10 +42,13 @@
   background: none;
   font-family: DejaVu Sans Mono, monospace;
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
+  color: whitesmoke;
 }
-
+.login-signup button:hover {
+color: greenyellow;
+}
 .login-signup button:focus {
   outline: none;
 }
@@ -69,6 +71,9 @@
   display: flex;
   align-items: center;
   width: 200px;
+}
+.less-Trav-Logo img {
+  height: 60px;
 }
 // .states-dropdown {
 //   position: relative;

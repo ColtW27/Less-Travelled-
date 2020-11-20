@@ -41,7 +41,9 @@ class NavBar extends React.Component {
     return (
       <nav className='nav-container'>
         <ul>
-          <li className='grow'><Link to="/">LessTravelled</Link></li>
+          <li className='grow less-Trav-Logo'><Link to="/">LessTravelled</Link></li>
+          {/* <li className='grow less-Trav-Logo'><Link to="/"><img src={process.env.PUBLIC_URL + '/LessTravLogoTwoPinish.png'} /></Link></li> */}
+          
           <li className='grow'><Link to="/attractions">Attractions</Link></li>
           {/* <li className='grow'><Link to="/attractionsform">Add an attraction</Link></li> */}
           <li className='grow'><Link to="/aboutus" className="about-us-link">Meet the Team</Link></li>
