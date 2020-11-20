@@ -2,7 +2,8 @@ import React from "react";
 import {withRouter} from 'react-router-dom';
 import TravelMap from '../map/map';
 import AttractionsBox from './AttractionsBox'; 
-import SearchBar from '../search/search'
+import SearchBar from '../search/search';
+import { Link } from 'react-router-dom';
 
 class AttractionsIndex extends React.Component {
   constructor(props) {
@@ -79,7 +80,7 @@ class AttractionsIndex extends React.Component {
       // debugger 
         // newAttractions = newAttractions.filter(attraction => {
         newAttractions = this.state.allAttractions.filter(attraction => {
-          return (attraction.rating == this.state.rating)  
+          return (attraction.rating === this.state.rating)  
         })
     }
 
@@ -178,6 +179,9 @@ class AttractionsIndex extends React.Component {
            />
         </div>
         <br/>
+        <div className="AddAttraction">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
@@ -215,6 +219,9 @@ class AttractionsIndex extends React.Component {
         <div className="search-result-count">
           {attractions.length} search result(s)
         </div>
+          <div className="AddAttraction">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
         <div className="attractionsListings">
           {attractions}
         </div>

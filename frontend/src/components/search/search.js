@@ -73,10 +73,10 @@ class SearchBar extends React.Component {
             <option>1</option>
           </select> */}
                   &nbsp;
-                  <input 
+                  <button 
                   className="searchButton" 
                   type="submit" 
-                  value="Search" 
+                  // value="S" 
                   onClick={
                     // () => {
                     //   console.log('props: ', this.props);  
@@ -90,7 +90,7 @@ class SearchBar extends React.Component {
                     // this.handleAll(this.state.rating, this.stateattractionQuery)
                     // this.props.handleAll(this.state.attractionQuery, this.state.category, this.state.rating)
                     } 
-                  />
+                  >   🔍  </button> {/* Add a search icon here */}
         </form>
       </div>
     )
