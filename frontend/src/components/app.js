@@ -28,7 +28,7 @@ const App = () => (
       <ProtectedRoute exact path="/attractionsform" component={AttractionsForm}/>
       <ProtectedRoute exact path="/talltalesform" component={TalltalesForm}/>
     </Switch>
-    <Footer />
+      <Footer />
   </div>
 );
 
