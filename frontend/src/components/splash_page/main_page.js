@@ -16,7 +16,7 @@ class MainPage extends React.Component {
         <div className="main-page-description">
           LessTravelled is an app for those of us that love to get out and see the world in all of its nitty-gritty detail. They say not to sweat the small things, because life is comprised of small things. We might as well stop to enjoy them as we pass through.
         </div>
-        <footer className="main-page-footer">
+        {/* <footer className="main-page-footer">
           <div className="copyright">
             Copyright &copy; 2020 LessTravelled
           Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
@@ -26,7 +26,7 @@ class MainPage extends React.Component {
           className="about-us-link"
           to="/aboutus"
           >Meet the Team</Link>
-        </footer>
+        </footer> */}
       </div>
     );
   }
