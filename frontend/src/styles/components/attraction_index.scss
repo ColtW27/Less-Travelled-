@@ -1,48 +1,45 @@
 .attractions-container {
   display: grid;
-  // background-attachment: fixed;
-  // width: 100vw;
-  // height: 100vh; 
-  // min-height: 100vh; 
-  // background-image: url(https://www.mensjournal.com/wp-content/uploads/2019/12/Desert-Road-Trip-6-dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
-
+  gap: 5px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+      "search  map"
+      "searchResults map"
+      "attractions map";
 
   .searchBar {
-    // padding-top: 10vh;
-    background-color: red;
+    grid-area: search;
+    padding-top: 5vh;
 
-    z-index: 2;
+
   }
 }
 
-.attractions-main {
-  
+.attraction-map {
+  height: 100vh;
+  grid-area: map;
 
-
-
-
-
-
-  map {
-    position: fixed;
-    top: 190px;
-    left: 750px;
-   
-  }
+  // position: fixed;
+  // // top: 1vh;
+  // right: 0;
+  // bottom: 0;
+  // // left: 50vw;
+  // height: 100vh;
+  // width: 55vw;
 }
 
 
 
-
-.attractionsListings {
-  left: 20px;
-  margin-top: 175px;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column; 
-  width: 100%;
+.attraction-listings {
+  grid-area: attractions;
+  // left: 20px;
+  // margin-top: 175px;
+  // display: flex;
+  // position: relative;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+  // flex-direction: column; 
+  // width: 100%;
 
   div {
     margin-left: 25px;
@@ -50,7 +47,8 @@
     height: 300px; 
     width: 650px;
     border-radius: 10px;
-    background-color: oldlace;
+    // background-color: gray;
+    background-color: #59405c;
   }
 
 
@@ -102,6 +100,7 @@
     height: 260px;
     width: 280px;
     border-radius: 10px;
+    border: 2px solid black;
   }
 
   .attractionTitle{
@@ -139,7 +138,6 @@
     
     padding-top: 8px;
     float: left;
-    // width: 50%;
     width: 225px;
     height: 240px;
     position: absolute;
@@ -180,3 +178,19 @@
   width:45%
 }
 
+.AddAttraction {
+  display: flex;
+  position: fixed;
+  top: 150px;
+  left: 32%;
+  font-size: 17px;
+  font-family: DejaVu Sans Mono, monospace;
+
+  a {
+    text-decoration: none;
+    color: aqua;
+  }
+  a:hover {
+    color: greenyellow;
+  }
+}

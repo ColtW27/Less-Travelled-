@@ -2,7 +2,8 @@ import React from "react";
 import {withRouter} from 'react-router-dom';
 import TravelMap from '../map/map';
 import AttractionsBox from './AttractionsBox'; 
-import SearchBar from '../search/search'
+import SearchBar from '../search/search';
+import { Link } from 'react-router-dom';
 
 class AttractionsIndex extends React.Component {
   constructor(props) {
@@ -79,7 +80,7 @@ class AttractionsIndex extends React.Component {
       // debugger 
         // newAttractions = newAttractions.filter(attraction => {
         newAttractions = this.state.allAttractions.filter(attraction => {
-          return (attraction.rating == this.state.rating)  
+          return (attraction.rating === this.state.rating)  
         })
     }
 
@@ -178,6 +179,9 @@ class AttractionsIndex extends React.Component {
            />
         </div>
         <br/>
+        <div className="AddAttraction">
+          <Link to="/attractionsform">Add an attraction</Link> 
+          </div>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
@@ -187,7 +191,7 @@ class AttractionsIndex extends React.Component {
           <br />
           <div className="attractionsIndex">
           </div>
-          <map><TravelMap attractions={attractions} /></map>
+          <div><TravelMap attractions={attractions} /></div>
         </div>
       </div>
     )
@@ -207,7 +211,7 @@ class AttractionsIndex extends React.Component {
 
     return (
       <div className='attractions-container'>
-        <div className='attractions-main'>
+        {/* <div className='attractions-main'> */}
           <SearchBar 
             handleQuery={this.handleQuery}
             handleRating={this.handleRating}
@@ -218,7 +222,7 @@ class AttractionsIndex extends React.Component {
             {attractions.length} search result(s)
           </div>
 
-          <div className="attractionsListings">
+          <div className="attraction-listings">
             {attractions}
           </div>
         
@@ -226,7 +230,7 @@ class AttractionsIndex extends React.Component {
             <TravelMap attractions={attractions} />
           </map>
           
-        </div>
+  
       </div>
 
     );

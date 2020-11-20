@@ -19,7 +19,6 @@ class TravelMap extends React.Component {
     
     return (
         <Map google={this.props.google}
-
           zoom={9}
           initialCenter={!!attraction ? {lat: attraction[0].latitude, lng: attraction[0].longitude} : {lat: 40.7128, lng: -73.935242}}
           >
@@ -37,8 +36,7 @@ class TravelMap extends React.Component {
           
           }
           <Marker onClick={this.onMapClick}
-                name={'Current location'} 
-                
+                name={'Current location'}           
                 />
         </Map>
     )

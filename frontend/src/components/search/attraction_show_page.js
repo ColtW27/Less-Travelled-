@@ -19,7 +19,7 @@ class AttractionShow extends React.Component {
   
     return (
       <div className="attractions-show-container">
-        <div className="attractionShow">
+        <div className="attractionShow"> 
           <ul className="attraction-show-container">
             <li>
               <img
