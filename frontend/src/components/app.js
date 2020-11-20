@@ -12,6 +12,7 @@ import TalltalesShowContainer from './talltales_index/talltales_container';
 import AttractionsForm from './attraction_form/attraction_form_container';
 import TalltalesForm from './talltales_form/talltales_form_container';
 import AboutUs from "./about_us/about_us";
+import Footer from "../components/footer/footer";
 const App = () => (
   <div>
       <NavBarContainer />
@@ -27,6 +28,7 @@ const App = () => (
       <ProtectedRoute exact path="/attractionsform" component={AttractionsForm}/>
       <ProtectedRoute exact path="/talltalesform" component={TalltalesForm}/>
     </Switch>
+    <Footer />
   </div>
 );
 
