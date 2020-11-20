@@ -202,28 +202,33 @@ class AttractionsIndex extends React.Component {
         />
       ))
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
+
+
+
     return (
       <div className='attractions-container'>
-        <div>
+        <div className='attractions-main'>
           <SearchBar 
             handleQuery={this.handleQuery}
             handleRating={this.handleRating}
             handleAll={this.handleAll}
           />
-        </div>
-        <br/>
-        <div className="search-result-count">
-          {attractions.length} search result(s)
-        </div>
-        <div className="attractionsListings">
-          {attractions}
-        </div>
-        <div className='attractions-main'>
-          <br/> 
+
+          <div className="search-result-count">
+            {attractions.length} search result(s)
+          </div>
+
+          <div className="attractionsListings">
+            {attractions}
+          </div>
+        
           <map className="attraction-map">
-            <TravelMap attractions={attractions} /></map>
+            <TravelMap attractions={attractions} />
+          </map>
+          
         </div>
       </div>
+
     );
   }
 } 
