@@ -21,11 +21,15 @@
   font-family: DejaVu Sans Mono, monospace;
 
   a {
-    color: ghostwhite;    
+    color: ghostwhite; 
+    text-decoration: none;   
   }
-  a:hover{
+  a:hover {
     font-weight: bold;;
     color: greenyellow;
+  }
+  a:visited {
+    color: hotpink;
   }
   ul {
     display: flex;

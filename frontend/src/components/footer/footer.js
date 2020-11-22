@@ -7,17 +7,13 @@ class Footer extends React.Component{
     return(
       <footer className="main-page-footer">
         <div>
-          <img className="footer-logo"src={process.env.PUBLIC_URL + '/LessTravLogoTwoPinish.png'} />
+          <img src={process.env.PUBLIC_URL + '/LessTravLogoTwoPinish.png'} />
         </div>
 
         <div className="copyright-container">
-          <ul className="team-list">
+          <ul>
             <li>
-              <Link
-                className="about-us-link"
-                to="/aboutus"
-                >Meet the Team ➡
-              </Link>
+              <Link to="/aboutus">Meet the Team ➡</Link>
             </li>
             <li><a href="https://cgodl.github.io/" target="_blank" rel="noopener noreferrer">Carl Godlewski</a></li>
             <li><a href="https://rahulj93.github.io/"target="_blank" rel="noopener noreferrer">Rahul Jain</a></li>
