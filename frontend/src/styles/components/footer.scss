@@ -2,21 +2,27 @@
 .main-page-footer {
   display: flex;
   //  justify-content: flex-start;
+  // flex-direction: column;
   padding-left: 5%; 
   padding-top: 1%; 
   height: 100px;
   background-color: #322f3d;
 }
 .copyright {
+  // display: flex;
+  // flex-direction: column;
   padding-right: 2%;
 }
 .about-us-section {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  width: 20%;
 }
 .about-us-link {
   color: ghostwhite;
   font-family: DejaVu Sans Mono, monospace;
+  // width: 100px;
 }
 .about-us-link:hover {
   font-weight: bold;;
@@ -25,13 +31,22 @@
   height: 100%;
 }
 .copyright-container {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   // justify-content: space-around;
   // align-items: right;
-}
-.copyright {
   color: ghostwhite;
   font-family: DejaVu Sans Mono, monospace;
-  width: 100%;
+}
+.copyright {
+  // display: flex;
+  // flex-direction: column;
+  color: ghostwhite;
+  font-family: DejaVu Sans Mono, monospace;
+}
+.team-list {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-between;
+  width: 120%;
 }
