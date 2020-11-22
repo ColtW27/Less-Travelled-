@@ -1,16 +1,18 @@
 
 .main-page-footer {
   display: flex;
-//    justify-content: space-evenly;
-  bottom: 0px;
+  //  justify-content: flex-start;
   padding-left: 5%; 
   padding-top: 1%; 
-  width: 100vw;
-  height: 100%;
+  height: 100px;
   background-color: #322f3d;
 }
 .copyright {
   padding-right: 2%;
+}
+.about-us-section {
+  display: flex;
+  flex-direction: column;
 }
 .about-us-link {
   color: ghostwhite;
@@ -24,9 +26,12 @@
 }
 .copyright-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  // justify-content: space-around;
+  // align-items: right;
 }
 .copyright {
   color: ghostwhite;
   font-family: DejaVu Sans Mono, monospace;
+  width: 100%;
 }
