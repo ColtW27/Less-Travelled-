@@ -51,7 +51,7 @@ color: $GreenHover;
   background-color: rgba(128, 128, 128, 0.5);
   padding: 5px;
   border-radius: 30%;
-  font-family: $pacificoc;
+  font-family: $primaryFont;
   font-size: 16px;
   font-weight: bold;
 }
@@ -64,6 +64,7 @@ color: $GreenHover;
   display: flex;
   align-items: center;
   width: 200px;
+  color: $GhostWhite;
 }
 .less-Trav-Logo img {
   height: 60px;
