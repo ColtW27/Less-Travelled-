@@ -2,17 +2,13 @@
   position: fixed;
   width: 100vw;
   z-index: 5;
-  // color: $yellowfont;
   
-
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px 10px 100px;
-    // background-color: $navbackground;
-    // background-color: #1d2d50;
     background-color: #322f3d;
   }
 

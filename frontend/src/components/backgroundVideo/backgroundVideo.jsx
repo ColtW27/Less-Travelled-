@@ -1,8 +1,6 @@
 import React from 'react';
   
 
-
-
 const BackgroundVideo = () => {
   const videoSource = '../../styles/images/lessTraveledMainVideo'
   return (
