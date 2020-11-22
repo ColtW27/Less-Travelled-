@@ -2,35 +2,34 @@
 .main-page-footer {
   display: flex;
   padding-left: 5%; 
-  padding-top: 1%; 
+  padding-top: .5%; 
+  padding-bottom: .5%;
   height: 100px;
   background-color: #322f3d;
-}
-.copyright {
-  padding-right: 2%;
+
+  img {
+      height: 100%;
+
+  }
 }
 
-.about-us-link {
-  color: ghostwhite;
-  font-family: DejaVu Sans Mono, monospace;
-}
-.about-us-link:hover {
-  font-weight: bold;;
-  color: greenyellow;
-}
-.footer-logo {
-  height: 100%;
-}
 .copyright-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: ghostwhite;
   font-family: DejaVu Sans Mono, monospace;
-}
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  width: 120%;
+  a {
+    color: ghostwhite;    
+  }
+  a:hover{
+    font-weight: bold;;
+    color: greenyellow;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+  }
 }

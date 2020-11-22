@@ -25,11 +25,7 @@ class Footer extends React.Component{
             <li><a href="https://coltw27.github.io/" target="_blank" rel="noopener noreferrer">Colton Wilmouth</a></li>
           </ul>
 
-          <Link
-            className="about-us-link"
-            to="/aboutus"
-            >Our Passion
-          </Link>
+          <Link to="/aboutus">Our Passion</Link>
 
           <div>
             Copyright &copy; 2020 LessTravelled
