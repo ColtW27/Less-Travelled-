@@ -15,8 +15,9 @@ class MainPage extends React.Component {
           <BackgroundVideo />
         </div>
         <div className="main-page-description">
-          LessTravelled is an app for those of us that love to get out and see the world in all of its nitty-gritty detail. They say not to sweat the small things, because life is comprised of small things. We might as well stop to enjoy them as we pass through.
+          LessTravelled is for those of us that love to get out and see the world in all of its nitty-gritty detail.  
         </div>
+        {/* They say not to sweat the small things, because life is comprised of small things. We might as well stop to enjoy them as we pass through. */}
     
         {/* <footer className="main-page-footer">
           <div className="copyright">
