@@ -1,10 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-// import NavBarContainer from '../nav/navbar_container';
+// import { Link } from 'react-router-dom';
 import BackgroundVideo from '../backgroundVideo/backgroundVideo';
-import Footer from '../footer/footer'
-// import TravelMap from '../map/map'
-
 
 class MainPage extends React.Component {
 
@@ -19,17 +15,6 @@ class MainPage extends React.Component {
         </div>
         {/* They say not to sweat the small things, because life is comprised of small things. We might as well stop to enjoy them as we pass through. */}
     
-        {/* <footer className="main-page-footer">
-          <div className="copyright">
-            Copyright &copy; 2020 LessTravelled
-          Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
-          </div>
-          
-          <Link
-          className="about-us-link"
-          to="/aboutus"
-          >Meet the Team</Link>
-        </footer> */}
       </div>
     );
   }
