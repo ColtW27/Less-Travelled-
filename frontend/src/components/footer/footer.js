@@ -23,9 +23,13 @@ class Footer extends React.Component{
             </Link>
           </div>
           <div className="copyright">
+            <ul>
+              <li>Carl Godlewski</li>
+              <li>Rahul Jain</li>
+              <li>Jonathan Romero</li>
+              <li>Colton Wilmouth</li>
+            </ul>
             Copyright &copy; 2020 LessTravelled
-
-          Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
           </div>
         </div>
       </footer>
