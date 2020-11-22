@@ -19,10 +19,10 @@ class Footer extends React.Component{
                 >Meet the Team ➡
               </Link>
             </li>
-            <li>Carl Godlewski</li>
-            <li>Rahul Jain</li>
-            <li>Jonathan Romero</li>
-            <li>Colton Wilmouth</li>
+            <li><a href="https://cgodl.github.io/" target="_blank" rel="noopener noreferrer">Carl Godlewski</a></li>
+            <li><a href="https://rahulj93.github.io/"target="_blank" rel="noopener noreferrer">Rahul Jain</a></li>
+            <li><a href="https://Duskstone.github.io" target="_blank" rel="noopener noreferrer">Jonathan Romero</a></li>
+            <li><a href="https://coltw27.github.io/" target="_blank" rel="noopener noreferrer">Colton Wilmouth</a></li>
           </ul>
 
           <Link
@@ -30,7 +30,7 @@ class Footer extends React.Component{
             to="/aboutus"
             >Our Passion
           </Link>
-          
+
           <div>
             Copyright &copy; 2020 LessTravelled
           </div>
