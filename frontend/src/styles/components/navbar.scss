@@ -26,10 +26,10 @@
   
   a {
     text-decoration: none;
-    color: whitesmoke;
+    color: $WhiteSmoke;
   }
   a:hover {
-    color: greenyellow;
+    color: $GreenHover;
   }
 }
 
@@ -39,10 +39,10 @@
   border: none;
   font-size: 13px;
   font-weight: bold;
-  color: whitesmoke;
+  color: $WhiteSmoke;
 }
 .login-signup button:hover {
-color: greenyellow;
+color: $GreenHover;
 }
 .login-signup button:focus {
   outline: none;
