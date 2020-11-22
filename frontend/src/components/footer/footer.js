@@ -10,9 +10,11 @@ class Footer extends React.Component{
           <img className="footer-logo"src={process.env.PUBLIC_URL + '/LessTravLogoTwoPinish.png'} />
 
         </div>
-        <div className="copyright">
-          Copyright &copy; 2020 LessTravelled
-        Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
+        <div className="copyright-container">
+          <div className="copyright">
+            Copyright &copy; 2020 LessTravelled
+          Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
+          </div>
         </div>
         
         <Link

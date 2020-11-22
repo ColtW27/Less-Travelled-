@@ -13,11 +13,18 @@
   padding-right: 2%;
 }
 .about-us-link {
-  color: black;
+  color: ghostwhite;
 }
 .about-us-link:hover {
   font-weight: bold;;
 }
 .footer-logo {
   height: 100%;
+}
+.copyright-container {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright {
+  color: ghostwhite;
 }
