@@ -5,10 +5,10 @@
   padding-top: .5%; 
   padding-bottom: .5%;
   height: 100px;
-  background-color: #322f3d;
+  background-color: $DarkPurple;
 
   img {
-      height: 100%;
+    height: 100%;
 
   }
 }
@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: space-around;
   color: ghostwhite;
-  font-family: DejaVu Sans Mono, monospace;
+  font-family: $primaryFont;
 
   a {
     color: ghostwhite; 
@@ -26,10 +26,10 @@
   }
   a:hover {
     font-weight: bold;;
-    color: greenyellow;
+    color: $GreenHover;
   }
   a:visited {
-    color: hotpink;
+    color: $VisitedPink;
   }
   ul {
     display: flex;

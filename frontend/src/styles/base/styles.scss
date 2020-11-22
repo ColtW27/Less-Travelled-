@@ -1,28 +1,27 @@
 
 
 // Primary color scheme
-$lightskyblue: #a5c9c9;
-$skyblue: #00858e;
-$mesaorange: #c76c19;
-$mesabrown: #94483b;
-$lightmesabrown: #d9814f;
-$roadgray: #745a5d;
+$DarkPurple: #322f3d;
+$MediumPurple: #00858e;
+// $mesaorange: #c76c19;
+// $mesabrown: #94483b;
+// $lightmesabrown: #d9814f;
+// $roadgray: #745a5d;
 
 
 
 //Nav specific;
 
-
-
-
-
+$GreenHover: greenyellow;
+$VisitedPink: hotpink;
 $yellowfont: #eeff41;
 $gray: #d4d2d2;
-$pacificoc: 'Pacifico', cursive;
+$pacificoc: 'Pacifico', cursive; // logo
 $navbackground: rgba(rgba(107, 99, 99, 0.39), 0.5);
 
 
 //Fonts
+$primaryFont: 'DejaVu Sans Mono', monospace;
 $handwriting: 'Nanum Pen Script', cursive;
 
 

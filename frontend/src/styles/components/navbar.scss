@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px 10px 100px;
-    background-color: #322f3d;
+    background-color: $DarkPurple;
   }
 
   ul li:first-child {
@@ -21,7 +21,7 @@
   ul li {
     font-size: 13px;
     font-weight: bold;
-    font-family: DejaVu Sans Mono, monospace;
+    font-family: $primaryFont;
   }
   
   a {
@@ -35,7 +35,7 @@
 
 .login-signup button {
   background: none;
-  font-family: DejaVu Sans Mono, monospace;
+  font-family: $primaryFont;
   border: none;
   font-size: 13px;
   font-weight: bold;
@@ -59,8 +59,6 @@ color: greenyellow;
 .welcome-user {
   display: flex;
   margin-right: 2%;
-  // width: 100px;
-  // flex-wrap: wrap;
 }
 .header-name {
   display: flex;
