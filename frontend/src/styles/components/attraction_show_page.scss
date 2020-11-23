@@ -1,12 +1,10 @@
 
 .attractions-show-container {
   // background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5c7elN6K48UuVUqr44nCactnT1-h2joikIg&usqp=CAU);
-  background-color: rgba(110, 110, 110, 0.466);
-  // background-color: #3e978b;
+  background-color: $BlueGrey;
   padding-top: 80px;
   padding-left: 25px;
   height: 100vh;
-  // width: 98vw;
 }
 
 .attraction-show-container {
@@ -24,13 +22,14 @@
 .attraction-title {
   font-size: 20px;
   text-emphasis: 700;
-  font-family: $pacificoc;
+  font-family: $primaryFont;
+  color: $GhostWhite;
   margin-bottom: 1vh;
 }
 
 .attraction-description {
-  font-family: $pacificoc;
-  color: $yellowfont;
+  font-family: $primaryFont;
+  color: $GhostWhite;
   padding-top: 7px;
   font-size: 16px;
   width: 43vw;
