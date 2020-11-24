@@ -1,76 +1,76 @@
 .signup-form-container{
-    // background: rgba(44, 49, 53, 0.829);
-    background: $DarkPurple;
-    justify-content: left;
-    border-radius: 10px;
-    width: 500px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 2px 3px;
+  // background: rgba(44, 49, 53, 0.829);
+  background: $DarkPurple;
+  justify-content: left;
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 3px;
 }
 .signup-form-input{
-    width: 470px;
-    height: 50px;
-    margin: 7px;
-    border-radius: 10px;
-    //  background: transparent;
-    box-shadow: 1px 1.5px;
-    background-color: rgba(146, 146, 146, 0.356);
-    font-size: 20px;
+  width: 470px;
+  height: 50px;
+  margin: 7px;
+  border-radius: 10px;
+  //  background: transparent;
+  box-shadow: 1px 1.5px;
+  background-color: rgba(146, 146, 146, 0.356);
+  font-size: 20px;
 
 }
 .log-in-label{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    color: $GhostWhite;
-    font-weight: bold;
-    font-family: $primaryFont;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: $GhostWhite;
+  font-weight: bold;
+  font-family: $primaryFont;
 }
 
 .bottom-form-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: $primaryFont;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $primaryFont;
+  font-weight: bold;
 
    
 }
 .bottom-form-div button{
-    background-color: $GhostWhite;
-    // background-color: $MediumPurple;
-    font-family: $pacificoc;
-    font-weight: bold;
-    padding: 5px;
-    font-size: large;
-    padding: 5px;
-    border-radius: 8px;
-    width: 96%;
+  background-color: $GhostWhite;
+  // background-color: $MediumPurple;
+  font-family: $pacificoc;
+  font-weight: bold;
+  padding: 5px;
+  font-size: large;
+  padding: 5px;
+  border-radius: 8px;
+  width: 96%;
 
 }
 .bottom-form-div button:hover {
-    // background-color: $GreenHover;
-    background-color: $DarkGray;
-    color: $GreenHover;
+  // background-color: $GreenHover;
+  background-color: $DarkGray;
+  color: $GreenHover;
 
 }
 .signup-form-errors {
-    background: transparent;
-    width: 200px;
+  background: transparent;
+  width: 200px;
 }
 
 .signup-form-errors ul li {
-    color: floralwhite;
-    margin-left: 10px;
-    font-family: "Pacifico", cursive;
+  color: floralwhite;
+  margin-left: 10px;
+  font-family: "Pacifico", cursive;
 }
 
 .already-a-member {
-    display: flex;
-    justify-content: center;
-    color: $GhostWhite;
-    font-family: $primaryFont;
-    padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  color: $GhostWhite;
+  font-family: $primaryFont;
+  padding-bottom: 5px;
 }
