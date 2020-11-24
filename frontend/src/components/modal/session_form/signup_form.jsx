@@ -101,7 +101,7 @@ class SignupForm extends React.Component {
              
             >
               <button
-                className="signup-form-main-login-button"
+                className="grow"
                 type="submit"
                 value="signup"
               >
@@ -111,8 +111,10 @@ class SignupForm extends React.Component {
               <div className="already-a-member">
                 Already a member?
               </div>
+                
                 {this.props.otherForm} 
                 {/* Link to other switch to signup form */}
+               
             </div>
             
           </form>

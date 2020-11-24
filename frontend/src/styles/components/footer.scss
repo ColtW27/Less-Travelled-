@@ -1,0 +1,39 @@
+
+.main-page-footer {
+  display: flex;
+  padding-left: 5%; 
+  padding-top: .5%; 
+  padding-bottom: .5%;
+  height: 100px;
+  background-color: $DarkPurple;
+
+  img {
+    height: 100%;
+
+  }
+}
+
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: $GhostWhite;
+  font-family: $primaryFont;
+
+  a {
+    color: $GhostWhite; 
+    text-decoration: none;   
+  }
+  a:hover {
+    font-weight: bold;;
+    color: $GreenHover;
+  }
+  a:visited {
+    color: $VisitedPink;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+  }
+}

@@ -48,7 +48,7 @@
     width: 650px;
     border-radius: 10px;
     // background-color: gray;
-    background-color: #59405c;
+    background-color: $MediumPurple;
   }
 
 
@@ -143,7 +143,8 @@
     position: absolute;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $primaryFont;
     font-size: large;
     color: black;
    
@@ -159,7 +160,6 @@
 }
   .attraction-index-item{
     border-radius: 10px;
-   
   }
 
 
@@ -184,13 +184,14 @@
   top: 150px;
   left: 32%;
   font-size: 17px;
-  font-family: DejaVu Sans Mono, monospace;
+  font-family: $primaryFont;
 
   a {
     text-decoration: none;
-    color: aqua;
+    // color: aqua;
+    color: $GhostWhite;
   }
   a:hover {
-    color: greenyellow;
+    color: $GreenHover;
   }
 }

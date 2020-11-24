@@ -1,4 +1,4 @@
-//** There is a search related ruleaset in attraction_index.scss, that is nested.
+//** There is a search related ruleset in attraction_index.scss, that is nested.
 .searchField {
     height: 40px;
     width: 500px;
@@ -40,14 +40,13 @@
   font-size: 15px;
   color: rgb(7, 6, 6);
   font-weight: bold;
-  font-family: DejaVu Sans Mono, monospace;
+  font-family: $primaryFont;
     
 }
 .attraction-search-form input::placeholder {
   color: rgb(7, 6, 6);
   font-weight: bold;
-  font-family: DejaVu Sans Mono, monospace;
-
+  font-family: $primaryFont;
 }
 
 .search-result-count {
