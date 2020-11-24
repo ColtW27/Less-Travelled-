@@ -51,7 +51,10 @@
 
 }
 .bottom-form-div button:hover {
-    background-color: $GreenHover;
+    // background-color: $GreenHover;
+    background-color: $DarkGray;
+    color: $GreenHover;
+
 }
 .signup-form-errors {
     background: transparent;
@@ -67,7 +70,7 @@
 .already-a-member {
     display: flex;
     justify-content: center;
-    color: $yellowfont;
-    font-family: "Pacifico", cursive;
+    color: $GhostWhite;
+    font-family: $primaryFont;
     padding-bottom: 5px;
 }
