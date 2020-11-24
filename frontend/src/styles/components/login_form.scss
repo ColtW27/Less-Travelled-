@@ -42,7 +42,8 @@
     
 }
 .login-bottom-form-div button:hover {
-    background-color: gray;
+    background-color: $gray;
+    color: $GreenHover;
 }
 
 .login-form-errors {

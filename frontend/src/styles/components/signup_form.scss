@@ -39,7 +39,8 @@
    
 }
 .bottom-form-div button{
-    background-color: $yellowfont;
+    background-color: $GhostWhite;
+    // background-color: $MediumPurple;
     font-family: $pacificoc;
     font-weight: bold;
     padding: 5px;
@@ -50,7 +51,7 @@
 
 }
 .bottom-form-div button:hover {
-    background-color: gray;
+    background-color: $GreenHover;
 }
 .signup-form-errors {
     background: transparent;
