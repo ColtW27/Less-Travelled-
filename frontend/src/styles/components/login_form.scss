@@ -1,7 +1,4 @@
 .login-form-container{
-    // background-image: url(https://blog.skymed.com/wp-content/uploads/2013/10/medium_75338202782.jpg);
-    // background: rgba(7, 92, 141, 0.582);
-    // background: rgba(7, 92, 141, 0.856);
     background: rgba(44, 49, 53, 0.829);
     display: flex; 
     justify-content: left;
@@ -24,23 +21,18 @@
     font-size: 20px;
 }
 
-.log-in-label{
-    color: $yellowfont;
-    font-weight: bold;
-}
-
 .login-bottom-form-div{
     display: flex;
     justify-content: center;
     border-radius: 30%;
-    font-family: $pacificoc;
-    color: $yellowfont;
+    font-family: $primaryFont;
+    color: $GhostWhite;
     font-weight: bold;
 }
 
 .login-bottom-form-div button{
-    background-color: $yellowfont;
-    font-family: $pacificoc;
+    background-color: $GhostWhite;
+    font-family: $primaryFont;
     font-weight: bold;
     font-size: large;
     padding: 5px;
@@ -55,12 +47,12 @@
 .login-form-errors {
     background: transparent;
     width: 200px;
-    color: floralwhite;
+    color: $GhostWhite;
 }
 
 .login-form-errors ul li {
-    color: floralwhite;
+    color: $GhostWhite;
     margin-left: 10px;
-    font-family: "Pacifico", cursive;
+    font-family: $primaryFont;
 }
 
