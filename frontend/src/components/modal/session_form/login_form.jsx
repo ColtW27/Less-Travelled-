@@ -87,13 +87,14 @@ class LoginForm extends React.Component {
             <br />
             <div className="login-bottom-form-div">
               <button
+                className="grow"
                 type="submit"
                 value="login"
               >
                 Log in
               </button>
             </div>
-            <div className="login-bottom-form-div">
+            <div className="grow login-bottom-form-div">
               <button
                 onClick={this.demoLogin}
                 type="submit"
@@ -103,7 +104,7 @@ class LoginForm extends React.Component {
               </button>
             </div>
 
-            <div className="login-bottom-form-div">
+            <div className="grow login-bottom-form-div">
                   {this.props.otherForm}
                   {/* Link to other switch to signup form */}
             </div>

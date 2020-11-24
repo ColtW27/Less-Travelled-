@@ -38,10 +38,10 @@
 
    
 }
-.bottom-form-div button{
+.bottom-form-div button {
   background-color: $GhostWhite;
   // background-color: $MediumPurple;
-  font-family: $pacificoc;
+  font-family: $primaryFont;
   font-weight: bold;
   padding: 5px;
   font-size: large;
@@ -64,7 +64,8 @@
 .signup-form-errors ul li {
   color: floralwhite;
   margin-left: 10px;
-  font-family: "Pacifico", cursive;
+  font-family: $primaryFont;
+
 }
 
 .already-a-member {
@@ -72,5 +73,5 @@
   justify-content: center;
   color: $GhostWhite;
   font-family: $primaryFont;
-  padding-bottom: 5px;
+  padding-bottom: 3%;
 }
