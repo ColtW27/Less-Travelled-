@@ -1,75 +1,80 @@
 .signup-form-container{
-    // background-color: $mesaorange;
-    // background-attachment: ; 
-    // background-image: url(https://hotmamatravel.com/wp-content/uploads/2020/01/vegas-road-trip-desert-drive.jpg);
-    //  display: flex;
-    background: rgba(44, 49, 53, 0.829);
-    // background: rgba(7, 92, 141, 0.856);
-    justify-content: left;
-    border-radius: 10px;
-    width: 500px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 2px 3px;
+  // background: rgba(44, 49, 53, 0.829);
+  background: $DarkPurple;
+  justify-content: left;
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 3px;
 }
-.signup-form-input{
-    width: 470px;
-    height: 50px;
-    margin: 7px;
-    border-radius: 10px;
-    //  background: transparent;
-    box-shadow: 1px 1.5px;
-    background-color: rgba(146, 146, 146, 0.356);
-    font-size: 20px;
-
+.signup-form-input {
+  width: 470px;
+  height: 50px;
+  margin: 7px;
+  border-radius: 10px;
+  //  background: transparent;
+  box-shadow: 1px 1.5px;
+  background-color: rgba(146, 146, 146, 0.356);
+  font-size: 20px;
+}
+.signup-form-input:focus {
+  outline: none;
+  background-color: $SoftPurple;
 }
 .log-in-label{
-    display: flex;
-    justify-content: center;
-    // margin: 5px;
-    font-size: 25px;
-    font-family: $pacificoc;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: $GhostWhite;
+  font-weight: bold;
+  font-family: $primaryFont;
 }
 
 .bottom-form-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: $pacificoc;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $primaryFont;
+  font-weight: bold;
 
    
 }
-.bottom-form-div button{
-    background-color: $yellowfont;
-    font-family: $pacificoc;
-    font-weight: bold;
-    padding: 5px;
-    font-size: large;
-    padding: 5px;
-    border-radius: 8px;
-    width: 96%;
+.bottom-form-div button {
+  background-color: $GhostWhite;
+  // background-color: $MediumPurple;
+  font-family: $primaryFont;
+  font-weight: bold;
+  padding: 5px;
+  font-size: large;
+  padding: 5px;
+  border-radius: 8px;
+  width: 96%;
 
 }
 .bottom-form-div button:hover {
-    background-color: gray;
+  // background-color: $GreenHover;
+  background-color: $DarkGray;
+  color: $GreenHover;
+
 }
 .signup-form-errors {
-    background: transparent;
-    width: 200px;
+  background: transparent;
+  width: 200px;
 }
 
 .signup-form-errors ul li {
-    color: floralwhite;
-    margin-left: 10px;
-    font-family: "Pacifico", cursive;
+  color: floralwhite;
+  margin-left: 10px;
+  font-family: $primaryFont;
+
 }
 
 .already-a-member {
-    display: flex;
-    justify-content: center;
-    color: $yellowfont;
-    font-family: "Pacifico", cursive;
-    padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  color: $GhostWhite;
+  font-family: $primaryFont;
+  padding-bottom: 3%;
 }
