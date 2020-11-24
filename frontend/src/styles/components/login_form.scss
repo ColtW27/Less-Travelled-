@@ -21,7 +21,10 @@
     color: rgb(5, 4, 4);
     font-size: 20px;
 }
-
+.login-form-input:focus {
+  outline: none;
+  background-color: $SoftPurple;
+}
 .login-bottom-form-div{
     display: flex;
     justify-content: center;

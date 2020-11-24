@@ -9,7 +9,7 @@
   justify-content: center;
   box-shadow: 2px 3px;
 }
-.signup-form-input{
+.signup-form-input {
   width: 470px;
   height: 50px;
   margin: 7px;
@@ -18,7 +18,10 @@
   box-shadow: 1px 1.5px;
   background-color: rgba(146, 146, 146, 0.356);
   font-size: 20px;
-
+}
+.signup-form-input:focus {
+  outline: none;
+  background-color: $SoftPurple;
 }
 .log-in-label{
   display: flex;
