@@ -15,17 +15,22 @@
   p {
     font-family: $primaryFont;
     font-size: 50px;
-    margin: 30px;
+    margin-left: 8%;
     color: $GhostWhite; 
+  }
+ 
+  input:focus {
+    outline: none;
   }
 }
 
 .new-attraction-button {
-  width: 200px;
+  width: 93%;
   height: 40px;
-  font-family: monospace;
   font-size: large;
-  background-color: wheat;
+  font-family: $primaryFont;
+  background-color: $SoftPurple;
+  color: $GhostWhite;
   margin-left: 10px;
 }
     // .attraction-rating {
