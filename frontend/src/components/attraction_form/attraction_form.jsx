@@ -133,7 +133,7 @@ class AttractionForm extends React.Component {
               </div> */}
               <hr />
 
-              <div className="button-holder">
+              <div className=" grow button-holder">
                 <input
                   type="submit"
                   value="Add this attraction"

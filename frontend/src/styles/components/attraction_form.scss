@@ -21,6 +21,8 @@
  
   input:focus {
     outline: none;
+    transform: scale(1.01);
+    transition: all .2s ease-in-out
   }
 }
 
@@ -28,11 +30,16 @@
   width: 93%;
   height: 40px;
   font-size: large;
+  font-weight: bold;
   font-family: $primaryFont;
-  background-color: $SoftPurple;
+  background-color: $MediumPurple;
   color: $GhostWhite;
   margin-left: 10px;
+
 }
+ .new-attraction-button:hover {
+      color: $GreenHover;
+    }
     // .attraction-rating {
     //   font-size: 55px;
     // }
