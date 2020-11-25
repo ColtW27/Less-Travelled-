@@ -6,27 +6,8 @@ const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOO
 
 const containerStyle = {
   width: '800px',
-  height: '400px'
+  height: '800px'
 };
-
-const center = { //Change to geoLocation later
-  lat: -3.745,
-  lng: -38.523
-};
-
-// const onLoad = marker => {
-//   console.log('marker: ', marker)
-// }
-
-// const position = {
-//   lat: 37.772,
-//   lng: -122.214
-// }
-
-// const position2 = {
-//   lat: 0,
-//   lng: 0
-// }
 
 
 
@@ -35,6 +16,15 @@ class travelMapV2 extends React.Component {
 
   render() {
     const {attractions, attraction} = this.props;
+
+    const center = { //Change to geoLocation later
+      lat: -3.745,
+      lng: -38.523
+    };
+
+
+
+
     return (
       // <div>Hello</div>
       <LoadScript

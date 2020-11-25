@@ -15,13 +15,16 @@ class AttractionsIndex extends React.Component {
       attractions: this.props.attractions, 
       searchTerm: "",
       category: "",
-      rating: ""
+      rating: "",
+      userCoord: {lat: '', lng: ''}
     }
     this.handleQuery = this.handleQuery.bind(this);
     this.handleRating = this.handleRating.bind(this);
     this.handleCategory = this.handleCategory.bind(this);
     this.handleAll = this.handleAll.bind(this); 
   }
+
+  
 
   componentDidMount() {
     this.props.fetchAttractions();  
@@ -206,10 +209,17 @@ class AttractionsIndex extends React.Component {
           fetchAttractions={this.props.fetchAttractions}
         />
       ))
+
+    navigator.geolocation.getCurrentPosition((position => {
+      userCoord.lat = position.coords.latitude
+    }));
+
+
+
+
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
 
-
-
+  
     return (
       <div className='attractions-container'>
         {/* <div className='attractions-main'> */}
@@ -240,8 +250,3 @@ class AttractionsIndex extends React.Component {
 } 
 
 export default withRouter (AttractionsIndex);
-
-
-
-
-
