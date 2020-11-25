@@ -1,6 +1,7 @@
 import React from "react";
 import {withRouter} from 'react-router-dom';
 import TravelMap from '../map/map';
+import TravelMapVr2 from '../map/mapv2'
 import AttractionsBox from './AttractionsBox'; 
 import SearchBar from '../search/search';
 import { Link } from 'react-router-dom';
@@ -191,7 +192,7 @@ class AttractionsIndex extends React.Component {
           <br />
           <div className="attractionsIndex">
           </div>
-          <div><TravelMap attractions={attractions} /></div>
+          {/* <div><TravelMap attractions={attractions} /></div> */}
         </div>
       </div>
     )
@@ -227,7 +228,8 @@ class AttractionsIndex extends React.Component {
           </div>
         
           <map className="attraction-map">
-            <TravelMap attractions={attractions} />
+            {/* <TravelMap attractions={attractions} /> */}
+            <TravelMapVr2 attractions={attractions}/>
           </map>
           
   
