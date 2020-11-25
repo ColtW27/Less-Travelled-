@@ -13,21 +13,33 @@
   background-size: cover; 
   display: inline-block;
   p {
-    font-family: $pacificoc;
+    font-family: $primaryFont;
     font-size: 50px;
-    margin: 30px;
-    color: $yellowfont; 
+    margin-left: 8%;
+    color: $GhostWhite; 
+  }
+ 
+  input:focus {
+    outline: none;
+    transform: scale(1.01);
+    transition: all .2s ease-in-out
   }
 }
 
 .new-attraction-button {
-  width: 200px;
+  width: 93%;
   height: 40px;
-  font-family: monospace;
   font-size: large;
-  background-color: wheat;
+  font-weight: bold;
+  font-family: $primaryFont;
+  background-color: $MediumPurple;
+  color: $GhostWhite;
   margin-left: 10px;
+
 }
+ .new-attraction-button:hover {
+      color: $GreenHover;
+    }
     // .attraction-rating {
     //   font-size: 55px;
     // }
