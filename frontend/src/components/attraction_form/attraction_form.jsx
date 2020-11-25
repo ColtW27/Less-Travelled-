@@ -44,7 +44,7 @@ class AttractionForm extends React.Component {
 
         <div className="new-attraction-container">
 
-          <p>Add an attraction:</p>
+          <p>Add an attraction</p>
 
           <div className="insideDiv">
 
