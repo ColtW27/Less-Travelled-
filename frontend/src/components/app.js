@@ -13,9 +13,13 @@ import AttractionsForm from './attraction_form/attraction_form_container';
 import TalltalesForm from './talltales_form/talltales_form_container';
 import AboutUs from "./about_us/about_us";
 import Footer from "../components/footer/footer";
+
+
+import travelMapV2 from './map/mapv2'
+
 const App = () => (
   <div>
-      <NavBarContainer />
+      {/* <NavBarContainer /> */}
       <Modal/>
     <Switch>
       <Route exact path="/" component={MainPage} />
@@ -25,10 +29,11 @@ const App = () => (
       <Route exact path="/login" component={PleaseLogin}/>
       <Route exact path="/talltales" component={TalltalesShowContainer}/>
       <Route exact path="/aboutus" component={AboutUs}/>
+      <Route exact path="/newMap" component={travelMapV2} />
       <ProtectedRoute exact path="/attractionsform" component={AttractionsForm}/>
       <ProtectedRoute exact path="/talltalesform" component={TalltalesForm}/>
     </Switch>
-      <Footer />
+      {/* <Footer /> */}
   </div>
 );
 
