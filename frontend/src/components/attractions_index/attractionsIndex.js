@@ -16,7 +16,7 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      userCoord: {lat: '', lng: ''}
+      currentCenter: {lat: 0, lng: 0}
     }
     this.handleQuery = this.handleQuery.bind(this);
     this.handleRating = this.handleRating.bind(this);
@@ -28,7 +28,37 @@ class AttractionsIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchAttractions();  
+    this.findCurrentLocation();
   }
+
+
+  findCurrentLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.setState(prevState => ({
+          currentCenter: {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          }
+        }))}
+
+
+
+      )
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
 
   componentDidUpdate(prevProps, prevState) {
 
@@ -210,14 +240,12 @@ class AttractionsIndex extends React.Component {
         />
       ))
 
-    navigator.geolocation.getCurrentPosition((position => {
-      userCoord.lat = position.coords.latitude
-    }));
 
 
 
 
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
+
 
   
     return (
@@ -239,7 +267,7 @@ class AttractionsIndex extends React.Component {
         
           <map className="attraction-map">
             {/* <TravelMap attractions={attractions} /> */}
-            <TravelMapVr2 attractions={attractions}/>
+            <TravelMapVr2 attractions={attractions} center={this.state.currentCenter}/>
           </map>
           
   

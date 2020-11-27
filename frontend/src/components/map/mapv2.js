@@ -15,15 +15,18 @@ class travelMapV2 extends React.Component {
 
 
   render() {
-    const {attractions, attraction} = this.props;
+    const {attractions, attraction, center} = this.props;
 
-    const center = { //Change to geoLocation later
-      lat: -3.745,
-      lng: -38.523
-    };
+    // let center = {lat: 0, lng: 0};
 
-
-
+    // if (attractions) {
+    //   navigator.geolocation.getCurrentPosition(position => {
+    //     return center = {
+    //       lat: position.coords.latitude,
+    //       lng: position.coords.longitude
+    //     }
+    //   }) 
+    // }
 
     return (
       // <div>Hello</div>
@@ -33,8 +36,14 @@ class travelMapV2 extends React.Component {
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={5}
+          zoom={10}
         >
+          <Marker 
+            position={center}
+          />
+
+
+
           {
             (attractions !== undefined) ? attractions.map(mark => {
               return <Marker
