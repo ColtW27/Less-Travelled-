@@ -33,23 +33,18 @@ class AttractionsIndex extends React.Component {
 
 
   findCurrentLocation = () => {
-    if (navigator.geolocation) {
+    // if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         this.setState(prevState => ({
           currentCenter: {
             lat: position.coords.latitude,
             lng: position.coords.longitude
-          }
-        }))}
-
-
-
-      )
-    }
-
-
-
-  }
+            }
+          }))
+        }, 
+        error => console.log(error)     
+      );   
+    };
 
 
 
