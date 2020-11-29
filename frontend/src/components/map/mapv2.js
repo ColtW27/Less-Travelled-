@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, DirectionsRenderer } from '@react-google-maps/api';
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 
@@ -17,19 +17,8 @@ class travelMapV2 extends React.Component {
   render() {
     const {attractions, attraction, center} = this.props;
 
-    // let center = {lat: 0, lng: 0};
-
-    // if (attractions) {
-    //   navigator.geolocation.getCurrentPosition(position => {
-    //     return center = {
-    //       lat: position.coords.latitude,
-    //       lng: position.coords.longitude
-    //     }
-    //   }) 
-    // }
-
     return (
-      // <div>Hello</div>
+  
       <LoadScript
         googleMapsApiKey={gKey}
       >
@@ -39,15 +28,14 @@ class travelMapV2 extends React.Component {
           zoom={10}
         >
           <Marker 
-            position={center}
+            position={attraction ? attraction : center}
           />
 
-
-
           {
-            (attractions !== undefined) ? attractions.map(mark => {
+            (attractions !== undefined) ? attractions.map((mark, index) => {
               return <Marker
-                position={{ lat: mark.props.attraction.latitude, lng: mark.props.attraction.longitude }}
+                key={index}
+                position={{ lat: parseFloat(mark.props.attraction.latitude), lng: parseFloat(mark.props.attraction.longitude) }}
               />
             })
             :
@@ -55,7 +43,6 @@ class travelMapV2 extends React.Component {
 
           }
 
-          { /* Child components, such as markers, info windows, etc. */ }
         </GoogleMap>
       </LoadScript>
     )

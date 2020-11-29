@@ -16,8 +16,10 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      currentCenter: {lat: 0, lng: 0}
+      currentCenter: {lat: 0, lng: 0},
+      destination: ''
     }
+
     this.handleQuery = this.handleQuery.bind(this);
     this.handleRating = this.handleRating.bind(this);
     this.handleCategory = this.handleCategory.bind(this);
@@ -186,6 +188,7 @@ class AttractionsIndex extends React.Component {
       e.preventDefault(); 
       this.setState({searchTerm, rating})
     } 
+    
   // handleAll(field, query) {
   //   return (e) => {
   //     e.preventDefault(); 
@@ -241,7 +244,6 @@ class AttractionsIndex extends React.Component {
 
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
 
-
   
     return (
       <div className='attractions-container'>
@@ -262,6 +264,7 @@ class AttractionsIndex extends React.Component {
         
           <map className="attraction-map">
             {/* <TravelMap attractions={attractions} /> */}
+            
             <TravelMapVr2 attractions={attractions} center={this.state.currentCenter}/>
           </map>
           
