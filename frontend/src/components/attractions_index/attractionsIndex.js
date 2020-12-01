@@ -17,7 +17,7 @@ class AttractionsIndex extends React.Component {
       category: "",
       rating: "",
       currentCenter: {lat: 0, lng: 0},
-      destination: ''
+      destination: {lat: 40.7484, lng: 73.9857}
     }
 
     this.handleQuery = this.handleQuery.bind(this);
@@ -265,7 +265,7 @@ class AttractionsIndex extends React.Component {
           <map className="attraction-map">
             {/* <TravelMap attractions={attractions} /> */}
             
-            <TravelMapVr2 attractions={attractions} center={this.state.currentCenter}/>
+            <TravelMapVr2 attractions={attractions} center={this.state.currentCenter} destination={this.state.destination}/>
           </map>
           
   
