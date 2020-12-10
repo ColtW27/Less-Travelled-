@@ -3,7 +3,6 @@ import { GoogleMap, LoadScript, Marker, DirectionsRenderer, DirectionsService } 
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 
-
 const containerStyle = {
   width: '800px',
   height: '800px'
@@ -11,10 +10,15 @@ const containerStyle = {
 
 
 
+
+
 class travelMapV2 extends React.Component {
 
   render() {
-    const {attractions, attraction, center, destination} = this.props;
+    const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
+
+
+ 
 
     return (
   
@@ -35,42 +39,81 @@ class travelMapV2 extends React.Component {
               return <Marker
                 key={index}
                 position={{ lat: parseFloat(mark.props.attraction.latitude), lng: parseFloat(mark.props.attraction.longitude) }}
+                onClick={setDestination}
               />
             })
             :
             null
           }
-           <DirectionsService
+           {/* <DirectionsService
+            options={{ 
+              destination: destination,
+              origin: center,
+              travelMode: "DRIVING"
+            }}
+
+            callback={this.directionsCallback}
+            onLoad={directionsService => {
+              console.log('DirectionsService onLoad directionsService: ', directionsService)
+            }}
+            onUnmount={directionsService => {
+              console.log('DirectionsService onUnmount directionsService: ', directionsService)
+            }}
+          /> */}
+          {
+              (
+                destination !== '' &&
+                center !== ''
+              ) && (
+                <DirectionsService
                   // required
                   options={{ 
                     destination: destination,
                     origin: center,
-                    travelMode: "DRIVING"
+                    travelMode: 'DRIVING'
                   }}
                   // required
-                  // callback={this.directionsCallback}
-                  // // optional
+                  callback={directionsCallback}
+                  // optional
                   // onLoad={directionsService => {
                   //   console.log('DirectionsService onLoad directionsService: ', directionsService)
                   // }}
-                  // // optional
+                  // optional
                   // onUnmount={directionsService => {
                   //   console.log('DirectionsService onUnmount directionsService: ', directionsService)
                   // }}
                 />
+              )
+            }
 
-
-
-
+            {
+              response !== null && (
+                <DirectionsRenderer
+                  // required
+                  options={{ 
+                    directions: response
+                  }}
+                  // optional
+                  onLoad={directionsRenderer => {
+                    console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+                  }}
+                  // optional
+                  onUnmount={directionsRenderer => {
+                    console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+                  }}
+                />
+              )
+            }
           <DirectionsRenderer
             options={{origin: center, destination: destination}}
-          
+            onLoad={directionsRenderer => {
+              console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+            }}
+            // optional
+            onUnmount={directionsRenderer => {
+              console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+            }}
           />
-
-
-
-
-
         </GoogleMap>
       </LoadScript>
     )

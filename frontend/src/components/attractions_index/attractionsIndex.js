@@ -16,14 +16,17 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      currentCenter: {lat: 0, lng: 0},
-      destination: {lat: 40.7484, lng: 73.9857}
+      currentCenter: "",
+      destination: '40.7487128, -72.9859724',
+      response: null
     }
 
     this.handleQuery = this.handleQuery.bind(this);
     this.handleRating = this.handleRating.bind(this);
     this.handleCategory = this.handleCategory.bind(this);
     this.handleAll = this.handleAll.bind(this); 
+    this.directionsCallback = this.directionsCallback.bind(this);
+    this.setDestination = this.setDestination.bind(this)
   }
 
   
@@ -47,6 +50,16 @@ class AttractionsIndex extends React.Component {
         error => console.log(error)     
       );   
     };
+
+    setDestination = (ref) => {
+      this.setState(prevState => ({
+        destination: `${ref.latLng.lat()}, ${ref.latLng.lng()}`
+
+
+      }))
+      console.log(ref)
+
+    }
 
 
 
@@ -202,6 +215,22 @@ class AttractionsIndex extends React.Component {
   // }
   }
 
+  directionsCallback (response) {
+    console.log(response)
+
+    if (response !== null) {
+      if (response.status === 'OK') {
+        this.setState(
+          () => ({
+            response
+          })
+        )
+      } else {
+        console.log('response: ', response)
+      }
+    }
+  }
+
   noMatches(attractions){
     return(
       <div className='attractions-container'>
@@ -238,6 +267,8 @@ class AttractionsIndex extends React.Component {
         />
       ))
 
+      
+
 
 
 
@@ -265,7 +296,17 @@ class AttractionsIndex extends React.Component {
           <map className="attraction-map">
             {/* <TravelMap attractions={attractions} /> */}
             
-            <TravelMapVr2 attractions={attractions} center={this.state.currentCenter} destination={this.state.destination}/>
+            <TravelMapVr2 
+                attractions={attractions} 
+                center={this.state.currentCenter} 
+                destination={this.state.destination} 
+                response={this.state.response}
+                directionsCallback={this.directionsCallback}
+                setDestination={this.setDestination}
+                
+                
+                />
+    
           </map>
           
   
