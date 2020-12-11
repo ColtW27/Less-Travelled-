@@ -1,5 +1,6 @@
 .attractions-container {
   display: grid;
+  background-color: $BlueGrey;
   gap: 5px;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 4fr;
@@ -9,13 +10,22 @@
   max-height: 100vh;
 }
 
+
+
 .attractions-search-section {
-  margin-top: 15px;
+  margin-top: 65px;
   grid-area: search;
+ 
   position: fixed;
   margin-left: 35px;
   z-index: 3;
   
+}
+
+.search-results-add-attractions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .attraction-map {

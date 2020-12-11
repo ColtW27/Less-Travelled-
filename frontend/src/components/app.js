@@ -19,7 +19,7 @@ import travelMapV2 from './map/mapv2'
 
 const App = () => (
   <div>
-      {/* <NavBarContainer /> */}
+      <NavBarContainer />
       <Modal/>
     <Switch>
       <Route exact path="/" component={MainPage} />
@@ -33,7 +33,7 @@ const App = () => (
       <ProtectedRoute exact path="/attractionsform" component={AttractionsForm}/>
       <ProtectedRoute exact path="/talltalesform" component={TalltalesForm}/>
     </Switch>
-      {/* <Footer /> */}
+      <Footer />
   </div>
 );
 

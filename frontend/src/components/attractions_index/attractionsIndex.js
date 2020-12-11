@@ -273,11 +273,13 @@ class AttractionsIndex extends React.Component {
             handleRating={this.handleRating}
             handleAll={this.handleAll}
           />
-          <div className="search-result-count">
-            {attractions.length} search result(s)
-          </div>
-          <div className="AddAttraction">
-            <Link to="/attractionsform">Add an attraction</Link> 
+          <div className='search-results-add-attractions'>
+            <div className="search-result-count">
+              {attractions.length} search result(s)
+            </div>
+            <div className="AddAttraction">
+              <Link to="/attractionsform">Add an attraction</Link> 
+            </div>
           </div>
         </div>
         <div className="attraction-listings">
