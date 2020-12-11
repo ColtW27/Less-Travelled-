@@ -1,38 +1,37 @@
 .attractions-container {
   display: grid;
   gap: 5px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-areas: 
-      "search  map"
-      "searchResults map"
+      "search map"
       "attractions map";
+  max-height: 100vh;
+}
 
-  .searchBar {
-    grid-area: search;
-    padding-top: 5vh;
-
-
-  }
+.attractions-search-section {
+  margin-top: 15px;
+  grid-area: search;
+  position: fixed;
+  margin-left: 35px;
+  z-index: 3;
+  
 }
 
 .attraction-map {
-  height: 100vh;
   grid-area: map;
-  margin-right: 15px;
-
-  // position: fixed;
-  // // top: 1vh;
-  // right: 0;
-  // bottom: 0;
-  // // left: 50vw;
-  // height: 100vh;
-  // width: 55vw;
 }
 
 
 
 .attraction-listings {
+  padding-top: 15px;
   grid-area: attractions;
+  overflow: scroll;
+
+
+
+
   // left: 20px;
   // margin-top: 175px;
   // display: flex;
@@ -40,9 +39,10 @@
   // justify-content: space-between;
   // flex-wrap: wrap;
   // flex-direction: column; 
-  // width: 100%;
+  width: 100%;
 
   div {
+
     margin-left: 25px;
     margin-bottom: 25px;
     height: 300px; 
@@ -52,7 +52,7 @@
     background-color: $MediumPurple;
   }
 
-
+ 
 
 
 
@@ -179,20 +179,3 @@
   width:45%
 }
 
-.AddAttraction {
-  display: flex;
-  position: fixed;
-  top: 150px;
-  left: 32%;
-  font-size: 17px;
-  font-family: $primaryFont;
-
-  a {
-    text-decoration: none;
-    // color: aqua;
-    color: $GhostWhite;
-  }
-  a:hover {
-    color: $GreenHover;
-  }
-}

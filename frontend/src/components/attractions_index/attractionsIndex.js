@@ -17,7 +17,7 @@ class AttractionsIndex extends React.Component {
       category: "",
       rating: "",
       currentCenter: "",
-      destination: '40.7487128, -72.9859724',
+      destination: "",
       response: null
     }
 
@@ -240,9 +240,6 @@ class AttractionsIndex extends React.Component {
            />
         </div>
         <br/>
-        <div className="AddAttraction">
-          <Link to="/attractionsform">Add an attraction</Link> 
-          </div>
 
         <div className="search-result-count">
           Sorry, there do not appear to be any matches for your search.
@@ -252,50 +249,42 @@ class AttractionsIndex extends React.Component {
           <br />
           <div className="attractionsIndex">
           </div>
-          {/* <div><TravelMap attractions={attractions} /></div> */}
         </div>
       </div>
     )
   }
 
   render() {
-     const attractions = this.state.attractions.map(attraction => (
-        <AttractionsBox
-          key={attraction._id} 
-          attraction={attraction}
-          fetchAttractions={this.props.fetchAttractions}
-        />
-      ))
-
-      
-
-
-
-
-
+    const attractions = this.state.attractions.map(attraction => (
+      <AttractionsBox
+        key={attraction._id} 
+        attraction={attraction}
+        fetchAttractions={this.props.fetchAttractions}
+      />
+    ))
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
 
   
     return (
       <div className='attractions-container'>
-        {/* <div className='attractions-main'> */}
+        <div className='attractions-search-section'>
           <SearchBar 
             handleQuery={this.handleQuery}
             handleRating={this.handleRating}
             handleAll={this.handleAll}
           />
-
           <div className="search-result-count">
             {attractions.length} search result(s)
           </div>
-
-          <div className="attraction-listings">
-            {attractions}
+          <div className="AddAttraction">
+            <Link to="/attractionsform">Add an attraction</Link> 
           </div>
+        </div>
+        <div className="attraction-listings">
+          {attractions}
+        </div>
         
-          <map className="attraction-map">
-            {/* <TravelMap attractions={attractions} /> */}
-            
+          <map className="attraction-map">            
             <TravelMapVr2 
                 attractions={attractions} 
                 center={this.state.currentCenter} 
@@ -303,10 +292,7 @@ class AttractionsIndex extends React.Component {
                 response={this.state.response}
                 directionsCallback={this.directionsCallback}
                 setDestination={this.setDestination}
-                
-                
                 />
-    
           </map>
           
   

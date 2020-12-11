@@ -5,20 +5,15 @@ const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOO
 
 const containerStyle = {
   width: '800px',
-  height: '800px'
+  height: '1000px',
+  position: 'fixed',
+  right: '5px'
 };
-
-
-
-
 
 class travelMapV2 extends React.Component {
 
   render() {
     const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
-
-
- 
 
     return (
   
