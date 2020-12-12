@@ -54,7 +54,9 @@ color: $GreenHover;
   border: none;
   font-family: $primaryFont;
   font-size: 16px;
-  font-weight: bold;
+}
+.main-page-logout:hover{
+  color: $GreenHover;
 }
 
 .welcome-user {
