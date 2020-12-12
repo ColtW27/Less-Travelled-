@@ -1,16 +1,14 @@
 //** There is a search related ruleset in attraction_index.scss, that is nested.
 .searchField {
-    height: 40px;
-    width: 500px;
+  height: 40px;
+  width: 500px;
 }
 .searchField:hover {
-    background-color: rgba(121, 121, 121, 0.712);
+  background-color: rgba(121, 121, 121, 0.712);
 }
-
 .categoryField {
   height: 46px;
   width: 150px;
-
 }
 .categoryField:hover {
   background-color: rgba(121, 121, 121, 0.712);
@@ -27,7 +25,7 @@
   height: 36px;
   width: 40px;
   border: none;
-  background-color: $DarkGray;
+  background-color: $DarkerGray;
   border-radius: 20%;
 }
 .searchButton:hover{
@@ -36,30 +34,22 @@
 .attraction-search-form{
   background-color: $MediumPurple;
   border-radius: 10px;
-  width: 103%;
-  
-
-  
+  width: 101.5%;
 }
 .attraction-search-form input , select{
   margin: 7px;
-  // border-radius: 10px;
   background: none;
   border: none;
-  // box-shadow: 1px 1.5px;
-  // background-color: rgba(146, 146, 146, 0.726);
   font-size: 15px;
   color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $primaryFont;
-    
 }
 .attraction-search-form input::placeholder {
   color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $primaryFont;
 }
-
 .search-result-count {
   display: flex;
   position: fixed;
