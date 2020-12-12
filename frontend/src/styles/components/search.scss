@@ -27,10 +27,19 @@
   height: 36px;
   width: 40px;
   border: none;
-  background: none;
+  background-color: ;
+  // margin-right: 10%;
+  border-radius: 20%;
 }
 .searchButton:hover{
   background-color: rgba(121, 121, 121, 0.712);
+}
+.attraction-search-form{
+  background-color: blueviolet;
+  border-radius: 10px;
+  
+
+  
 }
 .attraction-search-form input , select{
   margin: 7px;
