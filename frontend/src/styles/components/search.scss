@@ -27,25 +27,27 @@
   height: 36px;
   width: 40px;
   border: none;
-  background-color: ;
-  // margin-right: 10%;
+  background-color: $DarkGray;
   border-radius: 20%;
 }
 .searchButton:hover{
   background-color: rgba(121, 121, 121, 0.712);
 }
 .attraction-search-form{
-  background-color: blueviolet;
+  background-color: $MediumPurple;
   border-radius: 10px;
+  width: 103%;
   
 
   
 }
 .attraction-search-form input , select{
   margin: 7px;
-  border-radius: 10px;
-  box-shadow: 1px 1.5px;
-  background-color: rgba(146, 146, 146, 0.726);
+  // border-radius: 10px;
+  background: none;
+  border: none;
+  // box-shadow: 1px 1.5px;
+  // background-color: rgba(146, 146, 146, 0.726);
   font-size: 15px;
   color: rgb(7, 6, 6);
   font-weight: bold;
