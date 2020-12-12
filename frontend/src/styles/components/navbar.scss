@@ -49,12 +49,14 @@ color: $GreenHover;
   outline: none;
 }
 .main-page-logout{
-  background-color: rgba(128, 128, 128, 0.5);
-  padding: 5px;
-  border-radius: 30%;
+  background: none;
+  color: $WhiteSmoke;
+  border: none;
   font-family: $primaryFont;
   font-size: 16px;
-  font-weight: bold;
+}
+.main-page-logout:hover{
+  color: $GreenHover;
 }
 
 .welcome-user {
