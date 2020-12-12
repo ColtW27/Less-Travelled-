@@ -4,7 +4,7 @@
   width: 500px;
 }
 .searchField:hover {
-  background-color: rgba(121, 121, 121, 0.712);
+  // background-color: rgba(121, 121, 121, 0.712);
 }
 .categoryField {
   height: 46px;
@@ -29,7 +29,7 @@
   border-radius: 20%;
 }
 .searchButton:hover{
-  background-color: rgba(121, 121, 121, 0.712);
+  background-color: $GreenHover;
 }
 .attraction-search-form{
   background-color: $MediumPurple;
@@ -44,7 +44,11 @@
   color: rgb(7, 6, 6);
   font-weight: bold;
   font-family: $primaryFont;
+ 
 }
+ .attraction-search-form input:focus{
+    outline : none;
+  }
 .attraction-search-form input::placeholder {
   color: rgb(7, 6, 6);
   font-weight: bold;
