@@ -53,7 +53,8 @@ color: $GreenHover;
   color: $WhiteSmoke;
   border: none;
   font-family: $primaryFont;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: bold;
 }
 .main-page-logout:hover{
   color: $GreenHover;
@@ -68,6 +69,8 @@ color: $GreenHover;
   align-items: center;
   width: 200px;
   color: $GhostWhite;
+  font-family: $primaryFont;
+
 }
 .less-Trav-Logo img {
   height: 60px;
