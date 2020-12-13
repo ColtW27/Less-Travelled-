@@ -40,21 +40,7 @@ class travelMapV2 extends React.Component {
             :
             null
           }
-           {/* <DirectionsService
-            options={{ 
-              destination: destination,
-              origin: center,
-              travelMode: "DRIVING"
-            }}
 
-            callback={this.directionsCallback}
-            onLoad={directionsService => {
-              console.log('DirectionsService onLoad directionsService: ', directionsService)
-            }}
-            onUnmount={directionsService => {
-              console.log('DirectionsService onUnmount directionsService: ', directionsService)
-            }}
-          /> */}
           {
               (
                 destination !== '' &&
@@ -85,14 +71,14 @@ class travelMapV2 extends React.Component {
               response !== null && (
                 <DirectionsRenderer
                   // required
-                  options={{ 
+       
                     directions: response
                   }}
-                  // optional
+        
                   onLoad={directionsRenderer => {
                     console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
                   }}
-                  // optional
+   
                   onUnmount={directionsRenderer => {
                     console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
                   }}
