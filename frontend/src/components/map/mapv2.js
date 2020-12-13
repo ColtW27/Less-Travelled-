@@ -47,13 +47,11 @@ class travelMapV2 extends React.Component {
                 center !== ''
               ) && (
                 <DirectionsService
-                  // required
                   options={{ 
                     destination: destination,
                     origin: center,
                     travelMode: 'DRIVING'
                   }}
-                  // required
                   callback={directionsCallback}
                   // optional
                   // onLoad={directionsService => {
@@ -70,8 +68,7 @@ class travelMapV2 extends React.Component {
             {
               response !== null && (
                 <DirectionsRenderer
-                  // required
-       
+                  options={{ 
                     directions: response
                   }}
         
