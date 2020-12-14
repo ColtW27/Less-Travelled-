@@ -15,7 +15,7 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      currentCenter: "",
+      currentCenter: "40.7484, -73.9857",
       destination: "",
       response: null
     }
