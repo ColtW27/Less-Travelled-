@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ColtW27/Less-Travelled-#readme",
   "dependencies": {
+    "@react-google-maps/api": "^2.0.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
