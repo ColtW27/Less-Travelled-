@@ -1,50 +1,101 @@
 import React from 'react';
-import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import { GoogleMap, LoadScript, Marker, DirectionsRenderer, DirectionsService } from '@react-google-maps/api';
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
-// console.log(gKey)
 
-function statusChecker(input) {
-        return  <Marker
-            title={input.name}
-            key={input.id}
-            position={{ lat: input.latitude, lng: input.longitude }}
-          />
-}
+const containerStyle = {
+  width: '800px',
+  height: '1000px',
+  // position: 'fixed',
+  // right: '5px'
+};
 
 class TravelMap extends React.Component {
 
   render() {
-    const {attractions, attraction} = this.props
-    
-    return (
-        <Map google={this.props.google}
+    const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
 
-          zoom={9}
-          initialCenter={!!attraction ? {lat: attraction[0].latitude, lng: attraction[0].longitude} : {lat: 40.7128, lng: -73.935242}}
-          >
+    return (
+  
+      <LoadScript
+        googleMapsApiKey={gKey}
+      >
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={10}
+        >
+          <Marker 
+            position={attraction ? attraction : center}
+          />
+
           {
-            (attraction !== undefined) ? 
-              statusChecker(attraction)
-            :
-            attractions.map(garbage => {    
-            return <Marker
-              title={garbage.props.attraction.name}
-              key={garbage.props.attraction.id}
-              position={{ lat: garbage.props.attraction.latitude, lng: garbage.props.attraction.longitude }}
-            />
+            (attractions !== undefined) ? attractions.map((mark, index) => {
+              return <Marker
+                key={index}
+                position={{ lat: parseFloat(mark.props.attraction.latitude), lng: parseFloat(mark.props.attraction.longitude) }}
+                onClick={setDestination}
+              />
             })
-          
+            :
+            null
           }
-          <Marker onClick={this.onMapClick}
-                name={'Current location'} 
-                
+
+          {
+              (
+                destination !== '' &&
+                center !== ''
+              ) && (
+                <DirectionsService
+                  options={{ 
+                    destination: destination,
+                    origin: center,
+                    travelMode: 'DRIVING'
+                  }}
+                  callback={directionsCallback}
+                  // optional
+                  // onLoad={directionsService => {
+                  //   console.log('DirectionsService onLoad directionsService: ', directionsService)
+                  // }}
+                  // optional
+                  // onUnmount={directionsService => {
+                  //   console.log('DirectionsService onUnmount directionsService: ', directionsService)
+                  // }}
                 />
-        </Map>
+              )
+            }
+
+            {
+              response !== null && (
+                <DirectionsRenderer
+                  options={{ 
+                    directions: response
+                  }}
+        
+                  onLoad={directionsRenderer => {
+                    console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+                  }}
+   
+                  onUnmount={directionsRenderer => {
+                    console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+                  }}
+                />
+              )
+            }
+          <DirectionsRenderer
+            options={{origin: center, destination: destination}}
+            onLoad={directionsRenderer => {
+              console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+            }}
+            // optional
+            onUnmount={directionsRenderer => {
+              console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+            }}
+          />
+        </GoogleMap>
+      </LoadScript>
     )
   }
 }
 
-export default GoogleApiWrapper({
-    apiKey: (`${gKey}`)
-  })(TravelMap);
+export default TravelMap;

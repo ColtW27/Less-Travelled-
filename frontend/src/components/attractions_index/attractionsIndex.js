@@ -14,17 +14,46 @@ class AttractionsIndex extends React.Component {
       attractions: this.props.attractions, 
       searchTerm: "",
       category: "",
-      rating: ""
+      rating: "",
+      currentCenter: "",
+      destination: "",
+      response: null
     }
+
     this.handleQuery = this.handleQuery.bind(this);
     this.handleRating = this.handleRating.bind(this);
     this.handleCategory = this.handleCategory.bind(this);
     this.handleAll = this.handleAll.bind(this); 
+    this.directionsCallback = this.directionsCallback.bind(this);
+    this.setDestination = this.setDestination.bind(this)
   }
 
   componentDidMount() {
     this.props.fetchAttractions();  
+    this.findCurrentLocation();
   }
+
+  findCurrentLocation = () => {
+    // if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.setState(prevState => ({
+          currentCenter: {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+            }
+          }))
+        }, 
+        error => console.log(error)     
+      );   
+    };
+
+    setDestination = (ref) => {
+      this.setState(prevState => ({
+        destination: `${ref.latLng.lat()}, ${ref.latLng.lng()}`
+
+      }))
+      console.log(ref)
+    }
 
   componentDidUpdate(prevProps, prevState) {
 
@@ -76,6 +105,7 @@ class AttractionsIndex extends React.Component {
         )
       })
     }
+
     if (prevState.rating !== this.state.rating) {
       // debugger 
         // newAttractions = newAttractions.filter(attraction => {
@@ -170,6 +200,22 @@ class AttractionsIndex extends React.Component {
   // }
   }
 
+  directionsCallback (response) {
+    console.log(response)
+
+    if (response !== null) {
+      if (response.status === 'OK') {
+        this.setState(
+          () => ({
+            response
+          })
+        )
+      } else {
+        console.log('response: ', response)
+      }
+    }
+  }
+
   noMatches(attractions){
     return(
       <div className='attractions-container'>
@@ -191,7 +237,7 @@ class AttractionsIndex extends React.Component {
           <br />
           <div className="attractionsIndex">
           </div>
-          <map><TravelMap attractions={attractions} /></map>
+          {/* <map><TravelMap attractions={attractions} /></map> */}
         </div>
       </div>
     )
@@ -206,6 +252,8 @@ class AttractionsIndex extends React.Component {
         />
       ))
     if (this.state.attractions.length === 0) return this.noMatches(attractions);
+
+
     return (
       <div className='attractions-container'>
         <div>
@@ -220,15 +268,22 @@ class AttractionsIndex extends React.Component {
           {attractions.length} search result(s)
         </div>
           <div className="AddAttraction">
-          <Link to="/attractionsform">Add an attraction</Link> 
+            <Link to="/attractionsform">Add an attraction</Link> 
           </div>
+
         <div className="attractionsListings">
           {attractions}
         </div>
-        <div className='attractions-main'>
-          <br/> 
-          <map className="attraction-map">
-            <TravelMap attractions={attractions} /></map>
+
+        <div className='attraction-map'>
+          <TravelMap
+                attractions={attractions} 
+                center={this.state.currentCenter} 
+                destination={this.state.destination} 
+                response={this.state.response}
+                directionsCallback={this.directionsCallback}
+                setDestination={this.setDestination}
+          />
         </div>
       </div>
     );
