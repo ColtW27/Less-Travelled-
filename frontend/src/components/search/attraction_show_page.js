@@ -8,13 +8,18 @@ class AttractionShow extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentCenter: {lat: parseFloat(48.858093), lng: parseFloat(2.294694)}
+      currentCenter: {lat: parseFloat(40.758896), lng: parseFloat(-73.985130)},
+      destination: "",
+      response: null
     };
 
 
 
     this.findCurrentLocation = this.findCurrentLocation.bind(this);
+    this.setDestination = this.setDestination.bind(this);
+    this.directionsCallback = this.directionsCallback.bind(this);
   }
+
 
   componentDidMount(){
     this.props.fetchAttraction();
@@ -24,7 +29,6 @@ class AttractionShow extends React.Component {
 
 
   findCurrentLocation = () => {
-
     navigator.geolocation.getCurrentPosition(position => {
       this.setState(prevState => ({
         currentCenter: {
@@ -37,12 +41,39 @@ class AttractionShow extends React.Component {
     );   
   };
 
+  setDestination = (ref) => {
+    this.setState(prevState => ({
+      destination: `${parseFloat(ref.position.lat())}, ${parseFloat(ref.position.lng())}`
+    }))
+    console.log(ref)
+  };
+
+
+  directionsCallback (response) {
+
+    if (response !== null) {
+      if (response.status === 'OK') {
+        this.setState(
+          () => ({
+            response
+          })
+        )
+      } else {
+        console.log('response: ', response)
+      }
+    }
+  };
+
+
+
+
+
   render() {
     const attraction = this.props.attraction
     if (!attraction) {
       return null
-    }
-  
+    } 
+
     return (
       <div className="attractions-show-container">
         <div className="attractionShow"> 
@@ -68,6 +99,10 @@ class AttractionShow extends React.Component {
           <TravelMap 
             attraction={attraction} 
             center={this.state.currentCenter}
+            destination={this.state.destination} 
+            response={this.state.response}
+            setDestination={this.setDestination}
+            directionsCallback={this.directionsCallback}
           />
         </map>
       </div>

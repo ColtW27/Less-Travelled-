@@ -15,7 +15,7 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      currentCenter: {lat: parseFloat(48.858093), lng: parseFloat(2.294694)},
+      currentCenter: {lat: parseFloat(40.758896), lng: parseFloat(-73.985130)},
       destination: "",
       response: null
     }
@@ -48,6 +48,7 @@ class AttractionsIndex extends React.Component {
     };
 
     setDestination = (ref) => {
+    
       this.setState(prevState => ({
         destination: `${parseFloat(ref.latLng.lat())}, ${parseFloat(ref.latLng.lng())}`
 
