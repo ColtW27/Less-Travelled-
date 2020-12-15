@@ -5,11 +5,37 @@ import TravelMap from '../map/map';
   
 
 class AttractionShow extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentCenter: {lat: parseFloat(48.858093), lng: parseFloat(2.294694)}
+    };
+
+
+
+    this.findCurrentLocation = this.findCurrentLocation.bind(this);
+  }
 
   componentDidMount(){
     this.props.fetchAttraction();
     this.props.fetchAttractions();
+    this.findCurrentLocation();
   }
+
+
+  findCurrentLocation = () => {
+
+    navigator.geolocation.getCurrentPosition(position => {
+      this.setState(prevState => ({
+        currentCenter: {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+          }
+        }))
+      }, 
+      error => console.log(error)     
+    );   
+  };
 
   render() {
     const attraction = this.props.attraction
@@ -39,7 +65,10 @@ class AttractionShow extends React.Component {
           <br></br>
         </div>
         <map className="attraction-map">
-          <TravelMap attraction={[attraction]} />
+          <TravelMap 
+            attraction={attraction} 
+            center={this.state.currentCenter}
+          />
         </map>
       </div>
     );

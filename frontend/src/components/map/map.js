@@ -14,6 +14,8 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
+    debugger;
+    
 
     return (
   
@@ -26,7 +28,7 @@ class TravelMap extends React.Component {
           zoom={10}
         >
           <Marker 
-            position={attraction ? attraction : center}
+            position={center}
           />
 
           {
@@ -38,7 +40,9 @@ class TravelMap extends React.Component {
               />
             })
             :
-            null
+            <Marker 
+              position={{ lat: parseFloat(attraction.latitude), lng: parseFloat(attraction.longitude) }}
+            />
           }
 
           {
