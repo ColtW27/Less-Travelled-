@@ -14,6 +14,7 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
+    
 
     return (
   
@@ -26,7 +27,7 @@ class TravelMap extends React.Component {
           zoom={10}
         >
           <Marker 
-            position={attraction ? attraction : center}
+            position={center}
           />
 
           {
@@ -38,7 +39,10 @@ class TravelMap extends React.Component {
               />
             })
             :
-            null
+            <Marker 
+              position={{ lat: parseFloat(attraction.latitude), lng: parseFloat(attraction.longitude) }}
+              onLoad={setDestination}
+            />
           }
 
           {
@@ -53,14 +57,7 @@ class TravelMap extends React.Component {
                     travelMode: 'DRIVING'
                   }}
                   callback={directionsCallback}
-                  // optional
-                  // onLoad={directionsService => {
-                  //   console.log('DirectionsService onLoad directionsService: ', directionsService)
-                  // }}
-                  // optional
-                  // onUnmount={directionsService => {
-                  //   console.log('DirectionsService onUnmount directionsService: ', directionsService)
-                  // }}
+
                 />
               )
             }
