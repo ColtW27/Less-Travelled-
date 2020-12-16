@@ -15,7 +15,7 @@ class AttractionsIndex extends React.Component {
       searchTerm: "",
       category: "",
       rating: "",
-      currentCenter: "40.7484, -73.9857",
+      currentCenter: {lat: parseFloat(40.758896), lng: parseFloat(-73.985130)},
       destination: "",
       response: null
     }
@@ -25,7 +25,7 @@ class AttractionsIndex extends React.Component {
     this.handleCategory = this.handleCategory.bind(this);
     this.handleAll = this.handleAll.bind(this); 
     this.directionsCallback = this.directionsCallback.bind(this);
-    this.setDestination = this.setDestination.bind(this)
+    this.setDestination = this.setDestination.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +34,7 @@ class AttractionsIndex extends React.Component {
   }
 
   findCurrentLocation = () => {
-    // if (navigator.geolocation) {
+
       navigator.geolocation.getCurrentPosition(position => {
         this.setState(prevState => ({
           currentCenter: {
@@ -48,8 +48,9 @@ class AttractionsIndex extends React.Component {
     };
 
     setDestination = (ref) => {
+    
       this.setState(prevState => ({
-        destination: `${ref.latLng.lat()}, ${ref.latLng.lng()}`
+        destination: `${parseFloat(ref.latLng.lat())}, ${parseFloat(ref.latLng.lng())}`
 
       }))
       console.log(ref)
