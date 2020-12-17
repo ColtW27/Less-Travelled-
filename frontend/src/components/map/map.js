@@ -8,8 +8,9 @@ console.log(logo)
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 debugger;
 const containerStyle = {
-  width: '800px',
-  height: '1000px',
+  width: '700px',
+  height: '400px',
+  position: 'relative'
 };
 
 class TravelMap extends React.Component {
@@ -44,7 +45,7 @@ class TravelMap extends React.Component {
             <Marker 
               position={{ lat: parseFloat(attraction.latitude), lng: parseFloat(attraction.longitude) }}
               onLoad={setDestination}
-              
+
             />
           }
 
@@ -71,26 +72,28 @@ class TravelMap extends React.Component {
                   options={{ 
                     directions: response
                   }}
+            
         
-                  onLoad={directionsRenderer => {
-                    console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
-                  }}
+                  // onLoad={directionsRenderer => {
+                  //   console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+                  // }}
    
-                  onUnmount={directionsRenderer => {
-                    console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
-                  }}
+                  // onUnmount={directionsRenderer => {
+                  //   console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+                  // }}
                 />
               )
             }
           <DirectionsRenderer
             options={{origin: center, destination: destination}}
-            onLoad={directionsRenderer => {
-              console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
-            }}
-            // optional
-            onUnmount={directionsRenderer => {
-              console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
-            }}
+   
+            // onLoad={directionsRenderer => {
+            //   console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+            // }}
+            // // optional
+            // onUnmount={directionsRenderer => {
+            //   console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+            // }}
           />
         </GoogleMap>
       </LoadScript>
