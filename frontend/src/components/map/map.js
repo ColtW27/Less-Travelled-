@@ -1,5 +1,9 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker, DirectionsRenderer, DirectionsService } from '@react-google-maps/api';
+import logo from '../../styles/images/traveller_icon.png';
+
+console.log('hello')
+console.log(logo)
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 
@@ -14,8 +18,7 @@ class TravelMap extends React.Component {
 
   render() {
     const {attractions, attraction, center, destination, response, directionsCallback, setDestination} = this.props;
-    
-
+  
     return (
   
       <LoadScript
@@ -28,6 +31,7 @@ class TravelMap extends React.Component {
         >
           <Marker 
             position={center}
+            icon={{url: logo}}
           />
 
           {
@@ -42,6 +46,7 @@ class TravelMap extends React.Component {
             <Marker 
               position={{ lat: parseFloat(attraction.latitude), lng: parseFloat(attraction.longitude) }}
               onLoad={setDestination}
+      
             />
           }
 
