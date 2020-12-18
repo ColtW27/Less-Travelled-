@@ -272,19 +272,20 @@ class AttractionsIndex extends React.Component {
             <Link to="/attractionsform">Add an attraction</Link> 
           </div>
 
-        <div className="attractionsListings">
-          {attractions}
-        </div>
-
-        <div className='attraction-map'>
-          <TravelMap
-                attractions={attractions} 
-                center={this.state.currentCenter} 
-                destination={this.state.destination} 
-                response={this.state.response}
-                directionsCallback={this.directionsCallback}
-                setDestination={this.setDestination}
-          />
+        <div className='attractions-map-section'>
+          <div className="attractionsListings">
+            {attractions}
+          </div>
+          <div className='attraction-map'>
+            <TravelMap
+                  attractions={attractions} 
+                  center={this.state.currentCenter} 
+                  destination={this.state.destination} 
+                  response={this.state.response}
+                  directionsCallback={this.directionsCallback}
+                  setDestination={this.setDestination}
+            />
+          </div>
         </div>
       </div>
     );
