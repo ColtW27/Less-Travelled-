@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 
 .attractions-scroll {
   overflow: auto;
-  max-height: 800px;
+  max-height: 780px;
   padding-right: 20px;
 }
 
@@ -17,7 +18,6 @@
 
 .attractions-listing { 
   margin-top: 175px;
-  
   width: 90%;
 
   div {

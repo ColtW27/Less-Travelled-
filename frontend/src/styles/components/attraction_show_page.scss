@@ -5,6 +5,9 @@
   padding-top: 80px;
   padding-left: 25px;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .attraction-show-container {

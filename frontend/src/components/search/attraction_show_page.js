@@ -85,17 +85,15 @@ class AttractionShow extends React.Component {
                 alt="Attraction"
               ></img>
             </li>
-            {/* <br></br> */}
             <li className="attraction-title">{attraction.name}</li>
             <li className="attraction-description">
               Rating: {attraction.rating}
             </li>
             <li className="attraction-description">Location: {attraction.address}</li>
-          <li className="attraction-description">{attraction.description}</li>
+            <li className="attraction-description">{attraction.description}</li>
           </ul>
-          <br></br>
         </div>
-        <map className="attraction-map">
+        <div className="attraction-map">
           <TravelMap 
             attraction={attraction} 
             center={this.state.currentCenter}
@@ -104,7 +102,7 @@ class AttractionShow extends React.Component {
             setDestination={this.setDestination}
             directionsCallback={this.directionsCallback}
           />
-        </map>
+        </div>
       </div>
     );
   }
