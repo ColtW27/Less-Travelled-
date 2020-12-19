@@ -246,6 +246,7 @@ class AttractionsIndex extends React.Component {
 
   render() {
      const attractions = this.state.attractions.map(attraction => (
+       
         <AttractionsBox
           key={attraction._id} 
           attraction={attraction}
@@ -273,8 +274,10 @@ class AttractionsIndex extends React.Component {
           </div>
 
         <div className='attractions-map-section'>
-          <div className="attractionsListings">
-            {attractions}
+          <div className='attractions-scroll'>
+            <div className="attractions-listing">
+              <ul>{attractions}</ul>
+            </div>
           </div>
           <div className='attraction-map'>
             <TravelMap

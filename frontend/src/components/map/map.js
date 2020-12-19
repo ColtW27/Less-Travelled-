@@ -9,7 +9,7 @@ const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOO
 debugger;
 const containerStyle = {
   width: '700px',
-  height: '750px',
+  height: '770px',
   position: 'relative'
 };
 
