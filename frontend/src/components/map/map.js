@@ -7,9 +7,9 @@ console.log(logo)
 
 const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOOGLEMAP_API_KEY : require('../../config/keys').googleKey;
 const containerStyle = {
-  width: '45vw',
+  width: '50vw',
   minWidth: '25vw',
-  height: '770px',
+  height: '700px',
   position: 'relative'
 };
 

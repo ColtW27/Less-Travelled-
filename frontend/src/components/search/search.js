@@ -74,10 +74,10 @@ class SearchBar extends React.Component {
           </select> */}
                   &nbsp;
                   <button 
-                  className="searchButton" 
-                  type="submit" 
+                    className="searchButton" 
+                    type="submit" 
                   // value="S" 
-                  onClick={
+                    onClick={
                     // () => {
                     //   console.log('props: ', this.props);  
                     //   this.props.handleRating(this.state.rating);  
