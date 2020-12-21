@@ -7,10 +7,12 @@
   width: 90%;
 
   div {
-    margin-left: 25px;
+    margin-left: 15px;
     margin-bottom: 25px;
     height: 300px; 
-    width: 650px;
+    // width: 650px;
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
     // background-color: gray;
     background-color: $MediumPurple;
@@ -98,6 +100,7 @@
   margin-left: 15px;
   width: 50%;
   
+  
 
 
 
@@ -111,6 +114,7 @@
   width: 70%;
   margin-top: 5px;
   margin-left: 5px;
+  max-width: 572px;
 
 }
 
@@ -132,6 +136,7 @@
 
 .attractions-scroll {
   overflow: auto;
+  margin-top: 2px;
   max-height: 81vh;
   padding-right: 20px;
 }
