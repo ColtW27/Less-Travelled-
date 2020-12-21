@@ -1,23 +1,9 @@
-.attractions-map-section {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-
-.attractions-scroll {
-  overflow: auto;
-  max-height: 780px;
-  padding-right: 20px;
-}
 
 
 
 
 .attractions-listing { 
-  margin-top: 175px;
+  margin-top: 17px;
   width: 90%;
 
   div {
@@ -99,12 +85,33 @@
   height: 100vh;
   background-color: $BlueGrey;
 
-  .searchBar {
-    padding-top: 85px;
-    position: fixed;
-    left: 24px;
-    z-index: 2;
-  }
+  // .searchBar {
+  //   padding-top: 85px;
+  //   position: fixed;
+  //   left: 24px;
+  //   z-index: 2;
+  // }
+}
+
+.attractions-search-section {
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 50%;
+  
+
+
+
+}
+
+
+.search-add-attraction-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 5px;
+  margin-left: 5px;
+
 }
 
 
@@ -114,12 +121,28 @@
   justify-content: space-between;
 }
 
+.attractions-map-section {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+.attractions-scroll {
+  overflow: auto;
+  max-height: 81vh;
+  padding-right: 20px;
+}
+
+
 
 .AddAttraction {
-  display: flex;
-  position: fixed;
-  top: 150px;
-  left: 32%;
+  // display: flex;
+  // position: fixed;
+  // top: 150px;
+  // left: 32%;
   font-size: 17px;
   font-family: $primaryFont;
 

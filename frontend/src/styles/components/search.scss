@@ -34,9 +34,10 @@
   background-color: $GreenHover;
 }
 .attraction-search-form{
+  margin-top: 20px;
   background-color: $MediumPurple;
   border-radius: 10px;
-  width: 101.5%;
+  width: 85.5%;
   border: 1px solid black;
 }
 .attraction-search-form input , select{
@@ -58,10 +59,10 @@
   font-family: $primaryFont;
 }
 .search-result-count {
-  display: flex;
-  position: fixed;
-  top: 150px;
-  left: 37px;
+  // display: flex;
+  // position: fixed;
+  // top: 150px;
+  // left: 37px;
   background-color: rgba(146, 146, 146, 0.726);;
   padding: 5px;
   border-radius: 8px;

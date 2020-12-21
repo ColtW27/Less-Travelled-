@@ -108,7 +108,7 @@ class AttractionsIndex extends React.Component {
     }
 
     if (prevState.rating !== this.state.rating) {
-      // debugger 
+
         // newAttractions = newAttractions.filter(attraction => {
         newAttractions = this.state.allAttractions.filter(attraction => {
           return (attraction.rating === this.state.rating)  
@@ -116,7 +116,6 @@ class AttractionsIndex extends React.Component {
     }
 
     if (this.state.attractions !== newAttractions) {
-      // debugger 
       this.setState({attractions: newAttractions}); 
     }
 
@@ -220,18 +219,19 @@ class AttractionsIndex extends React.Component {
   noMatches(attractions){
     return(
       <div className='attractions-container'>
-        <div>
+
+        <div className='attractions-search-section'>
           <SearchBar 
               handleAll={this.handleAll}
            />
-        </div>
-        <br/>
-        <div className="AddAttraction">
-          <Link to="/attractionsform">Add an attraction</Link> 
+           <div className='attractions-search-results'>
+            <div className="AddAttraction">
+              <Link to="/attractionsform">Add an attraction</Link> 
+            </div>
+            <div className="search-result-count">
+              Sorry, there do not appear to be any matches for your search.
+            </div>
           </div>
-
-        <div className="search-result-count">
-          Sorry, there do not appear to be any matches for your search.
         </div>
 
         <div className='attractions-main'>
@@ -258,27 +258,31 @@ class AttractionsIndex extends React.Component {
 
     return (
       <div className='attractions-container'>
-        <div>
-          <SearchBar 
-            handleQuery={this.handleQuery}
-            handleRating={this.handleRating}
-            handleAll={this.handleAll}
-          />
-        </div>
-        <br/>
-        <div className="search-result-count">
-          {attractions.length} search result(s)
-        </div>
-          <div className="AddAttraction">
-            <Link to="/attractionsform">Add an attraction</Link> 
-          </div>
 
         <div className='attractions-map-section'>
-          <div className='attractions-scroll'>
-            <div className="attractions-listing">
-              <ul>{attractions}</ul>
+
+          <div className='attractions-search-section'>
+            <SearchBar 
+              handleQuery={this.handleQuery}
+              handleRating={this.handleRating}
+              handleAll={this.handleAll}
+            />
+            <div className='search-add-attraction-section'>
+              <div className="search-result-count">
+                  {attractions.length} search result(s)
+              </div>
+              <div className="AddAttraction">
+                <Link to="/attractionsform">Add an attraction</Link> 
+              </div>
+            </div>
+              
+            <div className='attractions-scroll'>
+              <div className="attractions-listing">
+                <ul>{attractions}</ul>
+              </div>
             </div>
           </div>
+
           <div className='attraction-map'>
             <TravelMap
                   attractions={attractions} 
