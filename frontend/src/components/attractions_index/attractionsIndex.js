@@ -219,7 +219,8 @@ class AttractionsIndex extends React.Component {
   noMatches(attractions){
     return(
       <div className='attractions-container'>
-
+        <br></br>
+        <br></br>
         <div className='attractions-search-section'>
           <SearchBar 
               handleAll={this.handleAll}
@@ -244,6 +245,7 @@ class AttractionsIndex extends React.Component {
     )
   }
 
+  
   render() {
      const attractions = this.state.attractions.map(attraction => (
        
