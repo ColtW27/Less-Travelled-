@@ -9,7 +9,7 @@ const gKey = process.env.REACT_APP_GOOGLEMAP_API_KEY ? process.env.REACT_APP_GOO
 const containerStyle = {
   width: '50vw',
   minWidth: '25vw',
-  height: '700px',
+  height: '750px',
   position: 'relative'
 };
 

@@ -1,7 +1,3 @@
-
-
-
-
 .attractions-listing { 
   margin-top: 17px;
   width: 90%;
@@ -10,11 +6,9 @@
     margin-left: 15px;
     margin-bottom: 25px;
     height: 300px; 
-    // width: 650px;
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
-    // background-color: gray;
     background-color: $MediumPurple;
   }
   
@@ -24,9 +18,10 @@
 
   .attractionsImage {
     margin: 20px 10px 10px 10px;
-    // width: 300px;
-    height: 260px;
     width: 280px;
+    height: 260px;
+    max-width: 280px;
+
     border-radius: 10px;
     border: 2px solid black;
   }
@@ -78,9 +73,57 @@
  
 
 }
-  .attraction-index-item{
-    border-radius: 10px;
+
+@media only screen and (max-width: 1360px) {
+
+  .attractions-listing { 
+
+    div {
+      margin-left: 15px;
+      margin-bottom: 5px;
+      height: 300px; 
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      background-color: $MediumPurple;
+    }
+
+    .attractionContent {
+      width: 225px;
+      height: 140px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-family: $primaryFont;
+      font-size: large;
+      color: black;
+     
+    }
+
   }
+
+
+
+
+
+  .attraction-box-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 200px;
+
+
+
+
+
+  }
+
+
+}
+
+
+.attraction-index-item{
+  border-radius: 10px;
+}
 
 
 .attractions-container {
@@ -105,7 +148,6 @@
 
 
 }
-
 
 .search-add-attraction-section {
   display: flex;
@@ -134,12 +176,18 @@
 }
 
 
+
+
+
 .attractions-scroll {
   overflow: auto;
   margin-top: 2px;
   max-height: 81vh;
   padding-right: 20px;
 }
+
+
+
 
 
 
