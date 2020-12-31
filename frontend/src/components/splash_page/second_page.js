@@ -9,41 +9,62 @@ class SplashPage extends React.Component {
   render() {
     return (
       <div className='main-page-container'>
-        <div className='background-mage-main'>
-          YOU SEE ME?
-        </div>
+        <ul>
+          <li>
+            <div className='about-us-polaroid'>
+              <img  src='../../../images/splashPageImages/Drumheller_Dino.jpg' />
+              <h3>Find hidden treasures</h3>
+            </div>
+            <p>
+              Route to the 'LessTravelled' attractions near you with our mapping tool.
+
+            </p>
+
+
+          </li>
+          <li>
+            <div className='about-us-polaroid'>
+              <img  src='../../../images/splashPageImages/secret_caverns.jpeg' />
+              <h3>Find hidden treasures</h3>
+            </div>
+            <p>
+              Route to the 'LessTravelled' attractions near you with our mapping
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada massa. Fusce in lobortis orci, vel luctus dui. Etiam mattis dui lectus, quis commodo sem ultricies a. Nam nec 
+
+
+
+
+            </p>
+
+
+          </li>
+          <li>
+            <div className='about-us-polaroid'>
+              <img  src='../../../images/splashPageImages/sideshowexpo.jpeg' />
+              <h3>Find hidden treasures</h3>
+            </div>
+            <p>
+              Route to the 'LessTravelled' attractions near you with our mapping
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada massa. Fusce in lobortis orci, vel luctus dui. Etiam mattis dui lectus, quis commodo sem ultricies a. Nam nec 
+
+
+
+            </p>
+
+
+          </li>
+
+        </ul>
+
+
+
+
+        {/* <div className='background-image-main'>
+        </div> */}
         <div className="main-page-description">
         </div>
-        <footer className="main-page-footer">
-          
-
-
-
-
-
-
-
-
-
-          <div className="copyright">
-
-
-
-
-
-            Copyright &copy; 2020 LessTravelled
-            Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
-          </div>
-          
-
-
-
-
-          <Link
-          className="about-us-link"
-          to="/aboutus"
-          >Meet the Team</Link>
-        </footer>
       </div>
     );
   }
