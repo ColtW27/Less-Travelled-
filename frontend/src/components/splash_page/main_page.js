@@ -8,10 +8,17 @@ class MainPage extends React.Component {
     return (
      
       <div className='landing-page-container'>
+
         <div className='landing-polaroid'>
-              <img  src='../../../images/splashPageImages/Drumheller_Dino.jpg' />
+              <img  src='../../../images/splashPageImages/route-66.jpg' />
               <h3>LessTravelled</h3>
+              <h4>See the world in all of its nitty-gritty detail</h4>
         </div>
+
+        <style type="text/css">
+          {`.nav-container {display: none}`}
+          {`.main-page-footer {display: none}`}
+         </style>
 
 
 
@@ -20,8 +27,6 @@ class MainPage extends React.Component {
           LessTravelled is for those of us that love to get out and see the world in all of its nitty-gritty detail.  
         </div> */}
     
-
-        <div>Click the photo to proceed</div>
       </div>
     );
   }
