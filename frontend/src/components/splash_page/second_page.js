@@ -16,40 +16,27 @@ class SplashPage extends React.Component {
               <h3>Find hidden treasures</h3>
             </div>
             <p>
-              Route to the 'LessTravelled' attractions near you with our mapping tool.
-
+              Discover the 'LessTravelled' on your roadtrip with LessTravelled. Access our mapping tool and see a list of
             </p>
-
-
           </li>
           <li>
             <div className='about-us-polaroid'>
               <img  src='../../../images/splashPageImages/secret_caverns.jpeg' />
-              <h3>Find hidden treasures</h3>
+              <h3>Route to roadside attractions</h3>
             </div>
             <p>
-              Route to the 'LessTravelled' attractions near you with our mapping
-
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada massa. Fusce in lobortis orci, vel luctus dui. Etiam mattis dui lectus, quis commodo sem ultricies a. Nam nec 
-
-
-
-
+              Route to attractions near you with our mapping tool. Just click an attraction close by and let LessTravelled's mapping tool do the routing for you.
             </p>
-
-
           </li>
           <li>
             <div className='about-us-polaroid'>
               <img  src='../../../images/splashPageImages/sideshowexpo.jpeg' />
-              <h3>Find hidden treasures</h3>
+              <h3>Add your discoveries</h3>
             </div>
             <p>
-              Route to the 'LessTravelled' attractions near you with our mapping
+              Add an Attraction to LessTravelled and share in a community that promotes discovery
 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada massa. Fusce in lobortis orci, vel luctus dui. Etiam mattis dui lectus, quis commodo sem ultricies a. Nam nec 
-
-
+           
 
             </p>
 
@@ -57,12 +44,6 @@ class SplashPage extends React.Component {
           </li>
 
         </ul>
-
-
-
-
-        {/* <div className='background-image-main'>
-        </div> */}
         <div className="main-page-description">
         </div>
       </div>
