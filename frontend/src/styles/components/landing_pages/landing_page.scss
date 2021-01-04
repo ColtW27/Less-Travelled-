@@ -1,0 +1,37 @@
+.landing-page-container {
+  padding-top: 50px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.landing-polaroid {
+      max-width: 50%;
+      background: white;
+      display: inline-block;
+      // margin: 20px 50px 15px;
+      padding: 15px 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -webkit-transition: all .20s linear;
+      -moz-transition: all .20s linear;
+      transition: all .20s linear;
+      z-index: 0;
+      position: relative;
+      font-family: $handwriting;
+      font-size: 40px;
+}
+
+.landing-polaroid img{
+  height: 34vh;
+  width: 55vw;
+  max-width: 248px;
+  min-width: 240px;
+  min-height: 174px;
+  border-radius: 2% 2% 0% 0%;;
+}
