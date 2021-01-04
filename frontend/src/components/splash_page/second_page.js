@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import TravelMap from '../map/map'
 
 
-class SplashPage extends React.Component {
+class MainPage extends React.Component {
 
   render() {
     return (
@@ -51,7 +51,7 @@ class SplashPage extends React.Component {
   }
 }
 
-export default SplashPage;
+export default MainPage;
 
 
 //SPLASH PAGE / MAIN PAGE

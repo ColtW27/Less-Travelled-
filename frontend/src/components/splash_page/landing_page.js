@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 //Rename to Landing
-class MainPage extends React.Component {
+class LandingPage extends React.Component {
 
   render() {
     return (
@@ -32,7 +32,7 @@ class MainPage extends React.Component {
   }
 }
 
-export default MainPage;
+export default LandingPage;
 
 
 //SPLASH PAGE / MAIN PAGE
