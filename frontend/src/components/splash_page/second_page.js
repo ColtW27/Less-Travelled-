@@ -9,9 +9,11 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className='main-page-container'>
+        <div className='main-page-header-image'><h3>LessTravelled</h3></div>
+        {/* <div className='main-page-right-image'></div> */}
         <ul>
           <li>
-            <div className='about-us-polaroid'>
+            <div className='main-page-polaroid'>
               <img  src='../../../images/splashPageImages/Drumheller_Dino.jpg' />
               <h3>Find hidden treasures</h3>
             </div>
@@ -20,7 +22,7 @@ class MainPage extends React.Component {
             </p>
           </li>
           <li>
-            <div className='about-us-polaroid'>
+            <div className='main-page-polaroid'>
               <img  src='../../../images/splashPageImages/secret_caverns.jpeg' />
               <h3>Route to roadside attractions</h3>
             </div>
@@ -29,7 +31,7 @@ class MainPage extends React.Component {
             </p>
           </li>
           <li>
-            <div className='about-us-polaroid'>
+            <div className='main-page-polaroid'>
               <img  src='../../../images/splashPageImages/sideshowexpo.jpeg' />
               <h3>Add your discoveries</h3>
             </div>
@@ -44,8 +46,8 @@ class MainPage extends React.Component {
           </li>
 
         </ul>
-        <div className="main-page-description">
-        </div>
+        {/* <div className="main-page-description">
+        </div> */}
       </div>
     );
   }

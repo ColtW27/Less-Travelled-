@@ -1,10 +1,95 @@
 
 .main-page-container {
-  padding-top: 80px;
-  background-color: $BlueGrey;
+  padding-top: 40px;
+  background-color: $BlueGrey
+
+
 }
 
+
+.main-page-polaroid {
+      // background: #dbe1e2;
+      max-width: 255px;
+      background: white;
+      display: inline-block;
+      // margin: 20px 50px 15px;
+      padding: 15px 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -webkit-transition: all .20s linear;
+      -moz-transition: all .20s linear;
+      transition: all .20s linear;
+      z-index: 0;
+      position: relative;
+      font-family: $handwriting;
+
+
+}
+
+.main-page-polaroid img{
+  height: 27vh;
+  width: 18vw;
+  max-width: 248px;
+  min-width: 240px;
+  min-height: 174px;
+  border-radius: 2% 2% 0% 0%;;
+}
+
+.main-page-polaroid h3 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 24px;
+  scroll-padding-bottom: 5%;
+
+}
+
+.main-page-header-image {
+  // background-image: url('../../images/LessTravelled_main_page_design.jpg');
+  background-image: url('../../images/main_page_background_vr2.jpg');
+
+  background-repeat: no-repeat;
+  height: 58vh;
+  width: 100%;
+}
+
+.main-page-header-image h3 {
+  position: absolute;
+  font-size: 100px;
+  font-family: $pacificoc;
+  font-weight: 800;
+  color: white;
+
+  top: 90px;
+  left: 400px;
+
+}
+
+
+
+
+// .main-page-right-image {
+//   background-image: url('../../images/cornerImage.png');
+//   background-repeat: no-repeat;
+//   height: 900px;
+//   width: 300px;
+//   position:absolute; /* position absolutely */
+//   right:0;
+//   z-index: 1;
+//   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+//   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+
+// }
+
+
+
+
 .main-page-container ul {
+  padding-top: 35px;
   display: flex;
   flex-direction: column;
 }
@@ -13,6 +98,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 3%;
 }
 
 .main-page-container ul li:nth-child(2) {
@@ -20,18 +106,28 @@
   flex-direction: row-reverse;
 }
 
-.main-page-description {
-  display: flex;
-  position: fixed;
-  top: 120px;
-  left: 5%;
-  width: 50%;
-  flex-wrap: wrap;
-  font-size: 28px;
-  font-family: $primaryFont;
-  color: $GhostWhite;
-  line-height: 150%;
+.main-page-container ul li p{
+  background-color: $OffWhite;
 }
+
+
+
+
+// .main-page-description {
+//   display: flex;
+//   position: fixed;
+//   top: 120px;
+//   left: 5%;
+//   width: 50%;
+//   flex-wrap: wrap;
+//   font-size: 28px;
+//   font-family: $primaryFont;
+//   color: $GhostWhite;
+//   line-height: 150%;
+// }
+
+
+
 
 // .splash-list-images {
 //   height: 500px;
