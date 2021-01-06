@@ -7,6 +7,7 @@
 .searchField:hover {
   // background-color: rgba(121, 121, 121, 0.712);
 }
+
 .categoryField {
   height: 46px;
   width: 150px;
@@ -23,6 +24,7 @@
   background-color: rgba(121, 121, 121, 0.712);
 }
 .searchButton {
+
   height: 36px;
   width: 40px;
   border: none;
@@ -33,9 +35,15 @@
   background-color: $GreenHover;
 }
 .attraction-search-form{
+  margin-top: 20px;
   background-color: $MediumPurple;
   border-radius: 10px;
-  width: 101.5%;
+  width: 85.5%;
+  max-width: 572px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .attraction-search-form input , select{
   margin: 7px;
@@ -56,10 +64,7 @@
   font-family: $primaryFont;
 }
 .search-result-count {
-  display: flex;
-  position: fixed;
-  top: 150px;
-  left: 37px;
+
   background-color: rgba(146, 146, 146, 0.726);;
   padding: 5px;
   border-radius: 8px;

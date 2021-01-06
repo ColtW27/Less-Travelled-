@@ -1,11 +1,14 @@
 
 .main-page-footer {
+  
   display: flex;
   padding-left: 5%; 
   padding-top: .5%; 
   padding-bottom: .5%;
   height: 100px;
   background-color: $DarkPurple;
+  z-index: 5;
+
 
   img {
     height: 100%;
