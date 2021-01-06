@@ -4,52 +4,56 @@ import { Link } from 'react-router-dom';
 // import TravelMap from '../map/map'
 
 
-class SplashPage extends React.Component {
+class MainPage extends React.Component {
 
   render() {
     return (
       <div className='main-page-container'>
-        <div className='background-mage-main'>
-          YOU SEE ME?
-        </div>
-        <div className="main-page-description">
-        </div>
-        <footer className="main-page-footer">
-          
+        <div className='main-page-header-image'><h3>LessTravelled</h3></div>
+        {/* <div className='main-page-right-image'></div> */}
+        <ul>
+          <li>
+            <div className='main-page-polaroid'>
+              <img  src='../../../images/splashPageImages/Drumheller_Dino.jpg' />
+              <h3>Find hidden treasures</h3>
+            </div>
+            <p>
+              Discover the 'LessTravelled' on your roadtrip with LessTravelled. Access our mapping tool and see a list of
+            </p>
+          </li>
+          <li>
+            <div className='main-page-polaroid'>
+              <img  src='../../../images/splashPageImages/secret_caverns.jpeg' />
+              <h3>Route to roadside attractions</h3>
+            </div>
+            <p>
+              Route to attractions near you with our mapping tool. Just click an attraction close by and let LessTravelled's mapping tool do the routing for you.
+            </p>
+          </li>
+          <li>
+            <div className='main-page-polaroid'>
+              <img  src='../../../images/splashPageImages/sideshowexpo.jpeg' />
+              <h3>Add your discoveries</h3>
+            </div>
+            <p>
+              Add an Attraction to LessTravelled and share in a community that promotes discovery
+
+           
+
+            </p>
 
 
+          </li>
 
-
-
-
-
-
-
-          <div className="copyright">
-
-
-
-
-
-            Copyright &copy; 2020 LessTravelled
-            Made by: Carl Godlewski, Rahul Jain, Jonathan Romero, Colton Wilmouth
-          </div>
-          
-
-
-
-
-          <Link
-          className="about-us-link"
-          to="/aboutus"
-          >Meet the Team</Link>
-        </footer>
+        </ul>
+        {/* <div className="main-page-description">
+        </div> */}
       </div>
     );
   }
 }
 
-export default SplashPage;
+export default MainPage;
 
 
 //SPLASH PAGE / MAIN PAGE
