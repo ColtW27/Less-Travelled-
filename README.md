@@ -1,6 +1,6 @@
 # Less Travelled
 
-### Less Travelled is a fullstack JavaScript-based single-page web application that brings tavelers together with the love of strange and creative points of interest found across the united states. 
+### Less Travelled is a fullstack JavaScript-based single-page web application that brings travelers together with the love of strange and creative points of interest found across the united states. 
 
 #### View LessTravelled here:
 https://less-travelled.herokuapp.com/
