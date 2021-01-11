@@ -18,7 +18,7 @@ class MainPage extends React.Component {
               <h3>Find hidden treasures</h3>
             </div>
             <p>
-              Discover the 'LessTravelled' on your roadtrip with LessTravelled. Access our mapping tool and see a list of
+              Discover the 'LessTravelled' on your road trip with LessTravelled. Access our mapping tool and see a list of attractions discovered by other users.
             </p>
           </li>
           <li>
@@ -27,7 +27,7 @@ class MainPage extends React.Component {
               <h3>Route to roadside attractions</h3>
             </div>
             <p>
-              Route to attractions near you with our mapping tool. Just click an attraction close by and let LessTravelled's mapping tool do the routing for you.
+              Route to attractions near you with our mapping tool. Just click an attraction close by and let LessTravelled's mapping tool do the routing for you. It's just that easy!
             </p>
           </li>
           <li>
@@ -36,10 +36,7 @@ class MainPage extends React.Component {
               <h3>Add your discoveries</h3>
             </div>
             <p>
-              Add an Attraction to LessTravelled and share in a community that promotes discovery
-
-           
-
+              Find an attraction you can't wait to share? Add to LessTravelled! Explorers rely on your finds and welcome new locations.
             </p>
 
 
