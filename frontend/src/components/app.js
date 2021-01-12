@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Modal from './modal/modal';
 import LandingPage from './splash_page/landing_page';
-import MainPage from './splash_page/second_page';
+import MainPage from './splash_page/main_page';
 import AttractionsContainer from './attractions_index/attractions_container';
 import AttractionsShowContainer from './search/attraction_show_container';
 import PleaseLogin from './please_login/please_login';
