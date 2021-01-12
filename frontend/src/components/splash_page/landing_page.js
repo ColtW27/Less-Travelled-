@@ -7,9 +7,7 @@ class LandingPage extends React.Component {
     return (
      
       <div className='landing-page-container'>
-        <div className=''>Click the photo to start exploring </div>
-        
-
+        <div className='landing-page-enter-text'>Click the photo to start exploring </div>
         <Link className='landing-page-link' to={'/main'}>
           <div onClick={this.goToMain} className='landing-polaroid'>
                 <img  src='../../../images/splashPageImages/route-66.jpg' />

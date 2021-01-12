@@ -13,6 +13,19 @@
   color: black;
 }
 
+.landing-page-enter-text {
+  font-family: $handwriting;
+  font-size: 48px;
+
+  -ms-transform: rotate(-2deg); /* Use this for IE9 */
+  transform: rotate(-8deg);
+  margin-right: auto;
+  margin-left: 130px;
+
+
+
+}
+
 .landing-polaroid {
   width: 32vw;
   height: 55vh;
@@ -48,10 +61,6 @@
   -webkit-animation: fadein 5s;
 
 
-  // max-width: 248px;
-  // min-width: 240px;
-  // min-height: 174px;
-  // border-radius: 2% 2% 0% 0%;;
 }
 
 .landing-polaroid h3 {
