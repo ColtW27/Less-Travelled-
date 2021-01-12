@@ -10,7 +10,6 @@ class MainPage extends React.Component {
     return (
       <div className='main-page-container'>
         <div className='main-page-header-image'><h3>LessTravelled</h3></div>
-        {/* <div className='main-page-right-image'></div> */}
         <ul>
           <li>
             <div className='main-page-polaroid'>

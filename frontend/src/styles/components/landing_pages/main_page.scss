@@ -27,9 +27,34 @@
       z-index: 0;
       position: relative;
       font-family: $handwriting;
-
-
 }
+
+
+
+.main-page-polaroid:nth-child(1) {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(2deg);
+}
+
+.main-page-polaroid:nth-child(2) {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(2deg);
+}
+
+.main-page-polaroid:nth-child(3) {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(2deg);
+}
+
+.main-page-polaroid:hover {
+  -webkit-transform: rotate(0deg);
+}
+
+
+
+
+
+
 
 .main-page-polaroid img{
   height: 27vh;
@@ -61,7 +86,6 @@
 .main-page-header-image h3 {
   position: absolute;
   font-size: 140px;
-  // font-family: $pacificoc;
   font-family: $handwriting;
   font-weight: 800;
   color: white;
@@ -71,26 +95,6 @@
   
 
 }
-
-
-
-
-// .main-page-right-image {
-//   background-image: url('../../images/cornerImage.png');
-//   background-repeat: no-repeat;
-//   height: 900px;
-//   width: 300px;
-//   position:absolute; /* position absolutely */
-//   right:0;
-//   z-index: 1;
-//   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-//   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-//   box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-
-// }
-
-
-
 
 .main-page-container ul {
   padding-top: 35px;
@@ -110,6 +114,9 @@
   flex-direction: row-reverse;
 }
 
+
+
+
 .main-page-container ul li p{
 
   color: white;
@@ -125,6 +132,7 @@
   padding-left: 35px;
   font-family: $handwriting;
   font-size: 30px;
+  background-size: auto;
 }
 
 @media only screen and (max-width: 822px) {
@@ -133,31 +141,3 @@
     height: 440px;
   }
 }
-
-
-
-
-
-
-// .main-page-description {
-//   display: flex;
-//   position: fixed;
-//   top: 120px;
-//   left: 5%;
-//   width: 50%;
-//   flex-wrap: wrap;
-//   font-size: 28px;
-//   font-family: $primaryFont;
-//   color: $GhostWhite;
-//   line-height: 150%;
-// }
-
-
-
-
-// .splash-list-images {
-//   height: 500px;
-//   width: 500px;
-//   // background-image: url('../images/Drumheller_Dino.jpg');
-
-// }
