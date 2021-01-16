@@ -1,0 +1,93 @@
+.landing-page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $OffWhite;
+ 
+}
+
+.landing-page-link {
+  text-decoration: none;
+  color: black;
+}
+
+.landing-page-enter-text {
+  font-family: $handwriting;
+  font-size: 48px;
+
+  -ms-transform: rotate(-2deg); /* Use this for IE9 */
+  transform: rotate(-8deg);
+  margin-right: auto;
+  margin-left: 130px;
+
+
+
+}
+
+.landing-polaroid {
+  width: 32vw;
+  height: 55vh;
+  min-height: 479px;
+  min-width: 519px;
+
+  background: white;
+  display: inline-block;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  font-family: $handwriting;
+  font-size: 60px;
+  -webkit-animation: fadein 3s;
+  -webkit-transform: rotate(3deg);
+}
+
+
+
+.landing-polaroid img{
+  height: 80%;
+  width: 95%;
+  min-height: 414px;
+  min-width: 456px;
+  -webkit-animation: fadein 5s;
+
+
+}
+
+.landing-polaroid h3 {
+  -ms-transform: rotate(-2deg); /* Use this for IE9 */
+  transform: rotate(-2deg);
+  -webkit-animation: fadein 9s;
+}
+
+.landing-polaroid h4 {
+  font-size: 17px;
+  // -ms-transform: rotate(-4deg); /* Use this for IE9 */
+  // transform: rotate(-3deg);
+  -webkit-animation: fadein 9s;
+}
+
+
+
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.landing-polaroid:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+
+}
+

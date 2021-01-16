@@ -1,10 +1,10 @@
 import React from 'react';
-import { ProtectedRoute } from '../util/route_util';
+import { ProtectedRoute, AuthRoute } from '../util/route_util';
 import { Route, Switch } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Modal from './modal/modal';
+import LandingPage from './splash_page/landing_page';
 import MainPage from './splash_page/main_page';
-import SplashPage from './splash_page/second_page';
 import AttractionsContainer from './attractions_index/attractions_container';
 import AttractionsShowContainer from './search/attraction_show_container';
 import PleaseLogin from './please_login/please_login';
@@ -19,8 +19,8 @@ const App = () => (
       <NavBarContainer />
       <Modal/>
     <Switch>
-      <Route exact path="/" component={MainPage} />
-      <Route exact path="/splashpage" component={SplashPage} />
+      <AuthRoute exact path="/" component={LandingPage} />
+      <Route exact path="/main" component={MainPage} />
       <Route exact path="/attractions" component={AttractionsContainer} />
       <Route path="/attractions/:id" component={AttractionsShowContainer}/>
       <Route exact path="/login" component={PleaseLogin}/>
