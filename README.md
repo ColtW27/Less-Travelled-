@@ -12,22 +12,27 @@ https://less-travelled.herokuapp.com/
 * View Attractions in detail.
 * Locate Attractions on an interactive map.
 * Leave reviews and rating on Attractions.
-* Filter for Attractions by name, category, and rating.
+* Filter for Attractions by name.
+
+#### Landing Page
+<img width="1440" alt="Screen Shot 2021-01-20 at 12 55 43 PM" src="https://user-images.githubusercontent.com/35855017/105216801-091ee480-5b21-11eb-8a81-c199ae508c65.png">
 
 #### Splash Page
-<img width="1440" alt="Screen Shot 2020-07-27 at 2 18 02 PM" src="https://user-images.githubusercontent.com/35855017/88577144-835c2980-d014-11ea-9baa-b971baa858ca.png">
+<img width="1440" alt="Screen Shot 2021-01-20 at 12 56 00 PM" src="https://user-images.githubusercontent.com/35855017/105216805-0ae8a800-5b21-11eb-8844-f5fa1f478826.png">
 
 #### Attraction's Index
-<img width="1440" alt="Screen Shot 2020-07-27 at 2 18 42 PM" src="https://user-images.githubusercontent.com/35855017/88577241-b4d4f500-d014-11ea-9f87-aa664cd7337f.png">
+
+<img width="1440" alt="Screen Shot 2021-01-20 at 12 56 38 PM" src="https://user-images.githubusercontent.com/35855017/105216809-0c19d500-5b21-11eb-80cc-01b48473f4e5.png">
 
 #### Signup Modal 
-<img width="1440" alt="Screen Shot 2020-07-27 at 2 19 15 PM" src="https://user-images.githubusercontent.com/35855017/88577360-e483fd00-d014-11ea-9563-871929c84008.png">
+<img width="1440" alt="Screen Shot 2021-01-20 at 1 17 16 PM" src="https://user-images.githubusercontent.com/35855017/105217442-dde8c500-5b21-11eb-97f6-88dcb498721a.png">
+
 
 #### Login Modal 
-<img width="1440" alt="Screen Shot 2020-07-27 at 2 19 07 PM" src="https://user-images.githubusercontent.com/35855017/88577316-d0400000-d014-11ea-8a99-5937ca5940b8.png">
+<img width="1440" alt="Screen Shot 2021-01-20 at 12 57 03 PM" src="https://user-images.githubusercontent.com/35855017/105216713-ec82ac80-5b20-11eb-9cd0-8c908a4b0218.png">
 
 #### Add Attractions
-<img width="1440" alt="Screen Shot 2020-07-27 at 2 19 46 PM" src="https://user-images.githubusercontent.com/35855017/88577410-f9609080-d014-11ea-8269-26aeb820928e.png">
+<img width="1440" alt="Screen Shot 2021-01-20 at 12 58 05 PM" src="https://user-images.githubusercontent.com/35855017/105216793-07552100-5b21-11eb-9b2b-c0062ec5d3ad.png">
 
 ### Planning
  See our Wireframes here - https://github.com/ColtW27/Less-Travelled-/wiki/Wire-Frames
