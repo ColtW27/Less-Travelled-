@@ -63,7 +63,7 @@ class AboutUs extends React.Component {
               <h2>Back End Lead</h2>
               <h3>Jon Romero</h3>
             <ul className='polaroid-links-list'>
-              <li><a href="https://Duskstone.github.io" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+              {/* <li><a href="https://Duskstone.github.io" target="_blank" rel="noopener noreferrer">Portfolio</a></li> */}
               <li><a href="https://github.com/duskstone" target="_blank" rel="noopener noreferrer">Github</a></li>
               <li><a href="https://www.linkedin.com/in/jonathan-romero-ab325a165/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a href="https://angel.co/u/jonathan-romero-3" target="_blank" rel="noopener noreferrer">AngelList</a></li>
