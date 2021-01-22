@@ -6,9 +6,6 @@
 
 }
 
-
-
-
 .main-page-polaroid {
       // background: #dbe1e2;
       max-width: 255px;
@@ -138,6 +135,20 @@
 @media only screen and (max-width: 822px) {
 
   .main-page-container ul li p{
-    height: 440px;
+    max-height: 300px;
   }
+
+
+  .main-page-header-image {
+    width: 100vw;
+  }
+
+  .main-page-header-image h3 {
+    font-size: 120px;
+    left: 120px;
+    
+  
+  }
+
+
 }
