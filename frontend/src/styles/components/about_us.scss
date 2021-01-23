@@ -14,22 +14,12 @@
     position: absolute;
     bottom: 45px;
     left: 200px;
-
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
-    // align-self: flex-end;
-//    padding-top: 18vh;
-//    padding-left: 5vh;
 }
 
 .about-us-polaroid {
-    // background: #dbe1e2;
     max-width: 255px;
     background: white;
     display: inline-block;
-    // margin: 20px 50px 15px;
     padding: 15px 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -54,17 +44,17 @@
 .about-us-polaroid:nth-child(2) {
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(2deg);
-  }
+}
 
-  .about-us-polaroid:nth-child(3) {
+.about-us-polaroid:nth-child(3) {
     -webkit-transform: rotate(-12deg);
     -moz-transform: rotate(2deg);
-  }
+}
 
-  .about-us-polaroid:nth-child(4) {
+.about-us-polaroid:nth-child(4) {
     -webkit-transform: rotate(-17deg);
     -moz-transform: rotate(2deg);
-  }
+}
 
 .about-us-polaroid img{
     height: 27vh;
@@ -116,3 +106,16 @@
     text-decoration: underline;
 
 };
+
+@media only screen and (max-width: 1400px) {
+    .about-us-container {
+        display: grid;
+        grid-template-rows: repeat(2, 350px);
+        gap: 20px;
+        grid-auto-flow: column;
+    }
+
+}
+
+
+
